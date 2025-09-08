@@ -1,0 +1,434 @@
+/* Grid Homepage Component Styles */
+
+/* Reset and base styles */
+.grid-homepage,
+.grid-homepage * {
+  box-sizing: border-box;
+}
+
+.grid-homepage {
+  background: #d9f0f2;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.grid-homepage-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  margin-bottom: 88px;
+}
+
+.grid-homepage-main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1270px;
+  position: relative;
+  padding-top: 120px;
+}
+
+/* Header Section */
+.grid-homepage-header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1270px;
+  position: relative;
+}
+
+.grid-homepage-header-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.grid-homepage-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+
+.grid-homepage-preheader {
+  color: #213243;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  position: relative;
+  align-self: stretch;
+}
+
+.grid-homepage-headline-wrapper {
+  flex-shrink: 0;
+  width: 624px;
+  height: 257px;
+  position: relative;
+}
+
+.grid-homepage-headline {
+  color: #213243;
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 646px;
+}
+
+.grid-homepage-right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 496px;
+  position: relative;
+}
+
+.grid-homepage-divider {
+  margin-top: -0.5px;
+  border-style: solid;
+  border-color: #213243;
+  border-width: 0.5px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+
+.grid-homepage-description-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.grid-homepage-description {
+  color: #213243;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+.grid-homepage-cta-button {
+  padding: 8px 0px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  cursor: pointer;
+}
+
+.grid-homepage-button-content {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.grid-homepage-button-text {
+  color: #003a96;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+  text-decoration: underline;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+  text-decoration-color: #003a96;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.grid-homepage-button-text:hover {
+  text-decoration: none;           /* underline disappears instantly */
+}
+
+/* Cards Section */
+.grid-homepage-cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.grid-homepage-cards-row-1,
+.grid-homepage-cards-row-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.grid-homepage-card {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 305px;
+  height: 390px;
+  position: relative;
+  cursor: pointer;
+}
+
+.grid-homepage-card-content {
+  border-radius: 12px;
+  padding: 24px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  height: 390px;
+}
+
+/* Card variants */
+.grid-homepage-card-teal .grid-homepage-card-content {
+  background: #b1e4e3;
+}
+
+.grid-homepage-card-teal:hover .grid-homepage-card-content {
+  background: #004268;
+  transition: background-color 0.3s ease;
+}
+
+.grid-homepage-card-teal:hover .grid-homepage-card-content,
+.grid-homepage-card-teal:hover .grid-homepage-card-content * {
+  color: white; /* override inner text colors */
+  transition: color 0.3s ease;
+
+}
+
+.grid-homepage-card-white:hover .grid-homepage-card-content,
+.grid-homepage-card-white:hover .grid-homepage-card-content * {
+  color: white; /* override inner text colors */
+  transition: color 0.3s ease;
+
+}
+
+/* Override the specific link text */
+.grid-homepage-card-teal:hover .grid-homepage-link-text {
+  color: #B1E4E3; /* any color you want */
+    text-decoration: underline;
+  text-decoration-thickness: 1px;   /* thicker underline */
+  text-underline-offset: 3px;       /* lower position */
+ 
+}
+
+.grid-homepage-card-white .grid-homepage-card-content {
+  background: #ffffff;
+}
+
+.grid-homepage-card-white:hover .grid-homepage-card-content {
+  background: #004268;
+  transition: background-color 0.3s ease;
+}
+
+.grid-homepage-card-white:hover .grid-homepage-link-text {
+  color: #B1E4E3; /* any color you want */
+    text-decoration: underline;
+  text-decoration-thickness: 1px;   /* thicker underline */
+  text-underline-offset: 3px;       /* lower position */
+ 
+}
+
+
+.grid-homepage-card-dark-teal {
+  width: 633px;
+}
+
+.grid-homepage-card-dark-teal .grid-homepage-card-content {
+  background: #007d85;
+  width: 633px;
+}
+
+.grid-homepage-card-dark-blue .grid-homepage-card-content {
+  background: #213243;
+}
+
+.grid-homepage-card-dark-blue:hover .grid-homepage-card-content {
+  background: #004268;
+  transition: background-color 0.3s ease;
+}
+
+.grid-homepage-card-dark-blue:hover .grid-homepage-card-content,
+.grid-homepage-card-dark-blue:hover .grid-homepage-card-content * {
+  color: white; /* override inner text colors */
+  transition: color 0.3s ease;
+
+}
+
+/* Card stats */
+.grid-homepage-card-stats {
+  color: #003a96;
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+}
+
+.grid-homepage-card-stats:hover {
+  color: #fff;
+}
+
+.grid-homepage-stat-number {
+  font-family: "Roboto Slab", serif;
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+
+.grid-homepage-stat-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+/* Dark blue card stats */
+.grid-homepage-card-dark-blue .grid-homepage-card-stats {
+  color: #d9f0f2;
+}
+
+/* Card links */
+.grid-homepage-card-link {
+  display: inline-block;
+  position: relative;
+}
+
+.grid-homepage-link-text {
+  color: #003a96;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dark blue card link text */
+.grid-homepage-card-dark-blue .grid-homepage-link-text {
+  color: #d9f0f2;
+}
+
+/* Quote section */
+.grid-homepage-quote-icon {
+  flex-shrink: 0;
+  width: 28.12px;
+  height: 43.33px;
+  position: relative;
+  overflow: visible;
+}
+
+.grid-homepage-quote-text {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+/* Images */
+.grid-homepage-image-1,
+.grid-homepage-image-2 {
+  border-radius: 12px;
+  flex-shrink: 0;
+  width: 305px;
+  height: 390px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* Caret styles and animations */
+.grid-homepage-caret {
+  flex-shrink: 0;
+  width: 5.64px;
+  height: 9.5px;
+  position: relative;
+  overflow: visible;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: baseline;
+}
+
+/* Hover effects for carets */
+.grid-homepage-cta-button:hover .grid-homepage-caret,
+.grid-homepage-card:hover .grid-homepage-caret {
+  transform: translateX(4px);
+  stroke: aqua;
+  fill: aqua;
+}
+
+/* Card hover effects */
+
+
+

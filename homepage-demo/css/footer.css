@@ -1,0 +1,777 @@
+  /* CSS for the footer component */
+    .footer-1-2-3-container,
+.footer-1-2-3-container * {
+  box-sizing: border-box;
+}
+.footer-1-2-3-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.footer-global-cta-bar {
+  background: var(--global-cta-bar-bg, #213243);
+  padding: var(--spacing-base-space-700, 56px) 88px
+    var(--spacing-base-space-700, 56px) 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 170px;
+  position: relative;
+}
+.footer-frame-1686563793 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-doctor {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-doctor-icon {
+
+  flex-shrink: 0;
+  width: 44px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-doctor-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-find-a-location {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-location-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-location-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-request-an-appointment {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-request-appointment-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-request-appointment-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-log-into-patient-gateway {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-gateway-icon {
+
+  flex-shrink: 0;
+  width: 44px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-gateway-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-footer-links-container {
+  background: #e7e7e0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 794px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-middle-block {
+  background: var(--footer-top-bg, #e7e7e0);
+  padding: 80px 88px 80px 88px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1512px;
+  height: 794px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.footer-middle-block-outer {
+  /*padding: 0px 88px 0px 88px; */
+  display: flex;
+  flex-direction: row;
+  gap: 215px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1506px;
+  height: 714px;
+  position: relative;
+}
+.footer-middle-block-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-group {
+  flex-shrink: 0;
+  width: 368px;
+  height: 51.3px;
+  position: relative;
+  overflow: visible;
+}
+.footer-middle-block-column-1-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-patient-care {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-research-and-innovation {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-education-and-training {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-mass-general-brigham-health-plan {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-lorem-ipsum {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-middle-block-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-700, 56px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 682px;
+  position: relative;
+}
+.footer-middle-block-row-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-take-the-next-step {
+  color: var(--footer-top-preheader, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+}
+.footer-section-links {
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 676px;
+  position: relative;
+}
+.footer-section-links-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 227.5px;
+  position: relative;
+}
+.footer-pay-my-bill {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-participate-in-research {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-get-in-touch {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.footer-ipsum-lorem {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.footer-section-links-column-12 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.footer-request-an-appointment2 {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.footer-for-medical-professionals {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.footer-ipsum-lorem2 {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-middle-block-row-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+.footer-section-links-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-section-links-2-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 227.5px;
+  position: relative;
+}
+.section-links-2-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.footer-middle-block-row-3 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+.footer-labels {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-label {
+  color: var(--canvas-default-text-preheader, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+}
+.footer-social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-social-icons {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--footer-top-icons, #213243);
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+/*
+.footer-layer-1 {
+  flex-shrink: 0;
+  width: 11.83px;
+  height: 21.31px;
+  position: relative;
+  overflow: visible;
+}
+
+.footer-layer-12 {
+  flex-shrink: 0;
+  width: 17.72px;
+  height: 18.24px;
+  position: relative;
+  overflow: visible;
+}
+.footer-layer-13 {
+  flex-shrink: 0;
+  width: 22.06px;
+  height: 22.06px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-group2 {
+  width: 94.97%;
+  height: 94.97%;
+  position: absolute;
+  right: 2.53%;
+  left: 2.5%;
+  bottom: 2.53%;
+  top: 2.5%;
+  overflow: visible;
+}
+.footer-layer-14 {
+  flex-shrink: 0;
+  width: 24.92px;
+  height: 18.74px;
+  position: relative;
+  overflow: visible;
+}
+.footer-layer-15 {
+  flex-shrink: 0;
+  width: 21.3px;
+  height: 21.21px;
+  position: relative;
+  overflow: visible;
+}
+*/
+.footer-bottom-container {
+  background: var(--footer-bottom-bg, #01828e);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1512px;
+  height: 606px;
+  position: relative;
+}
+.footer-top-section {
+  padding: 64px 88px var(--spacing-base-space-1000, 80px) 88px;
+  display: flex;
+  flex-direction: row;
+  gap: 137px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-third-outer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1266px;
+  position: relative;
+}
+.footer-third-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-we-recognize-that-increasing-value-and-continuously-improving-quality-are-essential-to-maintaining-excellence {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --headline-h1-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h1-slab-font-size, 64px);
+  line-height: var(--headline-h1-slab-line-height, 70px);
+  font-weight: var(--headline-h1-slab-font-weight, 400);
+  position: relative;
+  width: 1225px;
+}
+.footer-third-logo-container {
+  padding: 8px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.footer-logo-avatar {
+  flex-shrink: 0;
+  width: 76px;
+  height: 108.98px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 76/108.98;
+}
+.footer-group3 {
+  width: 100.43%;
+  height: 100.53%;
+  position: absolute;
+  right: -0.43%;
+  left: 0%;
+  bottom: -0.53%;
+  top: 0%;
+  overflow: visible;
+}
+.footer-bottom-section {
+  border-style: solid;
+  border-color: var(--footer-bottom-border, #ffffff);
+  border-width: 0.5px 0px 0px 0px;
+  padding: 32px 88px 32px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-bottom-section-inner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-2025-mass-general-brigham-incorporated-all-rights-reserved {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.footer-bottom-section-inner-container-right {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-compliance {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-privacy-policy {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-non-discrimination {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-sitemap {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+  /* CSS for the footer component */

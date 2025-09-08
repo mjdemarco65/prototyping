@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+/* Title Controls Styling */
+.title-controls,
+.title-controls * {
+  box-sizing: border-box;
+}
+
+.title-controls {
+  background: #213243;
+  padding: 40px 90px 40px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 180px;
+  position: relative;
+}
+
+.frame-1686563847 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  
+}
+
+.frame-1686562663 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 801px;
+  position: relative;
+}
+
+.h-3 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+.button {
+  background: #8bffcd;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #213243;
+  border-width: 1px;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  
+  background: #00E682 !important;
+}
+
+.frame-1686563306 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.primary-button {
+  color: #213243;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+}
+
+.component-level-text-controller {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-1686562862 {
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.this-is-an-example-o {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+}
+
+.frame-1686562871 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.button2 {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.button2:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.icon-arrow-right {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+
+.button3 {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  cursor: pointer;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.button3:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.icon-arrow-right2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+
+/* Cards Ribbon Styling */
+.cards-ribbon,
+.cards-ribbon * {
+  box-sizing: border-box;
+}
+
+.cards-ribbon {
+  background: #213243;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 915px;
+}
+
+.frame-1686563908 {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 57px;
+  top: 210px;
+  transition: transform 0.3s ease;
+}
+
+/* Card Design - Exact from Figma export */
+.card-design,
+.card-design * {
+  box-sizing: border-box;
+}
+
+.card-design {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 408px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.card-design:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 58, 150, 0.15);
+}
+
+.card-design:hover .caret {
+  transform: translateX(4px);
+}
+
+.photo {
+  border-radius: var(--radius-radius-120, 12px) var(--radius-radius-120, 12px)
+    var(--radius-radius-0, 0px) var(--radius-radius-0, 0px);
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 215px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+ width: 420px;
+
+  object-fit: cover;
+  aspect-ratio: 522.36/402;
+}
+
+.contents {
+  border-radius: 0px 0px 12px 12px;
+  padding: var(--spacing-base-space-300, 24px) 20px
+    var(--spacing-base-space-300, 24px) 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  row-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.atom {
+  background: #e7e7e0;
+  border-radius: 5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.tag-name {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: center;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+
+.march-4-2025 {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+}
+
+.headline-link {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.new-smartphone-app-helps-people-recognize-stroke-symptoms {
+  color: var(--foreground-text-headline-link, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-slab-font-size, 22px);
+  line-height: var(--headline-h6-slab-line-height, 29px);
+  font-weight: var(--headline-h6-slab-font-weight, 400);
+  position: relative;
+  width: 295px;
+}
+
+.caret {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+  transition: transform 0.3s ease;
+}
+
+.description-date {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.read-article {
+  color: #303133;
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+/* Navigation Controls */
+.carousel-controls {
+  position: absolute;
+  bottom: 40px;
+  right: 57px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.page-indicator {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-button {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.nav-button:hover {
+  opacity: 0.8;
+}
+

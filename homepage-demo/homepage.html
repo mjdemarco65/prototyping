@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Navigation with All Dropdowns</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global-navigation-all-dropdowns-style.css">
+  <link rel="stylesheet" href="css/search-home-style.css">
+  <link rel="stylesheet" href="css/services-block-style.css">
+  <link rel="stylesheet" href="css/grid-homepage-style.css">
+  <link rel="stylesheet" href="css/news-title-style.css">
+  <link rel="stylesheet" href="css/cards-ribbon-style.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+<style>
+
+ /* CSS for the footer component */
+    .footer-1-2-3-container,
+.footer-1-2-3-container * {
+  box-sizing: border-box;
+}
+.footer-1-2-3-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.footer-global-cta-bar {
+  background: var(--global-cta-bar-bg, #213243);
+  padding: var(--spacing-base-space-700, 56px) 88px
+    var(--spacing-base-space-700, 56px) 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 170px;
+  position: relative;
+}
+.footer-frame-1686563793 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-doctor {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-doctor-icon {
+background-image: url("img/icon-1.png");
+  flex-shrink: 0;
+  width: 46px;
+  height: 57px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-doctor-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-find-a-location {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-location-icon {
+  background-image: url("img/icon-2.png");
+  flex-shrink: 0;
+  width: 50px;
+  height: 55px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-location-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-request-an-appointment {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-request-appointment-icon {
+background-image: url("img/icon-3.png");
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-request-appointment-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-log-into-patient-gateway {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-gateway-icon {
+background-image: url("img/icon-4.png");
+  flex-shrink: 0;
+  width: 55px;
+  height: 53px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-gateway-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-footer-links-container {
+  background: #e7e7e0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 794px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-middle-block {
+  background: var(--footer-top-bg, #e7e7e0);
+  padding: 80px 88px 80px 88px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1512px;
+  height: 794px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.footer-middle-block-outer {
+  /*padding: 0px 88px 0px 88px; */
+  display: flex;
+  flex-direction: row;
+  gap: 215px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1506px;
+  height: 714px;
+  position: relative;
+}
+.footer-middle-block-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-group {
+  flex-shrink: 0;
+  width: 368px;
+  height: 51.3px;
+  position: relative;
+  overflow: visible;
+}
+.footer-middle-block-column-1-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-patient-care {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-research-and-innovation {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-education-and-training {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-mass-general-brigham-health-plan {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-lorem-ipsum {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-middle-block-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-700, 56px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 682px;
+  position: relative;
+}
+.footer-middle-block-row-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-take-the-next-step {
+  color: var(--footer-top-preheader, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+}
+.footer-section-links {
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 676px;
+  position: relative;
+}
+.footer-section-links-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 227.5px;
+  position: relative;
+}
+.footer-pay-my-bill {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-participate-in-research {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-get-in-touch {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  margin-top: 18px;
+}
+.footer-ipsum-lorem {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.footer-section-links-column-12 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.footer-request-an-appointment2 {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.footer-for-medical-professionals {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  margin-top: 18px;
+}
+.footer-ipsum-lorem2 {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-middle-block-row-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+.footer-section-links-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-section-links-2-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 227.5px;
+  position: relative;
+}
+.section-links-2-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.footer-middle-block-row-3 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+.footer-labels {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-label {
+  color: var(--canvas-default-text-preheader, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+}
+.footer-social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-social-icons {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--footer-top-icons, #213243);
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.footer-layer-1 {
+  flex-shrink: 0;
+  width: 11.83px;
+  height: 21.31px;
+  position: relative;
+  overflow: visible;
+}
+.footer-layer-12 {
+  flex-shrink: 0;
+  width: 17.72px;
+  height: 18.24px;
+  position: relative;
+  overflow: visible;
+}
+.footer-layer-13 {
+  flex-shrink: 0;
+  width: 22.06px;
+  height: 22.06px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-group2 {
+  width: 94.97%;
+  height: 94.97%;
+  position: absolute;
+  right: 2.53%;
+  left: 2.5%;
+  bottom: 2.53%;
+  top: 2.5%;
+  overflow: visible;
+}
+.footer-layer-14 {
+  flex-shrink: 0;
+  width: 24.92px;
+  height: 18.74px;
+  position: relative;
+  overflow: visible;
+}
+.footer-layer-15 {
+  flex-shrink: 0;
+  width: 21.3px;
+  height: 21.21px;
+  position: relative;
+  overflow: visible;
+}
+.footer-bottom-container {
+  background: var(--footer-bottom-bg, #01828e);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1512px;
+  height: 606px;
+  position: relative;
+}
+.footer-top-section {
+  padding: 64px 88px var(--spacing-base-space-1000, 80px) 88px;
+  display: flex;
+  flex-direction: row;
+  gap: 137px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-third-outer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1266px;
+  position: relative;
+}
+.footer-third-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-we-recognize-that-increasing-value-and-continuously-improving-quality-are-essential-to-maintaining-excellence {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var( --headline-h1-slab-font-family, "Roboto Slab", serif );
+  font-size: var(--headline-h1-slab-font-size, 64px);
+  line-height: var(--headline-h1-slab-line-height, 70px);
+  font-weight: var(--headline-h1-slab-font-weight, 400);
+  position: relative;
+  width: 1225px;
+}
+.footer-third-logo-container {
+  padding: 8px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.footer-logo-avatar {
+  flex-shrink: 0;
+  width: 76px;
+  height: 108.98px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 76/108.98;
+}
+.footer-group3 {
+  width: 100.43%;
+  height: 100.53%;
+  position: absolute;
+  right: -0.43%;
+  left: 0%;
+  bottom: -0.53%;
+  top: 0%;
+  overflow: visible;
+}
+.footer-bottom-section {
+  border-style: solid;
+  border-color: var(--footer-bottom-border, #ffffff);
+  border-width: 0.5px 0px 0px 0px;
+  padding: 32px 88px 32px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-bottom-section-inner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-2025-mass-general-brigham-incorporated-all-rights-reserved {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.footer-bottom-section-inner-container-right {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-compliance {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-privacy-policy {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-non-discrimination {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-sitemap {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+  /* CSS for the footer component */
+
+
+</style>
+
+
+</head>
+<body>
+  <div class="global-nav-component">
+    <div class="global-nav-menu">
+      <div class="global-nav-alert-banner" id="global-nav-alert-banner">
+        <div class="global-nav-alert-content">
+          <div class="global-nav-alert-text-section">
+            <img class="global-nav-alert-icon" src="img/nav/interface-icon0.svg" />
+            <div class="global-nav-alert-title">Severe weather notice</div>
+            <div class="global-nav-alert-description">
+              All elective surgeries, diagnostic, therapy and in-person
+              appointments are canceled Wednesday, January 22nd.
+            </div>
+          </div>
+          <div class="global-nav-alert-button">
+            <a href="https://www.massgeneralbrigham.org/" class="global-nav-alert-link">
+              <div class="global-nav-alert-button-content">
+                <div class="global-nav-alert-button-text">View latest updates</div>
+              </div>
+              <img class="global-nav-alert-button-icon" src="img/interface-icon1.svg" />
+            </a>
+          </div>
+        </div>
+        <img class="global-nav-alert-close" src="img/interface-icon2.svg" id="global-nav-alert-close" />
+      </div>
+      <div class="global-nav-alert-strip" id="global-nav-alert-strip" style="display: none;"></div>
+      <div class="global-nav-secondary-bar">
+        <div class="global-nav-secondary-left">
+          <div class="global-nav-secondary-button">
+            <a href="https://massgeneralbrighamhealthplan.org/" class="global-nav-secondary-link">
+              <div class="global-nav-secondary-button-content">
+                <div class="global-nav-secondary-text">Health Plan</div>
+              </div>
+              <img class="global-nav-secondary-icon" src="img/interface-icon4.svg" />
+            </a>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Research</div>
+            </div>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Education and Training</div>
+            </div>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Donate</div>
+            </div>
+          </div>
+        </div>
+        <div class="global-nav-secondary-right">
+          <div class="global-nav-secondary-group">
+            <div class="global-nav-secondary-button">
+              <a href="https://patientgateway.massgeneralbrigham.org/mychart-PRD/Authentication/Login" class="global-nav-secondary-link">
+                <div class="global-nav-secondary-button-content">
+                  <div class="global-nav-secondary-text">Patient Gateway</div>
+                </div>
+                <img class="global-nav-secondary-icon" src="img/interface-icon4.svg" />
+              </a>
+            </div>
+            <div class="global-nav-language-button">
+              <img class="global-nav-language-icon" src="img/interface-icon5.svg" />
+              <div class="global-nav-secondary-button-content">
+                <div class="global-nav-secondary-text">English</div>
+              </div>
+              <img class="global-nav-language-dropdown" src="img/interface-icon6.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="global-nav-main-section">
+      <div class="global-nav-main-container">
+        <div class="global-nav-main-content">
+          <div class="global-nav-main-row">
+            <div class="global-nav-main-left">
+              <div class="global-nav-logo">
+                <img class="global-nav-logo-image" src="img/group-13213176770.svg" />
+              </div>
+              <div class="global-nav-main-menu">
+                <div class="global-nav-nav-item" id="get-care-nav-item">
+                  <div class="global-nav-nav-label">Find Care</div>
+                  <img class="global-nav-nav-icon" id="get-care-chevron" src="img/interface-icon7.svg" />
+                </div>
+                <div class="global-nav-nav-item" id="services-nav-item">
+                  <div class="global-nav-nav-label">Services &amp; Treatments</div>
+                  <img class="global-nav-nav-icon" id="services-chevron" src="img/interface-icon8.svg" />
+                </div>
+                <div class="global-nav-nav-item" id="patients-nav-item">
+                  <div class="global-nav-nav-label">Patients &amp; Visitors</div>
+                  <img class="global-nav-nav-icon" id="patients-chevron" src="img/interface-icon9.svg" />
+                </div>
+                <div class="global-nav-nav-item">
+                  <div class="global-nav-nav-label">Find a Doctor</div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-main-right">
+              <div class="global-nav-search-button">
+                <img class="global-nav-search-icon" src="img/interface-icon11.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Get Care Dropdown Menu -->
+    <div class="global-nav-get-care-dropdown" id="get-care-dropdown" style="display: none;">
+      <div class="global-nav-get-care-container">
+        <div class="global-nav-get-care-content">
+          <div class="global-nav-get-care-main">
+            <div class="global-nav-get-care-left-column">
+              <div class="global-nav-get-care-header">
+                <div class="global-nav-get-care-title-section">
+                  <div class="global-nav-get-care-title">
+                    <div class="global-nav-get-care-title-text">Find Care</div>
+                  </div>
+                  <div class="global-nav-get-care-description">
+                    Find and access urgent care, appointments, and health services quickly for all your medical needs.
+                  </div>
+                </div>
+                <div class="global-nav-get-care-button">
+                  <div class="global-nav-get-care-button-content">
+                    <div class="global-nav-get-care-button-text">
+                      See all care options
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-get-care-middle-section">
+              <div class="global-nav-get-care-actions">
+                <div class="global-nav-get-care-action-column">
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-get-care-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-get-care-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Find a provider</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <img class="global-nav-get-care-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Find a location</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Request an appointment</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-layer" src="img/layer-13.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Get a second opinion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-get-care-right-column">
+              <div class="global-nav-get-care-featured">
+                <div class="global-nav-get-care-featured-content">
+                  <div class="global-nav-get-care-featured-title">Types of care</div>
+                  <div class="global-nav-get-care-featured-item">Urgent Care</div>
+                  <div class="global-nav-get-care-featured-item">Emergency Care</div>
+                  <div class="global-nav-get-care-featured-item">Virtual Care</div>
+                  <div class="global-nav-get-care-featured-item">Home Care</div>
+                  <div class="global-nav-get-care-featured-item">International Patient Care</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services & Treatments Dropdown Menu -->
+    <div class="global-nav-services-dropdown" id="services-dropdown" style="display: none;">
+      <div class="global-nav-services-container">
+        <div class="global-nav-services-content">
+          <div class="global-nav-services-main">
+            <div class="global-nav-services-left-column">
+              <div class="global-nav-services-header">
+                <div class="global-nav-services-title-section">
+                  <div class="global-nav-services-title">
+                    <div class="global-nav-services-title-text">Services and Treatments</div>
+                  </div>
+                  <div class="global-nav-services-description">
+                    Mass General Brigham offers a full range of patient services
+                    for common to complex health conditions. Learn about our
+                    services and treatments.
+                  </div>
+                </div>
+                <div class="global-nav-services-button">
+                  <div class="global-nav-services-button-content">
+                    <div class="global-nav-services-button-text">
+                      See all services and treatments
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-services-middle-section">
+              <div class="global-nav-services-actions">
+                <div class="global-nav-services-action-column">
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-services-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-services-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a service</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <img class="global-nav-services-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a treatment</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a condition</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-layer" src="img/layer-13.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Get a second opinion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-services-right-column">
+              <div class="global-nav-services-featured">
+                <div class="global-nav-services-featured-content">
+                  <div class="global-nav-services-featured-title">Featured Services</div>
+                  <div class="global-nav-services-featured-item">Cancer Institute</div>
+                  <div class="global-nav-services-featured-item"><a href="/Users/mjd/Documents/UWSP/institute/institute.html">Heart and Vascular Institute</a></div>
+                  <div class="global-nav-services-featured-item">Neurosciences Institute</div>
+                  <div class="global-nav-services-featured-item">Orthopedics and Sports Medicine</div>
+                  <div class="global-nav-services-featured-item">Home Hospital</div>
+                  <div class="global-nav-services-featured-link">See all services</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Patients & Visitors Dropdown Menu -->
+    <div class="global-nav-patients-dropdown" id="patients-dropdown" style="display: none;">
+      <div class="global-nav-patients-container">
+        <div class="global-nav-patients-content">
+          <div class="global-nav-patients-main">
+            <div class="global-nav-patients-left-column">
+              <div class="global-nav-patients-header">
+                <div class="global-nav-patients-title-section">
+                  <div class="global-nav-patients-title">
+                    <div class="global-nav-patients-title-text">Patients and Visitors</div>
+                  </div>
+                  <div class="global-nav-patients-description">
+                    We're here to help you navigate your patient and visitor experience from start to finish. View our resources and policies to guide your journey.
+                  </div>
+                </div>
+                <div class="global-nav-patients-button">
+                  <div class="global-nav-patients-button-content">
+                    <div class="global-nav-patients-button-text">
+                      See all patients and visitors
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-patients-middle-section">
+              <div class="global-nav-patients-actions">
+                <div class="global-nav-patients-action-column">
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <div class="global-nav-patients-icon-wrapper">
+                          <img class="global-nav-patients-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-patients-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-patients-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">Plan Your Visit</div>
+                  </div>
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <img class="global-nav-patients-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">International Patients</div>
+                  </div>
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <div class="global-nav-patients-icon-wrapper">
+                          <img class="global-nav-patients-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">Health and Wellness</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-patients-right-column">
+              <div class="global-nav-patients-featured">
+                <div class="global-nav-patients-featured-content">
+                  <div class="global-nav-patients-featured-title">Quick Links</div>
+                  <div class="global-nav-patients-featured-item">Billing and Insurance</div>
+                  <div class="global-nav-patients-featured-item">Caregiver Resources</div>
+                  <div class="global-nav-patients-featured-item">Home Care</div>
+                  <div class="global-nav-patients-featured-item">Patient Resources</div>
+                  <div class="global-nav-patients-featured-item">Medical Records</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="search-home">
+    <div
+      class="search-home-background"
+      style="
+        background: url(img/search/background0.png) center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="search-home-main-container">
+        <div class="search-home-content-wrapper">
+          <div class="search-home-title">
+            #1 in Hospital
+            <br />
+            Medical Research
+            <br />
+            in the U.S
+          </div>
+          <div class="search-home-search-section">
+            <div class="search-home-search-tabs">
+              <div class="search-home-tab-category">Search by category</div>
+            </div>
+            <div class="search-home-search-bar">
+              <div class="search-home-dropdown">
+                <div class="search-home-dropdown-container" id="search-dropdown-trigger">
+                  <div class="search-home-dropdown-content">
+                    <div class="search-home-dropdown-text" id="search-dropdown-selected">All</div>
+                    <img class="search-home-dropdown-icon" id="search-dropdown-chevron" src="img/search/interface-icon0.svg" />
+                  </div>
+                </div>
+                <div class="search-home-dropdown-menu" id="search-dropdown-menu" style="display: none;">
+                  <div class="search-home-dropdown-option" data-value="all">All</div>
+                  <div class="search-home-dropdown-option" data-value="doctors">Doctors</div>
+                  <div class="search-home-dropdown-option" data-value="locations">Locations</div>
+                </div>
+              </div>
+              
+              <!-- All Search Bar (Default) -->
+              <div class="search-home-input-container" id="search-bar-all">
+                <div class="search-home-input-wrapper">
+                  <div class="search-home-search-icon-container">
+                    <img class="search-home-search-icon" src="img/search/interface-icon1.svg" />
+                  </div>
+                  <input type="text" class="search-home-input-field" placeholder="" />
+                </div>
+              </div>
+              
+              <!-- Doctors Search Bar -->
+              <div class="search-home-input-container-doctors" id="search-bar-doctors" style="display: none;">
+                <div class="search-home-doctors-field">
+                  <div class="search-home-search-icon-container">
+                    <img class="search-home-search-icon" src="img/search/interface-icon1.svg" />
+                  </div>
+                  <input type="text" class="search-home-input-field" placeholder="Search for doctor, or specialty" />
+                </div>
+                <div class="search-home-divider"></div>
+                <div class="search-home-location-field">
+                  <div class="search-home-location-icon-container">
+                    <img class="search-home-location-icon" src="img/search/interface-icon2.svg" />
+                  </div>
+                  <input type="text" class="search-home-location-input" placeholder="City, State, or Zip code" />
+                </div>
+              </div>
+              
+              <!-- Locations Search Bar -->
+              <div class="search-home-input-container-locations" id="search-bar-locations" style="display: none;">
+                <div class="search-home-locations-field">
+                  <div class="search-home-search-icon-container">
+                    <img class="search-home-search-icon" src="img/search/interface-icon1.svg" />
+                  </div>
+                  <input type="text" class="search-home-input-field" placeholder="Search for location, or specialty" />
+                </div>
+                <div class="search-home-divider"></div>
+                <div class="search-home-location-field">
+                  <div class="search-home-location-icon-container">
+                    <img class="search-home-location-icon" src="img/search/interface-icon2.svg" />
+                  </div>
+                  <input type="text" class="search-home-location-input" placeholder="City, State, or Zip code" />
+                </div>
+              </div>
+              <div class="search-home-button">
+                <div class="search-home-button-content">
+                  <div class="search-home-button-text">Search</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search-home-cards-section">
+          <div class="search-home-card search-home-card-1">
+            <div class="search-home-card-inner">
+              <div class="search-home-card-content">
+                <div class="search-home-card-header">
+                  <div class="search-home-card-title-section">
+                    <div class="search-home-card-title-container">
+                      <div class="search-home-card-title-wrapper">
+                        <div class="search-home-card-title-text">
+                          <span>
+                            <span class="search-home-card-title-span">
+                              Appointment or referral
+                            </span>
+                            <span class="search-home-card-arrow">›</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="search-home-card-description-section">
+                        <div class="search-home-card-description">
+                          Explore your care options, locations, and how to find
+                          the right doctor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-home-card search-home-card-2">
+            <div class="search-home-card-inner">
+              <div class="search-home-card-content">
+                <div class="search-home-card-header">
+                  <div class="search-home-card-title-section">
+                    <div class="search-home-card-title-container">
+                      <div class="search-home-card-title-wrapper">
+                        <div class="search-home-card-title-text">
+                          <span>
+                            <span class="search-home-card-title-span">
+                              Log in to Patient Gateway
+                            </span>
+                            <span class="search-home-card-arrow">›</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="search-home-card-description-section">
+                        <div class="search-home-card-description">
+                          Explore your care options, locations, and how to find
+                          the right doctor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-home-card search-home-card-3">
+            <div class="search-home-card-inner">
+              <div class="search-home-card-content">
+                <div class="search-home-card-header">
+                  <div class="search-home-card-title-section">
+                    <div class="search-home-card-title-container">
+                      <div class="search-home-card-title-wrapper">
+                        <div class="search-home-card-title-text">
+                          <span>
+                            <span class="search-home-card-title-span">
+                              See all care options
+                            </span>
+                            <span class="search-home-card-arrow">›</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="search-home-card-description-section">
+                        <div class="search-home-card-description">
+                          Explore your care options, locations, and how to find
+                          the right doctor.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Component 2: Services Block -->
+  <div class="services-block">
+    <div class="services-block-main-container">
+      <div class="services-block-content-wrapper">
+        <div class="services-block-left-section">
+          <div class="services-block-text-content">
+            <div class="services-block-text-wrapper">
+              <div class="services-block-headline">
+                Leading specialists. Exceptional care, designed around you.
+              </div>
+              <div class="services-block-description">
+                Get the specialized care from our team of world-class experts—all in one system, designed around you. From complex diagnoses to advanced treatments, we deliver the latest innovations with compassion and collaboration.
+              </div>
+            </div>
+            <div class="services-block-button">
+              <div class="services-block-button-content">
+                <div class="services-block-button-text">See all services</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-block-right-section">
+          <div class="services-block-grid-container">
+            <div class="services-block-grid-left">
+              <div class="services-block-accordion-item">
+                <div class="services-block-accordion-cell">
+                  <div class="services-block-accordion-content">
+                    <div class="services-block-service-name">
+                      Cancer
+                      <img class="services-block-caret" src="img/search/caret1.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services-block-accordion-item">
+                <div class="services-block-accordion-cell">
+                  <div class="services-block-accordion-content">
+                    <div class="services-block-service-name services-block-multiline">
+                      Orthopedics and<br />Sports Medicine
+                      <img class="services-block-caret" src="img/search/caret1.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services-block-accordion-item">
+                <div class="services-block-accordion-cell">
+                  <div class="services-block-accordion-content">
+                    <div class="services-block-service-name">
+                      Primary Care
+                      <img class="services-block-caret" src="img/search/caret2.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services-block-accordion-item">
+                <div class="services-block-accordion-cell">
+                  <div class="services-block-accordion-content">
+                    <div class="services-block-service-name services-block-multiline">
+                      Obstetrics and<br />Gynecology
+                      <img class="services-block-caret" src="img/search/caret3.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-block-grid-right">
+              <div class="services-block-accordion-item">
+                <div class="services-block-accordion-cell">
+                  <div class="services-block-accordion-content">
+                    <div class="services-block-service-name">
+                      Heart and Vascular
+                      <img class="services-block-caret" src="img/search/caret4.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services-block-accordion-item">
+                <div class="services-block-accordion-cell">
+                  <div class="services-block-accordion-content">
+                    <div class="services-block-service-name">
+                      Brain and Spine
+                      <img class="services-block-caret" src="img/search/caret5.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services-block-accordion-item">
+                <div class="services-block-accordion-cell">
+                  <div class="services-block-accordion-content">
+                    <div class="services-block-service-name">
+                      Children's Health
+                      <img class="services-block-caret" src="img/search/caret6.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services-block-accordion-item">
+                <div class="services-block-accordion-cell">
+                  <div class="services-block-accordion-content">
+                    <div class="services-block-service-name services-block-multiline">
+                      Emergency and<br />Urgent Care
+                      <img class="services-block-caret" src="img/search/caret7.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="grid-homepage">
+    <div class="grid-homepage-container">
+      <div class="grid-homepage-main-section">
+        <div class="grid-homepage-header-section">
+          <div class="grid-homepage-header-content">
+            <div class="grid-homepage-left-content">
+              <div class="grid-homepage-preheader">
+                One system. World-class care.
+              </div>
+              <div class="grid-homepage-headline-wrapper">
+                <div class="grid-homepage-headline">
+                  At Mass General Brigham, our doctors, nurses, specialists, and
+                  researchers work together to care for you.
+                </div>
+              </div>
+            </div>
+            <div class="grid-homepage-right-content">
+              <div class="grid-homepage-divider"></div>
+              <div class="grid-homepage-description-section">
+                <div class="grid-homepage-description">
+                  Our unified health system means seamless, coordinated care,
+                  giving you access to the latest treatments and clinical trials
+                  at locations across New England.
+                </div>
+                <div class="grid-homepage-cta-button">
+                  <div class="grid-homepage-button-content">
+                    <div class="grid-homepage-button-text">
+                      Learn more about Mass General Brigham
+                    </div>
+                    <img class="grid-homepage-caret" src="img/grid/caret0.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-homepage-cards-section">
+          <div class="grid-homepage-cards-row-1">
+            <div class="grid-homepage-card grid-homepage-card-teal">
+              <div class="grid-homepage-card-content">
+                <div class="grid-homepage-card-stats">
+                  <span class="grid-homepage-stat-number">375+</span><br />
+                  <span class="grid-homepage-stat-label">Locations in New England</span>
+                </div>
+                <div class="grid-homepage-card-link">
+                  <div class="grid-homepage-link-text">Find a location</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-homepage-card grid-homepage-card-white">
+              <div class="grid-homepage-card-content">
+                <div class="grid-homepage-card-stats">
+                  <span class="grid-homepage-stat-number">$225 million</span>
+                  <span class="grid-homepage-stat-label">Invested in our community</span>
+                </div>
+                <div class="grid-homepage-card-link">
+                  <div class="grid-homepage-link-text">
+                    Our community<br>involvement<img class="grid-homepage-caret" src="caret2.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="grid-homepage-image-1" src="img/grid/homepage-1.jpg" />
+            <div class="grid-homepage-card grid-homepage-card-white">
+              <div class="grid-homepage-card-content">
+                <div class="grid-homepage-card-stats">
+                  <span class="grid-homepage-stat-number">8000+</span><br />
+                  <span class="grid-homepage-stat-label">Expert Providers</span>
+                </div>
+                <div class="grid-homepage-card-link">
+                  <div class="grid-homepage-link-text">Find a Provider</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-homepage-cards-row-2">
+            <img class="grid-homepage-image-2" src="img/grid/homepage-2.jpg" />
+            <div class="grid-homepage-card grid-homepage-card-dark-teal">
+              <div class="grid-homepage-card-content">
+                <div class="grid-homepage-quote-icon">
+                  <img src="img/grid/group-13213176770.svg" />
+                </div>
+                <div class="grid-homepage-quote-text">
+                  From routine checkups to complex care, we bring the best
+                  of medicine together so you can focus on your health.
+                </div>
+              </div>
+            </div>
+            <div class="grid-homepage-card grid-homepage-card-dark-blue">
+              <div class="grid-homepage-card-content">
+                <div class="grid-homepage-card-stats">
+                  <span class="grid-homepage-stat-number">2500+</span><br />
+                  <span class="grid-homepage-stat-label">Medical trainees</span>
+                </div>
+                <div class="grid-homepage-card-link">
+                  <div class="grid-homepage-link-text">Education &amp; training</div>
+                  <img class="grid-homepage-caret" src="caret4.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="news-component">
+    <!-- Phase 1: News Title Section -->
+    <div class="news-title-component">
+      <div class="news-title-container">
+        <div class="news-title-preheader">Featured News</div>
+        <div class="news-title-content-wrapper">
+          <div class="news-title-content">
+            <div class="news-title-headline">
+              Helping people live healthier lives
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Phase 2: News Hero Section -->
+    <div class="news-hero-component">
+      <div class="news-hero-container">
+        <div class="news-hero-card">
+          <img class="news-hero-image" src="img/news/image-120.png" alt="Medical professional" />
+          <div class="news-hero-content">
+            <div class="news-hero-tags">
+              <div class="news-hero-tag">
+                <div class="news-hero-tag-name">Stroke</div>
+              </div>
+              <div class="news-hero-tag">
+                <div class="news-hero-tag-name">Brain & Spine</div>
+              </div>
+              <div class="news-hero-tag">
+                <div class="news-hero-tag-name">Health & Wellness</div>
+              </div>
+            </div>
+            <div class="news-hero-title-wrapper">
+              <div class="news-hero-title">
+                Why are strokes on the rise in young people?
+              </div>
+              <img class="news-hero-caret" src="img/news/caret0.svg" />
+            </div>
+            <div class="news-hero-article-section">
+              <div class="news-hero-description">
+                Christopher David Anderson, MD, MSc, describes common causes of stroke
+                in younger adults. Learn steps you can take to help reduce your risk.
+              </div>
+              <div class="news-hero-button">
+                <div class="news-hero-button-content">
+                  <div class="news-hero-button-text">Read more</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="cards-ribbon">
+    <div class="title-controls">
+      <div class="frame-1686563847">
+        <div class="frame-1686562663">
+          <div class="h-3">Recent News and Stories</div>
+        </div>
+        <div class="button">
+          <div class="frame-1686563306">
+            <div class="primary-button">See all news</div>
+          </div>
+        </div>
+      </div>
+      <div class="component-level-text-controller">
+        <div class="frame-1686562862">
+          <div class="this-is-an-example-o" id="pageIndicator">1/6</div>
+          <div class="frame-1686562871">
+            <div class="button2" id="prevBtn">
+              <img class="icon-arrow-right" src="img/ribbon/icon-arrow-right0.svg" />
+            </div>
+            <div class="button3" id="nextBtn">
+              <img class="icon-arrow-right2" src="img/ribbon/icon-arrow-right1.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="frame-1686563908" id="cardsFrame">
+      <div class="card-design">
+        <div class="photo">
+          <img class="image" src="img/ribbon/image0.png" />
+        </div>
+        <div class="contents">
+          <div class="tags">
+            <div class="atom">
+              <div class="tag-name">Cancer</div>
+            </div>
+            <div class="atom">
+              <div class="tag-name">Innovation</div>
+            </div>
+
+          </div>
+          <div class="march-4-2025">March 4, 2025</div>
+          <div class="headline-link">
+            <div class="new-smartphone-app-helps-people-recognize-stroke-symptoms">
+              Nutrition and cancer treatment recovery <img class="caret" src="img/ribbon/caret0.svg" />
+            </div>
+            <!--<img class="caret" src="img/ribbon/caret0.svg" /> -->
+          </div>
+          <div class="description-date">
+            <div class="read-article">
+  Nutrition is a key component of cancer treatment and recovery. Getting the right nutrients helps keep you strong and energized.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-design">
+        <div class="photo">
+          <img class="image" src="img/ribbon/image1.png" />
+        </div>
+        <div class="contents">
+          <div class="tags">
+            <div class="atom">
+              <div class="tag-name">Stroke</div>
+            </div>
+            <div class="atom">
+              <div class="tag-name">Innovation</div>
+            </div>
+          </div>
+          <div class="march-4-2025">March 4, 2025</div>
+          <div class="headline-link">
+            <div class="new-smartphone-app-helps-people-recognize-stroke-symptoms">
+              New app helps people recognize stroke symptoms <img class="caret" src="img/ribbon/caret0.svg" />
+            </div>
+            <!--<img class="caret" src="img/ribbon/caret0.svg" /> -->
+          </div>
+          <div class="description-date">
+            <div class="read-article">
+              Mass General Brigham investigators developed and validated an app that
+              helps patients decide at home if they need to seek emergency care. Learn
+              how the app works.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-design">
+        <div class="photo">
+          <img class="image" src="img/ribbon/image2.png" />
+        </div>
+        <div class="contents">
+          <div class="tags">
+            <div class="atom">
+              <div class="tag-name">Gene and Cell Therapy</div>
+            </div>
+            <div class="atom">
+              <div class="tag-name">Research</div>
+            </div>
+
+          </div>
+          <div class="march-4-2025">March 4, 2025</div>
+          <div class="headline-link">
+            <div class="new-smartphone-app-helps-people-recognize-stroke-symptoms">
+              What are gene and cell therapies? <img class="caret" src="img/ribbon/caret0.svg" />
+            </div>
+            <!--<img class="caret" src="img/ribbon/caret0.svg" /> -->
+          </div>
+          <div class="description-date">
+            <div class="read-article">
+   Lately, gene and cell therapies have been getting a lot of buzz—and for good reason. They hold great promise for treating diseases such as multiple sclerosis...
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-design">
+        <div class="photo">
+          <img class="image" src="img/ribbon/image3.jpg" />
+        </div>
+        <div class="contents">
+          <div class="tags">
+            <div class="atom">
+              <div class="tag-name">Womens Health</div>
+            </div>
+            <div class="atom">
+              <div class="tag-name">Research</div>
+            </div>
+
+          </div>
+          <div class="march-4-2025">March 4, 2025</div>
+          <div class="headline-link">
+            <div class="new-smartphone-app-helps-people-recognize-stroke-symptoms">
+              Major gaps around knowledge of postpartum anxiety <img class="caret" src="img/ribbon/caret0.svg" />
+            </div>
+            <!--<img class="caret" src="img/ribbon/caret0.svg" /> -->
+          </div>
+          <div class="description-date">
+            <div class="read-article">
+              Understanding postpartum mental disorders, including postpartum anxiety (PPA), requires mothers, providers and social support networks to recognize the signs.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-design">
+        <div class="photo">
+          <img class="image" src="img/ribbon/image4.jpeg" />
+        </div>
+        <div class="contents">
+          <div class="tags">
+            <div class="atom">
+              <div class="tag-name">Cancer</div>
+            </div>
+          </div>
+          <div class="march-4-2025">March 4, 2025</div>
+          <div class="headline-link">
+            <div class="new-smartphone-app-helps-people-recognize-stroke-symptoms">
+              Cancer caregiver anxiety: How to manage the stress <img class="caret" src="img/ribbon/caret0.svg" />
+            </div>
+            <!--<img class="caret" src="img/ribbon/caret0.svg" /> -->
+          </div>
+          <div class="description-date">
+            <div class="read-article">
+              Knowing a loved one has cancer adds a new kind of challenge — and often new responsibilities — to life. And this challenge is often reflected in a caregiver’s mental health
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-design">
+        <div class="photo">
+          <img class="image" src="img/ribbon/image5.jpg" />
+        </div>
+        <div class="contents">
+          <div class="tags">
+            <div class="atom">
+              <div class="tag-name">Womens Health</div>
+            </div>
+          </div>
+          <div class="march-4-2025">March 4, 2025</div>
+          <div class="headline-link">
+            <div class="new-smartphone-app-helps-people-recognize-stroke-symptoms">
+              Spinal muscular atrophy carrier screening <img class="caret" src="img/ribbon/caret0.svg" />
+            </div>
+            <!--<img class="caret" src="img/ribbon/caret0.svg" /> -->
+          </div>
+          <div class="description-date">
+            <div class="read-article">
+            Spinal muscular atrophy (SMA) is a rare inherited genetic condition that gradually affects the strength and movement of your muscles.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="footer-1-2-3-container">
+  <div class="footer-global-cta-bar">
+    <div class="footer-frame-1686563793">
+      <div class="footer-find-a-doctor">
+        <div class="footer-find-a-doctor-icon"></div>
+        <div class="footer-doctor-label">Find a doctor</div>
+      </div>
+      <div class="footer-find-a-location">
+        <div class="footer-find-a-location-icon"></div>
+        <div class="footer-location-label">Find a location</div>
+      </div>
+      <div class="footer-request-an-appointment">
+        <div class="footer-request-appointment-icon"></div>
+        <div class="footer-request-appointment-label">Request an appointment</div>
+      </div>
+      <div class="footer-log-into-patient-gateway">
+        <div class="footer-gateway-icon"></div>
+        <div class="footer-gateway-label">Log into Patient Gateway</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-footer-links-container">
+    <div class="footer-middle-block">
+      <div class="footer-middle-block-outer">
+        <div class="footer-middle-block-column-1">
+          <div class="footer-logo-container">
+            <img class="group" src="img/logo-footer-full.png" />
+          </div>
+          <div class="footer-middle-block-column-1-inner">
+            <div class="footer-patient-care">Patient Care</div>
+            <div class="footer-research-and-innovation">Research and Innovation</div>
+            <div class="footer-education-and-training">Education and Training</div>
+            <div class="footer-mass-general-brigham-health-plan">
+              Mass General Brigham Health Plan
+            </div>
+           <!-- <div class="footer-lorem-ipsum">Lorem Ipsum</div>
+            <div class="footer-lorem-ipsum">Lorem Ipsum</div>
+            <div class="footer-lorem-ipsum">Lorem Ipsum</div> -->
+          </div>
+        </div>
+        <div class="footer-middle-block-column-2">
+          <div class="footer-middle-block-row-1">
+            <div class="footer-take-the-next-step">Take the Next Step</div>
+            <div class="footer-section-links">
+              <div class="footer-section-links-column-1">
+                <div class="footer-pay-my-bill">Pay My Bill</div>
+                <div class="footer-participate-in-research">
+                  Participate in Research
+                </div>
+                                <div class="footer-participate-in-research">
+                  Get in Touch
+                </div>
+              </div>
+              <div class="footer-section-links-column-2">
+                <div class="footer-request-an-appointment2">
+                  Request an Appointment
+                </div>
+                <div class="footer-for-medical-professionals">
+                  For Medical Professionals
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-middle-block-row-2">
+            <div class="footer-take-the-next-step">About Mass General Brigham</div>
+            <div class="footer-section-links-2">
+              <div class="footer-section-links-2-column-1">
+                <div class="footer-pay-my-bill">About Us</div>
+                <div class="footer-participate-in-research">Careers</div>
+                <div class="footer-participate-in-research">Community</div>
+              </div>
+              <div class="footer-section-links-2-column-2">
+                <div class="footer-request-an-appointment2">Donate</div>
+                <div class="footer-get-in-touch">Newsroom</div>
+                <div class="footer-for-medical-professionals">For Employees</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-middle-block-row-3">
+            <div class="footer-labels">
+              <div class="footer-label">Connect with us</div>
+            </div>
+            <div class="footer-social-media">
+              <div class="footer-social-icons">
+                <img class="footer-layer-1" src="img/facebook.png" />
+              </div>
+              <div class="footer-social-icons">
+                <img class="footer-layer-12" src="img/x.png" />
+              </div>
+              <div class="footer-social-icons">
+                <div class="footer-layer-13">
+                  <img class="footer-group2" src="img/instagram.png" />
+                </div>
+              </div>
+              <div class="footer-social-icons">
+                <img class="footer-layer-14" src="img/youtube.png" />
+              </div>
+              <div class="footer-social-icons">
+                <img class="footer-layer-15" src="img/linkedin.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-container">
+    <div class="footer-top-section">
+      <div class="footer-third-outer-container">
+        <div class="footer-third-inner-container">
+          <div
+            class="footer-we-recognize-that-increasing-value-and-continuously-improving-quality-are-essential-to-maintaining-excellence"
+          >
+            We recognize that increasing value and continuously improving
+            quality are essential to maintaining excellence.
+          </div>
+        </div>
+        <div class="footer-third-logo-container">
+          <div class="footer-logo-avatar">
+            <img class="footer-group3" src="img/footer-logo.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-section">
+      <div class="footer-bottom-section-inner-container">
+        <div
+          class="footer-2025-mass-general-brigham-incorporated-all-rights-reserved"
+        >
+          © 2025 Mass General Brigham Incorporated. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-section-inner-container-right">
+          <div class="footer-compliance">Privacy Policy</div>
+          <div class="footer-compliance">Terms &amp; Conditions</div>
+          <div class="footer-privacy-policy">Accessibility</div>
+          <div class="footer-compliance">Price Transparency</div>
+          <div class="footer-non-discrimination">Supplier/Vendor Information</div>
+          <div class="footer-sitemap">Ethics</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/ribbon.js"></script>
+</body>
+</html>
+
