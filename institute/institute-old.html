@@ -1,0 +1,4010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<style> 
+body {
+  margin: 0;
+}
+/* CSS for the breadcrumb component */
+.breadcrumb-small-service,
+.breadcrumb-small-service * {
+  box-sizing: border-box;
+}
+.breadcrumb-small-service {
+  background: #004268;
+  padding-top: var(--spacing-base-space-100, 8px);
+  padding-bottom: var(--spacing-base-space-100, 8px);
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.left-container {
+  padding: var(--spacing-base-space-150, 12px) 0px
+    var(--spacing-base-space-150, 12px) 39px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 606px;
+  position: relative;
+  backdrop-filter: blur(15px);
+}
+.page-nests {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-050, 4px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text-links-default-medium-dark {
+  padding: 2px var(--spacing-base-space-050, 4px) 2px
+    var(--spacing-base-space-050, 4px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-0, 0px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 24px;
+  position: relative;
+}
+.medium-text-link {
+  color: var(--foreground-text-body-copy-link, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --body-medium-400-link-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--body-medium-400-link-font-size, 16px);
+  line-height: var(--body-medium-400-link-line-height, 150%);
+  font-weight: var(--body-medium-400-link-font-weight, 400);
+  text-decoration: underline;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 25px;
+  height: 15px;
+  position: relative;
+  overflow: visible;
+}
+.interface-icon2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.radiation-oncology {
+  color: var(--foreground-text-body-copy, #ffffff);
+  text-align: left;
+  font-family: var(--body-medium-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-medium-400-font-size, 16px);
+  line-height: var(--body-medium-400-line-height, 150%);
+  font-weight: var(--body-medium-400-font-weight, 400);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* CSS for the breadcrumb component */
+
+/*CSS for the hero component */
+
+.institute-hero,
+.institute-hero * {
+  box-sizing: border-box;
+}
+.institute-hero {
+  padding: 56px 0px 56px 87px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 583px;
+  position: relative;
+}
+.institute-hero-outer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 590px;
+  height: 256px;
+  position: relative;
+}
+.hero-title-and-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.h-1-page-title {
+  color: #213243;
+  text-align: left;
+  font-family: "RobotoSlab-Medium", sans-serif;
+  font-weight: 500;
+  line-height: var(--headline-h1-slab-line-height, 70px);
+  font-weight: 500;
+  position: relative;
+  width: 618px;
+  height: 140px;
+}
+.h-1-page-title-award {
+  color: #ffffff;
+  text-align: left;
+  font-family: var(--headline-h1-slab-family, "RobotoSlab-Medium", sans-serif);
+  font-size: var(--headline-h1-slab-size, 48px);
+  line-height: var(--headline-h1-slab-line-height, 70px);
+  font-weight: 500;
+  position: relative;
+  width: 618px;
+  height: 60px;
+}
+.button {
+  background: var(--buttons-primary-button-default-background, #8bffcd);
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-button-default-stroke, #213243);
+  border-width: 1px;
+  padding: var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+.label-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.primary-button {
+  color: var(--buttons-primary-button-default-text-and-icon, #213243);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+
+
+/* CSS for the hero component */
+
+/* CSS for the in page menu component */
+.menu-container,
+.menu-container * {
+  box-sizing: border-box;
+}
+.menu-container {
+  background: #ffffff;
+  padding: 25px 124px 25px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 122px;
+  position: relative;
+  overflow: hidden;
+}
+.menu-container-outer {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.menu-container-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.services-and-programs {
+  border-style: solid;
+  border-color: #003a96;
+  border-width: 0px 0px 3px 0px;
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-100, 8px)
+    28px var(--spacing-base-space-100, 8px);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 63px;
+  position: relative;
+  overflow: hidden;
+}
+.services-and-programs-label {
+  color: #003a96;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: var(--body-large-500-size, 18px);
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+}
+.our-approach {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-100, 8px)
+    28px var(--spacing-base-space-100, 8px);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 63px;
+  position: relative;
+  overflow: hidden;
+}
+.our-approach-label {
+  color: #213243;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: var(--body-large-500-size, 18px);
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+}
+.conditions-and-treatments {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-100, 8px)
+    28px var(--spacing-base-space-100, 8px);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 63px;
+  position: relative;
+  overflow: hidden;
+}
+.conditions-and-treatments-label {
+  color: #213243;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: var(--body-large-500-size, 18px);
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+}
+.specialists {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-100, 8px)
+    28px var(--spacing-base-space-100, 8px);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 63px;
+  position: relative;
+  overflow: hidden;
+}
+.specialists-label {
+  color: #213243;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: var(--body-large-500-size, 18px);
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+}
+.similar-locations {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-100, 8px)
+    28px var(--spacing-base-space-100, 8px);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 63px;
+  position: relative;
+  overflow: hidden;
+}
+.similar-locations-label {
+  color: #213243;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: var(--body-large-500-size, 18px);
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+}
+.institute-nav-centered {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.line-centered {
+  border-style: solid;
+  border-color: var(--primary-deep-blue, #213243);
+  border-width: 0px 0px 0.5px 0px;
+  padding: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  height: 11px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, -1);
+  top: 16px;
+}
+
+/* CSS for the in page menu component */
+
+/* CSS for the intro component */
+
+.intro-container,
+.intro-container * {
+  box-sizing: border-box;
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-others-rtf-desktop-and-mobile, 24px);
+  align-items: center;
+  justify-content: center;
+  height: 279px;
+  position: relative;
+}
+.heading {
+  color: var(--foreground-text-headline, #213243);
+  text-align: center;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  width: 824px;
+}
+.intro-body-copy {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 824px;
+}
+
+
+/* CSS for the intro component */
+
+/* CSS for related services header */
+.related-services-container,
+.related-services-container * {
+  box-sizing: border-box;
+}
+.related-services-container {
+  background: #ffffff;
+  padding: 0px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 176px;
+  position: relative;
+  overflow: hidden;
+}
+.related-services-centered {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-500, 40px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.title-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.dolor-elementum-a-aliquet-nec-massa-est-ridiculus-amet-nulla-porta-mi-in {
+  color: var(--canvas-default-text-headline, #213243);
+  text-align: center;
+  font-family: var(
+    --headline-h2-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 878px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.description {
+  color: var(--canvas-default-text-text, #213243);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 878px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+
+/* CSS for the related services header */
+
+
+
+/*CSS for featured related services component */
+
+.featured-services-container,
+.featured-services-container * {
+  box-sizing: border-box;
+}
+.featured-services-container {
+  background: #ffffff;
+  padding: 0px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 299px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+.featured-services-centered {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.related-services-card {
+  background: var(--canvas-default-bg-palette, #ecf7f9);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 405px;
+  height: 299px;
+  position: relative;
+}
+.related-services-title {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  position: relative;
+}
+.related-services-title-span {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.related-services-title-span2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.related-services-title-span3 {
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+}
+.related-services-body {
+  color: var(--canvas-default-text-text, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-size, 18px);
+  line-height: 162%;
+  font-weight: var(--body-large-400-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.related-services-title-span {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.related-services-title-span2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.related-services-title-span3 {
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+}
+.related-services-title-span {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.related-services-title-span2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.related-services-title-span3 {
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+}
+
+
+
+/* CSS for featured related services component */
+
+/* CSS for rest of related services component */
+
+.related-services-list-container,
+.related-services-list-container * {
+  box-sizing: border-box;
+}
+.related-services-list-container {
+  padding: 18px 0px 18px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.related-services-list-outer-container {
+  align-self: stretch;
+  flex-shrink: 0;
+  /*height: 243px;*/
+  position: relative;
+  overflow: hidden;
+}
+.related-services-container-inner {
+display: flex;
+flex-direction: row;
+gap: 25px;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.related-services-column-1 {
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 405px;
+  position: relative;
+}
+.h-6-related-services-text {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(--headline-h6-sans-family, "Roboto-Regular", sans-serif);
+  font-size: var(--headline-h6-sans-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.related-services-column-3 {
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 405px;
+  position: relative;
+}
+.related-services-column-2 {
+  padding: 0px 45px 0px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 405px;
+  position: relative;
+}
+.show-more-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+ margin-top: 30px;
+}
+.text-links {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-0, 0px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 27px;
+  position: relative;
+}
+.show-more-services-9 {
+  color: #003a96;
+  text-align: center;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  text-decoration: underline;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.show-more-services-9.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/* --- Related Services Lazy-Load Button Styles --- */
+.related-services-show-more {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+/* CSS for the rest of related services component */
+
+/* CSS for the our approach component */
+
+.our-approach-container,
+.our-approach-container * {
+  box-sizing: border-box;
+}
+.our-approach-container {
+  background: #004268;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  height: 875px;
+  position: relative;
+}
+.expandabale-list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 137px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1336px;
+  height: 672px;
+  position: relative;
+}
+.image-left {
+  border-radius: 10px;
+  flex-shrink: 0;
+  width: 496px;
+  height: 672px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  object-fit: cover;
+}
+.container-accordion-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  height: 672px;
+  position: relative;
+}
+.accordion-open-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion-cell {
+  border-style: solid;
+  border-color: var(--primary-white, #ffffff);
+  border-width: 0.5px 0px 0px 0px;
+  padding: var(--spacing-base-space-300, 24px) 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.illustration-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.illustration-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.brand-icon {
+  align-self: stretch;
+  flex: 1;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.h-3 {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--headline-h5-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--headline-h5-font-size, 24px);
+  line-height: var(--headline-h5-line-height, 29px);
+  font-weight: var(--headline-h5-font-weight, 400);
+  position: relative;
+  width: 441px;
+}
+.up-down-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.approach-section-container-open {
+  padding: 0px 0px var(--spacing-base-space-300, 24px) 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.copy {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--body-medium-500-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-medium-500-size, 16px);
+  line-height: 150%;
+  font-weight: var(--body-medium-500-weight, 500);
+  position: relative;
+  width: 583px;
+}
+.accordion-cell-closed {
+  border-style: solid;
+  border-color: var(--primary-white, #ffffff);
+  border-width: 0.5px 0px 0px 0px;
+  padding: var(--spacing-base-space-300, 24px) 0px
+    var(--spacing-base-space-300, 24px) 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.title-and-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.h-32 {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--headline-h5-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--headline-h5-font-size, 24px);
+  line-height: var(--headline-h5-line-height, 29px);
+  font-weight: var(--headline-h5-font-weight, 400);
+  position: relative;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.interface-icon2 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.accordion-cell-closed-bottom {
+  border-style: solid;
+  border-color: var(--primary-white, #ffffff);
+  border-width: 0.5px 0px 0.5px 0px;
+  padding: var(--spacing-base-space-300, 24px) 0px
+    var(--spacing-base-space-300, 24px) 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.interface-icon3 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+
+
+
+/* CSS for the our approach component */
+
+/* CSS for the conditions and treatments component */
+
+.conditions-and-treatments-intro,
+.conditions-and-treatments-intro * {
+  box-sizing: border-box;
+}
+.conditions-and-treatments-intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-others-rtf-desktop-and-mobile, 24px);
+  align-items: center;
+  justify-content: center;
+  height: 279px;
+  position: relative;
+}
+.conditions-and-treatments-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1336px;
+  height: 131px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.conditions-and-treatments-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.conditions-and-treatments-inner-inner-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.conditions-and-treatments-centered-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 878px;
+  position: relative;
+}
+.related-conditions-and-treatments {
+  color: var(--primary-deep-blue, #213243);
+  text-align: center;
+  font-family: var(
+    --headline-h2-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 878px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.conditions-treatments-body {
+  color: var(--primary-deep-blue, #213243);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 800px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+/* CSS for the conditions and treatments component */
+
+/* CSS for the conditions lazy load component */
+
+.conditions-lazy-load-container,
+.conditions-lazy-load-container * {
+  box-sizing: border-box;
+}
+.conditions-lazy-load-container {
+  background: #ffffff;
+  padding: 92px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.conditions-centered {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-500, 40px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.container-title {
+  border-style: solid;
+  border-color: var(--primary-deep-blue, #213243);
+  border-width: 0px 0px 0.5px 0px;
+  padding: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.conditions {
+  color: var(--foreground-fg-primary, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h3-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h3-sans-font-size, 36px);
+  line-height: var(--headline-h3-sans-line-height, 42px);
+  font-weight: var(--headline-h3-sans-font-weight, 400);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.conditions-box-outer {
+  padding: 0px var(--spacing-base-space-500, 40px) 0px
+    var(--spacing-base-space-500, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.conditions-box-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.conditions-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 354px;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-199 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.atrial-fibrillation-a-fib {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 244px;
+}
+.aortic-stenosis {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 354px;
+}
+.conditions-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 354px;
+  position: relative;
+}
+.angina {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 354px;
+}
+.aortic-aneurysm {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 329px;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  aspect-ratio: 1;
+}
+.conditions-column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 354px;
+  position: relative;
+}
+.arrhythmia {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.atrial-septal-defect-asd {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 329px;
+}
+.conditions-show-more {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-250, 20px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1184px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.frame-1686563259 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.show-more-conditions-10 {
+  color: var(--color-primary-mgb-blue, #003a96);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.show-more-conditions-10.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.interface-icon2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.treatments {
+  color: var(--foreground-fg-primary, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h3-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h3-sans-font-size, 36px);
+  line-height: var(--headline-h3-sans-line-height, 42px);
+  font-weight: var(--headline-h3-sans-font-weight, 400);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.featured-container {
+  background: #ecf7f9;
+  border-radius: 12px;
+  padding: var(--spacing-base-space-500, 40px)
+    var(--spacing-base-space-500, 40px) 40px var(--spacing-base-space-500, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.featured-title-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.featured-treatments {
+  color: var(--foreground-fg-primary, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+/* CSS for the conditions lazy load component */
+
+/* CSS for the section separator component */
+.section-separator,
+.section-separator * {
+  box-sizing: border-box;
+}
+.section-separator {
+  background: #ffffff;
+  padding: 0px 124px 128px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.line-centered {
+  border-style: solid;
+  border-color: var(--primary-deep-blue, #213243);
+  border-width: 0px 0px 0.5px 0px;
+  padding: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  height: 25px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+/* CSS for the section separator component */
+
+
+/* CSS for award component */
+.award-container,
+.award-container * {
+  box-sizing: border-box;
+}
+
+.award-outer-container {
+  background: #ffffff;
+  padding: 31px 78px 31px 78px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 405px;
+  position: relative;
+  overflow: hidden;
+}
+
+.award-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.award-image-container {
+  background: #004268;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: #004268;
+  border-width: 1px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.image {
+  border-radius: 12px;
+  flex-shrink: 0;
+  width: 264px;
+  height: 264px;
+  position: relative;
+  object-fit: cover;
+}
+.award-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 840px;
+  position: relative;
+}
+.h-1-page-title {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: "RobotoSlab-Medium", sans-serif;
+  font-weight: 500;
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 880px;
+}
+.description {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 723px;
+}
+.description-resources {
+  color: var(--primary-white, #000000);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 723px;
+}
+.button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+.tertiary-button {
+  color: var(--buttons-tertiary-button-default-text-and-icon, #d9f0f2);
+  text-align: center;
+  font-family: var(
+    --body-large-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-large-500-link-font-size, 18px);
+  line-height: var(--body-large-500-link-line-height, 150%);
+  font-weight: var(--body-large-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+
+/* CSS for the award component */
+
+/*CSS for positioning top lockup*/
+.positioning-top-lockup,
+.positioning-top-lockup * {
+  box-sizing: border-box;
+}
+.positioning-top-lockup {
+  padding: 92px 124px 92px 124px;
+  display: flex;
+  flex-direction: row;
+  gap: 131px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.text-left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  width: 540px;
+}
+.h-1-page-title {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+   font-family: "RobotoSlab-Medium", sans-serif;
+  font-weight: 500;
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 624px;
+}
+.connect-with-leading-experts-in-heart-and-vascular-care-our-specialists-bring-advanced-training-experience-and-compassion-to-deliver-exceptional-personalized-treatment-for-every-patient {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 550px;
+  height: 142px;
+}
+.button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+.label-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.label {
+  color: var(--buttons-secondary-button-default-text-and-icon, #003a96);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+.image-right-container {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 496px;
+  height: 496px;
+  position: relative;
+  object-fit: cover;
+}
+
+
+/*CSS for the positioning top lockup*/
+
+/* CSS for the locations ribbon */
+/* CSS for the team ribbon */
+
+.meet-team-container,
+.meet-team-container * {
+  box-sizing: border-box;
+}
+.meet-team-container {
+  background: #ffffff;
+  padding: 48px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 675px;
+  position: relative;
+  overflow: hidden;
+}
+.meet-teem-container-centered {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.team-controller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1270px;
+  position: relative;
+}
+.meet-the-team-lockup {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.team-intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 824px;
+  position: relative;
+}
+.h-3-about {
+  color: var(--foreground-text-headline, #ffffff);
+  text-align: left;
+  font-family: var(--headline-h2-slab-family, "RobotoSlab-Regular", sans-serif);
+  font-size: var(--headline-h2-slab-size, 24px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.team-intro-text {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-300-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-300-size, 18px);
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  width: 748px;
+}
+.team-button {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 322px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.button-hero {
+  background: #8bffcd;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-button-default-stroke, #213243);
+  border-width: 1px;
+  padding: var(--spacing-space-150, 12px) var(--spacing-space-300, 24px)
+    var(--spacing-space-150, 12px) var(--spacing-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 430px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  overflow: hidden;
+}
+.primary-button {
+  color: var(--buttons-primary-button-default-text, #003a96);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.controller {
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-250, 20px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.numbering {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: left;
+  font-family: var(--body-small-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-small-400-font-size, 14px);
+  line-height: var(--body-small-400-line-height, 150%);
+  font-weight: var(--body-small-400-font-weight, 400);
+  position: relative;
+}
+.team-arrows-container {
+  padding: 2px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.arrow-button {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-disabled-stroke, #757575);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.arrow-button2 {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.team-ribbon-container {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* Hide scrollbar for Webkit browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.team-ribbon-container::-webkit-scrollbar {
+  display: none;
+}
+.team-container-ribbon {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  min-width: max-content;
+  padding-right: 40vw; /* allow cards to peek out to edge of viewport */
+}
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 260px;
+  position: relative;
+}
+.image-container {
+/* background: #d9d9d9;  Removed to allow inline background images */
+  border-radius: 9px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 215px;
+  position: relative;
+}
+.lecia-sequist-md-mph {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.team-tag-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 157px;
+  position: relative;
+}
+.tags {
+  background: var(--tag-disabled-bg, #e7e7e0);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--tag-disabled-stroke, #757575);
+  border-width: 0.5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.radiation-oncologist {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.diagnostic-radiology {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+
+/* CSS for the team ribbon */
+
+/* CSS for the locations ribbon */
+
+.related-location-card,
+.related-location-card * {
+  box-sizing: border-box;
+}
+.related-location-card {
+  background: #ecf7f9;
+  padding: 0px 24px 0px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 220px;
+  position: relative;
+  width: 336px;
+
+}
+.location-type-tag {
+  background: #e7e7e0;
+  border-radius: 5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.tag-name {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: center;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.name-and-address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.brigham-and-women-s-hospital {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  position: relative;
+  align-self: stretch;
+}
+.brigham-and-women-s-hospital-span {
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+}
+.brigham-and-women-s-hospital-span2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 400;
+}
+.location-card-address-lockup {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-1686563559 {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+._75-frances-street-boston-ma-02115 {
+  color: #213243;
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 196px;
+}
+
+
+/* CSS for image right and text left component */
+
+.container-image-and-text,
+.container-image-and-text * {
+  box-sizing: border-box;
+}
+.container-image-and-text {
+  background: #d9f0f2;
+  padding: 0px 88px 0px 88px;
+  display: flex;
+  flex-direction: row;
+  gap: 137px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 915px;
+  position: relative;
+}
+.container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+.h-1-page-title {
+  color: var(--foreground-text-headline, #213243);
+  text-align: left;
+  font-family: "RobotoSlab-Medium", sans-serif;
+  font-weight: 500;
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.h-1-page-title-locations {
+  color: var(--foreground-text-headline, #213243);
+  text-align: left;
+    font-family: "RobotoSlab-Medium", sans-serif;
+  font-weight: 500;
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  height: 200px;
+  height: 60px;
+}
+.at-mass-general-brigham-a-breakthrough-machine-learning-model-is-helping-specialists-identify-heart-disease-earlier-and-tailor-treatments-more-precisely-by-analyzing-complex-data-patterns-this-innovative-approach-is-improving-outcomes-personalizing-care-and-shaping-the-future-of-cardiovascular-medicine-one-algorithm-at-a-time {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.text-left-image-right-button {
+  background: var(--buttons-primary-button-default-background, #8bffcd);
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-button-default-stroke, #213243);
+  border-width: 1px;
+  padding: var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+.primary-button {
+  color: var(--buttons-primary-button-default-text-and-icon, #213243);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+.image-right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 582px;
+  position: relative;
+}
+.standard-hero-lib-18 {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 675px;
+  position: relative;
+  object-fit: cover;
+}
+
+
+/* CSS for image right and text left component */
+
+
+/* CSS for video player component */
+
+.video-player-block-container,
+.video-player-block-container * {
+  box-sizing: border-box;
+}
+.video-player-block-container {
+  background: #004268;
+  padding: var(--spacing-base-space-1100, 100px) 88px
+    var(--spacing-base-space-1100, 100px) 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 1015px;
+  position: relative;
+  overflow: hidden;
+}
+.title-block-container-outer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1359px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.title-block-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.left-side-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.optional-preheader {
+  color: var(--color-primary-white, #ffffff);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.understanding-heart-surgery {
+  color: var(--color-primary-medium-teal, #b1e4e3);
+  text-align: left;
+  font-family: var(
+    --headline-h2-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 624px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.right-side-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 496px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.line-287 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: var(--color-primary-white, #ffffff);
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.thor-sundt-md-director-of-the-cardiac-surgery-clinical-service-at-mass-general-brigham-heart-explains-the-symptoms-of-coronary-artery-disease-and-how-to-prepare-for-heart-surgery {
+  color: var(--color-primary-white, #ffffff);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-default-stroke, #213243);
+  border-width: 1px;
+  padding: var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+.label-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.secondary-button {
+  color: var(--buttons-secondary-button-default-text-and-icon, #d9f0f2);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+.video-block-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.background-image {
+  background: linear-gradient(
+    to left,
+    rgba(33, 50, 67, 0.2),
+    rgba(33, 50, 67, 0.2)
+  );
+  border-radius: 12px;
+  padding: 208px 565px 208px 565px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1320px;
+  height: 450px;
+  position: relative;
+}
+.video-icon-container-outer {
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  backdrop-filter: blur(4px);
+}
+.video-icon-container-inner {
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.frame-1686562915 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1320px;
+  position: relative;
+}
+.description {
+  color: var(--color-primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 726px;
+}
+.lower-section-right-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.view-transcript {
+  color: var(--color-primary-light-teal, #d9f0f2);
+  text-align: left;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+
+/* CSS for video player component */
+
+/*CSS for resources and downloads component*/
+
+.resources-and-support-outer-container,
+.resources-and-support-outer-container * {
+  box-sizing: border-box;
+}
+.resources-and-support-outer-container {
+  padding: var(--spacing-base-space-800, 64px) 88px
+    var(--spacing-base-space-800, 64px) 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.resources-and-support-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.textblock-container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 878px;
+  position: relative;
+}
+.patient-resources-and-support {
+  color: var(--foreground-text-headline, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h2-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 878px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.description-programs {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  width: 650px;
+}
+.downloads-container-outer {
+  display: flex;
+  flex-direction: row;
+  gap: 101px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.downloads-container-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 354px;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-199 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.heart-health-guide {
+  color: var(--foreground-text-headline-link, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-link-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-link-font-size, 22px);
+  line-height: var(--headline-h6-sans-link-line-height, 29px);
+  font-weight: var(--headline-h6-sans-link-font-weight, 400);
+  position: relative;
+}
+.sarcomas {
+  color: var(--foreground-text-headline-link, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-link-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-link-font-size, 22px);
+  line-height: var(--headline-h6-sans-link-line-height, 29px);
+  font-weight: var(--headline-h6-sans-link-font-weight, 400);
+  position: relative;
+}
+.interface-icon-about {
+  flex-shrink: 0;
+ width: 25px;
+  height: 15px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+
+/*CSS for resources and downloads component*/
+
+/* CSS for the supporting content */
+
+.supporting-content-container,
+.supporting-content-container * {
+  box-sizing: border-box;
+}
+.supporting-content-container {
+  background: #ffffff;
+  padding: 48px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.supporting-content-container-centered {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  margin-left:-37px;
+}
+.supporting-content-controller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1270px;
+  position: relative;
+}
+.supporting-content-the-team-lockup {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 824px;
+  position: relative;
+}
+.h-3-supporting-content {
+  color: var(--foreground-text-headline, #213243);
+  text-align: left;
+  font-family: var(--headline-h2-slab-family, "RobotoSlab-Regular", sans-serif);
+  font-size: var(--headline-h2-slab-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.supporting-content-intro-text {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-300-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-300-size, 18px);
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  width: 748px;
+}
+.supporting-content-button {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 322px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.another-button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: var(--spacing-space-150, 12px) var(--spacing-space-300, 24px)
+    var(--spacing-space-150, 12px) var(--spacing-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 430px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  overflow: hidden;
+}
+.innovation-button{
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: var(--spacing-space-150, 12px) var(--spacing-space-300, 24px) var(--spacing-space-150, 12px) var(--spacing-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  overflow: hidden;
+  margin-left: 250px;
+}
+
+.video-button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-button-default-stroke, #D9F0F2);
+  border-width: 1px;
+  padding: var(--spacing-space-150, 12px) var(--spacing-space-300, 24px)
+    var(--spacing-space-150, 12px) var(--spacing-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  overflow: hidden;
+}
+.supporting-content-primary-button {
+  color: var(--buttons-primary-button-default-text, #003a96);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.supporting-content-controller {
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-250, 20px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-numbering {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: left;
+  font-family: var(--body-small-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-small-400-font-size, 14px);
+  line-height: var(--body-small-400-line-height, 150%);
+  font-weight: var(--body-small-400-font-weight, 400);
+  position: relative;
+}
+.supporting-content-arrows-container {
+  padding: 2px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-arrow-button {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-disabled-stroke, #757575);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.supporting-contentinterface-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.supporting-contentarrow-button2 {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.supporting-content-ribbon-container {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* Hide scrollbar for Webkit browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.supporting-content-ribbon-container::-webkit-scrollbar {
+  display: none;
+}
+.supporting-content-container-ribbon {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  min-width: max-content;
+  padding-right: 40vw; /* allow cards to peek out to edge of viewport */
+}
+.supporting-content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 408px;
+  position: relative;
+}
+.supporting-contentimage-container {
+/* background: #d9d9d9;  Removed to allow inline background images */
+  border-radius: 9px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 215px;
+  position: relative;
+}
+.lecia-sequist-md-mph {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.supporting-content-tag-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 157px;
+  position: relative;
+}
+.tags {
+  background: var(--tag-disabled-bg, #e7e7e0);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--tag-disabled-stroke, #757575);
+  border-width: 0.5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.radiation-oncologist {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.diagnostic-radiology {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+
+.supporting-content-card,
+.supporting-content-card * {
+  box-sizing: border-box;
+}
+.supporting-content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.supporting-content-image {
+  background: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 215px;
+  position: relative;
+  overflow: hidden;
+}
+.screenshot-2024-10-27-at-10-29-20-pm {
+  width: 408px;
+  height: 215px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.supporting-content-description {
+  background: #ffffff;
+  border-radius: 0px 0px 12px 12px;
+  border-style: solid;
+  border-color: #003a96;
+  border-width: 0px 0.5px 0.5px 0.5px;
+  padding: 24px 20px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-card-tag-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-card-tag {
+  background: #e7e7e0;
+  border-radius: 5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.tag-name {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: center;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.january-24-2024 {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+}
+.cutting-edge-discoveries {
+  color: var(--foreground-text-headline-link, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-slab-font-size, 22px);
+  line-height: var(--headline-h6-slab-line-height, 29px);
+  font-weight: var(--headline-h6-slab-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.read-article {
+  color: #303133;
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+/* CSS for the supporting content */
+
+body {
+  margin: 0;
+}
+</style>
+<body>
+<div class="breadcrumb-small-service">
+  <div class="left-container">
+    <div class="page-nests">
+      <div class="text-links-default-medium-dark">
+        <div class="medium-text-link">Home</div>
+      </div>
+      <img class="interface-icon" src="interface-icon0.svg" />
+      <div class="medium-text-link">Services and Treatments</div>
+      <img class="interface-icon2" src="interface-icon1.svg" />
+      <div class="radiation-oncology">Heart and Vascular Institute</div>
+    </div>
+  </div>
+</div>
+<div class="institute-hero" style="
+    background: url(institute-hero.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="institute-hero-outer-container">
+    <div class="hero-title-and-button-container">
+      <div class="h-1-page-title">Heart and Vascular Institute</div>
+      <div class="button">
+        <div class="label-container">
+          <img class="interface-icon" src="interface-icon0.svg" />
+          <div class="primary-button">Call 866-726-5608</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="menu-container">
+  <div class="menu-container-outer">
+    <div class="menu-container-inner">
+      <div class="services-and-programs">
+        <div class="services-and-programs-label">Services and Programs</div>
+      </div>
+      <div class="our-approach">
+        <div class="our-approach-label">Our Approach</div>
+      </div>
+      <div class="conditions-and-treatments">
+        <div class="conditions-and-treatments-label">
+          Conditions and Treatments
+        </div>
+      </div>
+      <div class="specialists">
+        <div class="specialists-label">Specialists</div>
+      </div>
+      <div class="similar-locations">
+        <div class="similar-locations-label">Similar Locations</div>
+      </div>
+    </div>
+    <div class="institute-nav-centered">
+      <div class="line-centered"></div>
+    </div>
+  </div>
+</div>
+<div class="intro-container">
+  <div class="heading">World-class care</div>
+  <div class="intro-body-copy">
+    At Mass General Brigham, we provide world-class cardiovascular care you can
+    trust, with a highly personalized, team-based approach that integrates the
+    latest innovative research. Our network of hospitals, clinics, and vein care
+    centers connects you with leading experts who work together to treat complex
+    cardiovascular conditions and develop new technologies.
+  </div>
+</div>
+<div class="related-services-container">
+  <div class="related-services-centered">
+    <div class="title-description">
+      <div
+        class="dolor-elementum-a-aliquet-nec-massa-est-ridiculus-amet-nulla-porta-mi-in"
+      >
+       Heart and Vascular services and programs
+      </div>
+      <div class="description-programs">
+        Mass General Brigham offers a personalized approach to care through numerous programs, each of which is focused on treating a particular heart condition.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="featured-services-container">
+  <div class="featured-services-centered">
+    <div class="related-services-card">
+      <div class="related-services-title">
+        <span>
+          <span class="related-services-title-span">
+            Advanced Heart Failure
+            <br />
+          </span>
+          <span class="related-services-title-span2">Program</span>
+          <span class="related-services-title-span3">› </span>
+        </span>
+      </div>
+      <div class="related-services-body">
+        Mass General Brigham Heart treats severe heart failure with the latest medications, ventricular assist devices (VADs), and transplants—delivered by world-class specialists.
+      </div>
+    </div>
+    <div class="related-services-card">
+      <div class="related-services-title">
+        <span>
+          <span class="related-services-title-span">
+           Aortic Disease
+            <br />
+          </span>
+          <span class="related-services-title-span2">Program</span>
+          <span class="related-services-title-span3">› </span>
+        </span>
+      </div>
+      <div class="related-services-body">
+        Mass General Brigham Heart treats complex aortic diseases and emergencies with advanced care, tailoring treatment plans to each patient through a team of specialists.
+      </div>
+    </div>
+    <div class="related-services-card">
+      <div class="related-services-title">
+        <span>
+          <span class="related-services-title-span">
+            Cardiac Arrhythmia
+            <br />
+          </span>
+          <span class="related-services-title-span2">Program</span>
+          <span class="related-services-title-span3">› </span>
+        </span>
+      </div>
+      <div class="related-services-body">
+      Mass General Brigham Heart treats complex cardiac arrhythmias with advanced care, tailoring treatment plans to each patient through a team of specialists.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="related-services-list-container">
+  <div class="related-services-list-outer-container">
+    <div class="related-services-container-inner">
+      <div class="related-services-column-1">
+        <div class="h-6-related-services-text">Aortic Aneurysm Center › </div>
+        <div class="h-6-related-services-text">Arrhythmia Management Program › </div>
+        <div class="h-6-related-services-text">Cardiac Imaging Center › </div>
+      </div>
+      <div class="related-services-column-3">
+        <div class="h-6-related-services-text">Cardiac Rehabilitation › </div>
+        <div class="h-6-related-services-text">Cardiomyopathy Treatment Center › </div>
+        <div class="h-6-related-services-text">Congenital Heart Disease Program › </div>
+      </div>
+      <div class="related-services-column-2">
+        <div class="h-6-related-services-text">Coronary Artery Care Center › </div>
+        <div class="h-6-related-services-text">Endocarditis Treatment Program › </div>
+        <div class="h-6-related-services-text">Heart Failure Recovery › </div>
+      </div>
+    </div>
+  </div>
+  <div class="show-more-container">
+    <div class="text-links">
+     <!-- <div class="show-more-services-9">Show more services (9)</div>-->
+    </div>
+   
+  </div>
+</div>
+<div class="our-approach-container">
+  <div class="expandabale-list-container">
+    <img class="image-left" src="our-approach.png" />
+    <div class="container-accordion-right">
+      <div class="accordion-open-container">
+        <div class="accordion-cell">
+          <div class="illustration-title-container">
+            <div class="illustration-container">
+              <img class="brand-icon" src="heart-icon.png" />
+            </div>
+            <div class="h-3-about">Compassionate, personalized heart care</div>
+          </div>
+          <img class="interface-icon-about" src="uparrow.png" />
+        </div>
+        <div class="approach-section-container-open">
+          <div class="copy">
+            compassionate, personalized heart care is at the core of everything
+            we do. We understand that every heart is unique, and so is every
+            patient. Our multidisciplinary teams combine advanced technology
+            with empathy to provide care tailored to each individual’s needs.
+            Whether you’re managing a chronic condition or facing an urgent
+            diagnosis, we’re here to support you—body, mind, and spirit. From
+            prevention to recovery, we partner with you every step of the way,
+            delivering expert care with a human touch.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-cell-closed">
+        <div class="title-and-icon">
+          <div class="h-32">About the Heart and Cardiovascular team</div>
+        </div>
+        <img class="interface-icon-about" src="downarrow.png" />
+      </div>
+      <div class="accordion-cell-closed">
+        <div class="title-and-icon">
+          <div class="h-32">Support the Heart Center</div>
+        </div>
+        <img class="interface-icon-about" src="downarrow.png" />
+      </div>
+      <div class="accordion-cell-closed-bottom">
+        <div class="title-and-icon">
+          <div class="h-32">
+            Heart and cardiovascular research and innovation
+          </div>
+        </div>
+        <img class="interface-icon-about" src="downarrow.png" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="conditions-and-treatments-intro">
+  <div class="conditions-and-treatments-container">
+    <div class="conditions-and-treatments-inner-container">
+      <div class="conditions-and-treatments-inner-inner-container">
+        <div class="conditions-and-treatments-centered-container">
+          <div class="related-conditions-and-treatments">
+            Related conditions and treatments
+          </div>
+          <div class="conditions-treatments-body">
+            Lorem ipsum dolor sit amet consectetur. Iaculis ridiculus massa sit
+            tellus imperdiet a. Amet dapibus ultricies nisl mauris cursus
+            dictumst rhoncus lectus.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="conditions-lazy-load-container">
+  <div class="conditions-centered">
+    <div class="container-title">
+      <div class="conditions">Conditions</div>
+    </div>
+    <div class="conditions-box-outer">
+      <div class="conditions-box-inner">
+        <div class="conditions-column-1">
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">
+                Atrial Fibrillation (AFib) › 
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Aortic Stenosis</div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-2">
+          <div class="text">
+            <div class="frame-199">
+              <div class="angina">Angina</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-aneurysm">Aortic Aneurysm ›</div>
+              <div class="interface-icon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-3">
+          <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Arrhythmia › </div>
+            </div>
+          </div>
+          <div class="frame-199">
+            <div class="atrial-septal-defect-asd">
+              Atrial Septal Defect (ASD) ›  
+            </div>
+            <div class="interface-icon"></div>
+          </div>
+        </div>
+      </div>
+      <div class="conditions-show-more">
+        <div class="frame-1686563259">
+          <div class="show-more-conditions-10">Show more conditions (8)</div>
+          <img class="interface-icon2" src="interface-icon2.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="conditions-lazy-load-container">
+  <div class="conditions-centered">
+    <div class="container-title">
+      <div class="treatments">Treatments</div>
+    </div>
+    <div class="featured-container">
+      <div class="featured-title-container">
+        <div class="featured-treatments">Featured Treatments</div>
+      </div>
+      <div class="conditions-box-inner">
+        <div class="conditions-column-1">
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">
+                Atrial Fibrillation (AFib) › 
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Aortic Stenosis</div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-2">
+          <div class="text">
+            <div class="frame-199">
+              <div class="angina">Angina</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-aneurysm">Aortic Aneurysm ›</div>
+              <div class="interface-icon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-3">
+          <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Arrhythmia › </div>
+            </div>
+          </div>
+          <div class="frame-199">
+            <div class="atrial-septal-defect-asd">
+              Atrial Septal Defect (ASD) ›  
+            </div>
+            <div class="interface-icon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conditions-box-outer">
+      <div class="conditions-box-inner">
+        <div class="conditions-column-1">
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">
+                Atrial Fibrillation (AFib) › 
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Aortic Stenosis</div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-2">
+          <div class="text">
+            <div class="frame-199">
+              <div class="angina">Angina</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-aneurysm">Aortic Aneurysm ›</div>
+              <div class="interface-icon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-3">
+          <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Arrhythmia › </div>
+            </div>
+          </div>
+          <div class="frame-199">
+            <div class="atrial-septal-defect-asd">
+              Atrial Septal Defect (ASD) ›  
+            </div>
+            <div class="interface-icon"></div>
+          </div>
+        </div>
+      </div>
+       <div class="conditions-show-more">
+        <div class="frame-1686563259">
+          <div class="show-more-conditions-10">Show more conditions (8)</div>
+          <img class="interface-icon2" src="interface-icon2.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-separator">
+  <div class="line-centered"></div>
+</div>
+<div class="award-outer-container">
+<div class="award-container">
+  <div class="award-image-container">
+    <img class="image" src="best-childrens-award.png" />
+    <div class="award-text-container">
+      <div class="h-1-page-title-award">Ranked #4 in heart care</div>
+      <div class="description">
+        Proud to be ranked one of the best Heart and Vascular Centers in the
+        country by U.S. News &amp; World Report for eight consecutive years.
+      </div>
+      <div class="tertiary-button">See ranking</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="positioning-top-lockup">
+  <div class="text-left-container">
+    <div class="h-1-page-title">
+      Meet our top tier specialists in Heart and Vascular care
+    </div>
+    <div
+      class="connect-with-leading-experts-in-heart-and-vascular-care-our-specialists-bring-advanced-training-experience-and-compassion-to-deliver-exceptional-personalized-treatment-for-every-patient"
+    >
+      Connect with leading experts in heart and vascular care. Our specialists
+      bring advanced training, experience, and compassion to deliver
+      exceptional, personalized treatment for every patient.
+    </div>
+    <div class="button">
+      <div class="label-container">
+        <div class="label">See all Heart and Vascular providers</div>
+      </div>
+    </div>
+  </div>
+  <img class="image-right-container" src="specialists.png" />
+</div>
+<div class="meet-team-container">
+  <div class="meet-teem-container-centered">
+    <div class="team-controller-container">
+      <div class="meet-the-team-lockup">
+        <div class="team-intro-container">
+          <div class="h-1-page-title-locations">Heart and Vascular Locations</div>
+          <div class="team-intro-text">
+            Find a heart and vascular care location near you.
+          </div>
+        </div>
+        <div class="team-button">
+          <div class="button">
+            <div class="primary-button">
+              See all Heart and Vascular locations
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controller">
+        <div class="numbering">1/8</div>
+        <div class="team-arrows-container">
+          <div class="arrow-button">
+            <img class="interface-icon" src="Left-arrow.svg" />
+          </div>
+          <div class="arrow-button2">
+            <img class="interface-icon2" src="Right-arrow.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-ribbon-container">
+      <div class="team-container-ribbon">
+          <div class="related-location-card">
+            <div class="location-type-tag">
+              <div class="tag-name">Hospital</div>
+            </div>
+            <div class="name-and-address">
+              <div class="brigham-and-women-s-hospital">
+                <span>
+                  <span class="brigham-and-women-s-hospital-span">
+                    Brigham and Women’s Hospital
+                  </span>
+                  <span class="brigham-and-women-s-hospital-span2">›</span>
+                </span>
+              </div>
+              <div class="location-card-address-lockup">
+                <div class="frame-1686563559">
+                  <img class="interface-icon" src="interface-icon0.svg" />
+                </div>
+                <div class="_75-frances-street-boston-ma-02115">
+                  75 Frances Street
+                  <br />
+                  Boston, MA 02115
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="related-location-card">
+            <div class="location-type-tag">
+              <div class="tag-name">Hospital</div>
+            </div>
+            <div class="name-and-address">
+              <div class="brigham-and-women-s-hospital">
+                <span>
+                  <span class="brigham-and-women-s-hospital-span">
+                    Mass Eye and <br>Ear
+                  </span>
+                  <span class="brigham-and-women-s-hospital-span2">›</span>
+                </span>
+              </div>
+              <div class="location-card-address-lockup">
+                <div class="frame-1686563559">
+                  <img class="interface-icon" src="interface-icon0.svg" />
+                </div>
+                <div class="_75-frances-street-boston-ma-02115">
+                  75 Frances Street
+                  <br />
+                  Boston, MA 02115
+                </div>
+              </div>
+            </div>
+          </div>
+                    <div class="related-location-card">
+            <div class="location-type-tag">
+              <div class="tag-name">Hospital</div>
+            </div>
+            <div class="name-and-address">
+              <div class="brigham-and-women-s-hospital">
+                <span>
+                  <span class="brigham-and-women-s-hospital-span">
+                    Massachusetts General Hospital
+                  </span>
+                  <span class="brigham-and-women-s-hospital-span2">›</span>
+                </span>
+              </div>
+              <div class="location-card-address-lockup">
+                <div class="frame-1686563559">
+                  <img class="interface-icon" src="interface-icon0.svg" />
+                </div>
+                <div class="_75-frances-street-boston-ma-02115">
+                  75 Frances Street
+                  <br />
+                  Boston, MA 02115
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="related-location-card">
+            <div class="location-type-tag">
+              <div class="tag-name">Hospital</div>
+            </div>
+            <div class="name-and-address">
+              <div class="brigham-and-women-s-hospital">
+                <span>
+                  <span class="brigham-and-women-s-hospital-span">
+                    Newton Wellesley Hospital
+                  </span>
+                  <span class="brigham-and-women-s-hospital-span2">›</span>
+                </span>
+              </div>
+              <div class="location-card-address-lockup">
+                <div class="frame-1686563559">
+                  <img class="interface-icon" src="interface-icon0.svg" />
+                </div>
+                <div class="_75-frances-street-boston-ma-02115">
+                  75 Frances Street
+                  <br />
+                  Boston, MA 02115
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-image-and-text">
+  <div class="container-left">
+    <div class="h-1-page-title">
+      Machine Learning Model Transforms How We Detect and Treat Heart Conditions
+    </div>
+    <div
+      class="at-mass-general-brigham-a-breakthrough-machine-learning-model-is-helping-specialists-identify-heart-disease-earlier-and-tailor-treatments-more-precisely-by-analyzing-complex-data-patterns-this-innovative-approach-is-improving-outcomes-personalizing-care-and-shaping-the-future-of-cardiovascular-medicine-one-algorithm-at-a-time"
+    >
+      At Mass General Brigham, a breakthrough machine learning model is helping
+      specialists identify heart disease earlier and tailor treatments more
+      precisely. By analyzing complex data patterns, this innovative approach is
+      improving outcomes, personalizing care, and shaping the future of
+      cardiovascular medicine—one algorithm at a time.
+    </div>
+    <div class="text-left-image-right-button">
+      <div class="primary-button">See clinical trials</div>
+    </div>
+  </div>
+  <div class="image-right-container">
+    <img class="standard-hero-lib-18" src="image-lefttext.png" />
+  </div>
+</div>
+<div class="video-player-block-container">
+  <div class="title-block-container-outer">
+    <div class="title-block-container">
+      <div class="left-side-title-container">
+        <div class="optional-preheader">Optional Preheader</div>
+        <div class="understanding-heart-surgery">
+          Understanding heart surgery
+        </div>
+      </div>
+      <div class="right-side-content-container">
+        <div class="line-287"></div>
+        <div
+          class="thor-sundt-md-director-of-the-cardiac-surgery-clinical-service-at-mass-general-brigham-heart-explains-the-symptoms-of-coronary-artery-disease-and-how-to-prepare-for-heart-surgery"
+        >
+          Thor Sundt, MD, director of the Cardiac Surgery Clinical Service at
+          Mass General Brigham Heart, explains the symptoms of coronary artery
+          disease and how to prepare for heart surgery.
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="video-block-container">
+    <div
+      class="background-image"
+      style="
+        background: url(background-image-video.png) center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="video-icon-container-outer">
+        <img
+          class="video-icon-container-inner"
+          src="play.png"
+        />
+      </div>
+    </div>
+    <div class="frame-1686562915">
+      <div class="description">
+        Heart surgery involves repairing or replacing damaged heart structures
+        to restore function, improve blood flow, and enhance patient health and
+        quality of life.
+      </div>
+      <div class="lower-section-right-container">
+        <div class="view-transcript">View transcript</div>
+        <img class="interface-icon" src="interface-icon0.svg" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="resources-and-support-outer-container">
+  <div class="resources-and-support-inner-container">
+    <div class="textblock-container-left">
+      <div class="patient-resources-and-support">
+        Patient resources and support
+      </div>
+      <div class="description-resources">
+        Lorem ipsum dolor sit amet consectetur. Iaculis ridiculus massa sit
+        tellus imperdiet a. Amet dapibus ultricies nisl mauris cursus dictumst
+        rhoncus lectus.
+      </div>
+    </div>
+    <div class="downloads-container-outer">
+      <div class="downloads-container-inner">
+        <div class="text">
+          <div class="frame-199">
+            <div class="heart-health-guide">Heart Health Guide ›</div>
+          </div>
+        </div>
+        <div class="text">
+          <div class="frame-199">
+            <div class="sarcomas">Sarcomas </div>
+            <img class="interface-icon" src="interface-icon0.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="supporting-content-container">
+  <div class="supporting-content-container-centered">
+    <div class="supporting-content-controller-container">
+      <div class="supporting-content-the-team-lockup">
+        <div class="supporting-content-intro-container">
+          <div class="h-3-supporting-content">Heart Care innovation</div>
+          <div class="supporting-content-intro-text">
+            latest updates, expert insights, and trending stories related to this topic
+          </div>
+        </div>
+        <div class="supporting-content-button">
+          <div class="innovation-button">
+            <div class="supporting-content-primary-button">
+              View all articles
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="supporting-content-controller">
+        <div class="supporting-content-numbering">1/8</div>
+        <div class="supporting-content-arrows-container">
+          <div class="supporting-content-arrow-button">
+            <img class="supporting-contentinterface-icon" src="Left-arrow.svg" />
+          </div>
+          <div class="supporting-contentarrow-button2">
+            <img class="supporting-contentinterface-icon" src="Right-arrow.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="supporting-content-ribbon-container">
+      <div class="supporting-content-container-ribbon">
+       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="article-1.png"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Signs You Need to See a Cardiologist ›</div>
+            <div class="read-article">
+            The expression “better late than never” applies to a lot of things in life
+            </div>
+        </div>
+        </div>       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="article-2.jpeg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Coronary Artery Disease Risk Factors ›</div>
+            <div class="read-article">
+            Coronary artery disease is a common condition that affects about 20 million Americans
+            </div>
+        </div>
+        </div>       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="article-3.jpeg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Cardiology at <br>Mass General Brigham ›</div>
+            <div class="read-article">
+            Our board-certified cardiologists provide advanced heart care for all conditions, from the routine to the complicated
+            </div>
+        </div>
+        </div>       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="article-4.jpeg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">How to Lower Risk of Heart Disease in Women ›</div>
+            <div class="read-article">
+            Heart disease is the leading cause of death for women in the United States
+            </div>
+        </div>
+        </div>       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="article-5.jpg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Researchers Find Intensive Blood Pressure Targets Are Cost-Effective ›</div>
+            <div class="read-article">
+            Research led by investigators at Mass General Brigham suggests that the health benefits
+            </div>
+        </div>
+        </div>
+        <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="article-6.jpg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">How Do You Fix a Leaky Heart Valve? ›</div>
+            <div class="read-article">
+            A leaky heart valve allows blood to leak or flow in the wrong direction
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script>
+// Show more services functionality for .show-more-services-9
+var showMoreServicesBtns = document.querySelectorAll('.show-more-services-9');
+showMoreServicesBtns.forEach(function(showMoreBtn) {
+  var servicesListContainer = showMoreBtn.closest('.related-services-list-container');
+  var firstInner = servicesListContainer.querySelector('.related-services-container-inner');
+  var showMoreContainer = servicesListContainer.querySelector('.show-more-container');
+  showMoreBtn.addEventListener('click', function() {
+    if (!servicesListContainer.querySelector('.related-services-container-inner.clone')) {
+      var clone = firstInner.cloneNode(true);
+      clone.classList.add('clone');
+      clone.style.marginTop = '30px';
+      clone.style.opacity = '0';
+      // Insert clone right after the first .related-services-container-inner, before the button
+      firstInner.parentNode.insertBefore(clone, firstInner.nextSibling);
+      setTimeout(function() {
+        clone.style.transition = 'opacity 0.4s';
+        clone.style.opacity = '1';
+      }, 10);
+      showMoreBtn.classList.add('disabled');
+      showMoreBtn.style.pointerEvents = 'none';
+      showMoreBtn.textContent = showMoreBtn.textContent.replace(/\s*\(9\)/, '');
+    }
+  });
+  showMoreBtn.addEventListener('mouseover', function() {
+    if (!showMoreBtn.classList.contains('disabled')) {
+      showMoreBtn.style.textDecoration = 'underline';
+    }
+  });
+  showMoreBtn.addEventListener('mouseout', function() {
+    showMoreBtn.style.textDecoration = 'underline';
+    showMoreBtn.style.color = '';
+  });
+});
+
+// Existing show more conditions code
+var showMoreBtns = document.querySelectorAll('.show-more-conditions-10');
+showMoreBtns.forEach(function(showMoreBtn) {
+  // Find the closest conditions-box-outer for this button
+  var conditionsBoxOuter = showMoreBtn.closest('.conditions-box-outer');
+  var firstBoxInner = conditionsBoxOuter.querySelector('.conditions-box-inner');
+  showMoreBtn.addEventListener('click', function() {
+    if (!conditionsBoxOuter.querySelector('.conditions-box-inner.clone')) {
+      var clone = firstBoxInner.cloneNode(true);
+      clone.classList.add('clone');
+      clone.style.opacity = '0';
+      var showMoreDiv = conditionsBoxOuter.querySelector('.conditions-show-more');
+      conditionsBoxOuter.insertBefore(clone, showMoreDiv);
+      setTimeout(function() {
+        clone.style.transition = 'opacity 0.4s';
+        clone.style.opacity = '1';
+      }, 10);
+      showMoreBtn.classList.add('disabled');
+      showMoreBtn.style.pointerEvents = 'none';
+      // Remove (8) from button text when disabled
+      showMoreBtn.textContent = showMoreBtn.textContent.replace(/\s*\(8\)/, '');
+    }
+  });
+  showMoreBtn.addEventListener('mouseover', function() {
+    if (!showMoreBtn.classList.contains('disabled')) {
+      showMoreBtn.style.textDecoration = 'underline';
+    }
+  });
+  showMoreBtn.addEventListener('mouseout', function() {
+    showMoreBtn.style.textDecoration = 'underline';
+    showMoreBtn.style.color = '';
+  });
+});
+
+ // Team ribbon scroll interactivity
+  var teamRibbon = document.querySelector('.team-ribbon-container');
+  var leftArrow = document.querySelector('.arrow-button');
+  var rightArrow = document.querySelector('.arrow-button2');
+  var card = teamRibbon.querySelector('.team-member-card');
+  var cardWidth = card ? card.offsetWidth + 25 : 260 + 25; // 25px gap
+
+  leftArrow.addEventListener('click', function() {
+    teamRibbon.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+  rightArrow.addEventListener('click', function() {
+    teamRibbon.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+
+  // Optional: hide left arrow if at start, right arrow if at end
+  function updateArrows() {
+    leftArrow.style.opacity = teamRibbon.scrollLeft > 0 ? '1' : '0.5';
+    rightArrow.style.opacity =
+      teamRibbon.scrollLeft + teamRibbon.offsetWidth < teamRibbon.scrollWidth ? '1' : '0.5';
+  }
+  teamRibbon.addEventListener('scroll', updateArrows);
+  updateArrows();
+
+
+
+// SUpporting content scroll interactivity
+  var teamRibbon = document.querySelector('.supporting-content-ribbon-container');
+  var leftArrow = document.querySelector('.supporting-content-arrow-button');
+  var rightArrow = document.querySelector('.supporting-contentarrow-button2');
+  var card = teamRibbon.querySelector('.supporting-content-card');
+  var cardWidth = card ? card.offsetWidth + 25 : 260 + 25; // 25px gap
+
+  leftArrow.addEventListener('click', function() {
+    teamRibbon.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+  rightArrow.addEventListener('click', function() {
+    teamRibbon.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+
+  // Optional: hide left arrow if at start, right arrow if at end
+  function updateArrows() {
+    leftArrow.style.opacity = teamRibbon.scrollLeft > 0 ? '1' : '0.5';
+    rightArrow.style.opacity =
+      teamRibbon.scrollLeft + teamRibbon.offsetWidth < teamRibbon.scrollWidth ? '1' : '0.5';
+  }
+  teamRibbon.addEventListener('scroll', updateArrows);
+  updateArrows();  
+</script>
+
+</body>
+</html>
