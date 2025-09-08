@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Global Navigation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1512, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <style>
 /* Reset default browser margins and padding */
 * {
@@ -11,10 +11,19 @@
   padding: 0;
 }
 
+.fixed-width {
+  width: 1512px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 1512px;       /* fixed demo width */
+  max-width: 100%;     /* prevent overflow on smaller screens */
+  margin-left: auto;   /* center horizontally */
+  margin-right: auto;
   overflow-x: hidden;
 }
 
@@ -879,8 +888,7 @@ html, body {
 
     </style>
 </head>
-<body>
- <body>
+<body class="fixed-width">
   <div class="global-nav-component">
     <div class="global-nav-menu">
       <div class="global-nav-alert-banner" id="global-nav-alert-banner">
