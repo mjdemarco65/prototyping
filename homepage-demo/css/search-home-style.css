@@ -7,7 +7,7 @@
 
 .search-home {
   background: #ffffff;
-  height: 1020px;
+  height: 880px;
   position: relative;
   overflow: hidden;
 }
@@ -36,20 +36,20 @@
   height: 547px;
   position: relative;
   width: 100%;
-  margin-top: 90px;
 }
 
 .search-home-content-wrapper {
   padding: 0px 0px 0px 0px;
   display: flex;
   flex-direction: column;
-  gap: 128px;
+  gap: 44px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
   width: 100%;
   max-width: 1264px;
+  margin-top: -22px;
 }
 
 .search-home-title {
