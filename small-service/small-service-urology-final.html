@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>small-service</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/global-navigation-all-dropdowns-style.css">
 
 <style>
 body {
@@ -3550,7 +3550,368 @@ font-family: var( --headline-h1-slab-font-family, "Roboto Slab", serif );
 </style>    
 </head>
 <body>
-  <div><img src="ALERT-closed.png" /></div>
+  <div class="global-nav-component">
+    <div class="global-nav-menu">
+      <div class="global-nav-alert-banner" id="global-nav-alert-banner">
+        <div class="global-nav-alert-content">
+          <div class="global-nav-alert-text-section">
+            <img class="global-nav-alert-icon" src="img/nav/interface-icon0.svg" />
+            <div class="global-nav-alert-title">Severe weather notice</div>
+            <div class="global-nav-alert-description">
+              All elective surgeries, diagnostic, therapy and in-person
+              appointments are canceled Wednesday, January 22nd.
+            </div>
+          </div>
+          <div class="global-nav-alert-button">
+            <a href="https://www.massgeneralbrigham.org/" class="global-nav-alert-link">
+              <div class="global-nav-alert-button-content">
+                <div class="global-nav-alert-button-text">View latest updates</div>
+              </div>
+              <img class="global-nav-alert-button-icon" src="img/interface-icon1.svg" />
+            </a>
+          </div>
+        </div>
+        <img class="global-nav-alert-close" src="img/interface-icon2.svg" id="global-nav-alert-close" />
+      </div>
+      <div class="global-nav-alert-strip" id="global-nav-alert-strip" style="display: none;"></div>
+      <div class="global-nav-secondary-bar">
+        <div class="global-nav-secondary-left">
+          <div class="global-nav-secondary-button">
+            <a href="https://massgeneralbrighamhealthplan.org/" class="global-nav-secondary-link">
+              <div class="global-nav-secondary-button-content">
+                <div class="global-nav-secondary-text">Health Plan</div>
+              </div>
+              <img class="global-nav-secondary-icon" src="img/interface-icon4.svg" />
+            </a>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Research</div>
+            </div>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Education and Training</div>
+            </div>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Donate</div>
+            </div>
+          </div>
+        </div>
+        <div class="global-nav-secondary-right">
+          <div class="global-nav-secondary-group">
+            <div class="global-nav-secondary-button">
+              <a href="https://patientgateway.massgeneralbrigham.org/mychart-PRD/Authentication/Login" class="global-nav-secondary-link">
+                <div class="global-nav-secondary-button-content">
+                  <div class="global-nav-secondary-text">Patient Gateway</div>
+                </div>
+                <img class="global-nav-secondary-icon" src="img/interface-icon4.svg" />
+              </a>
+            </div>
+            <div class="global-nav-language-button">
+              <img class="global-nav-language-icon" src="img/interface-icon5.svg" />
+              <div class="global-nav-secondary-button-content">
+                <div class="global-nav-secondary-text">English</div>
+              </div>
+              <img class="global-nav-language-dropdown" src="img/interface-icon6.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="global-nav-main-section">
+      <div class="global-nav-main-container">
+        <div class="global-nav-main-content">
+          <div class="global-nav-main-row">
+            <div class="global-nav-main-left">
+              <div class="global-nav-logo">
+                <img class="global-nav-logo-image" src="img/group-13213176770.svg" />
+              </div>
+              <div class="global-nav-main-menu">
+                <div class="global-nav-nav-item" id="get-care-nav-item">
+                  <div class="global-nav-nav-label">Find Care</div>
+                  <img class="global-nav-nav-icon" id="get-care-chevron" src="img/interface-icon7.svg" />
+                </div>
+                <div class="global-nav-nav-item" id="services-nav-item">
+                  <div class="global-nav-nav-label">Services &amp; Treatments</div>
+                  <img class="global-nav-nav-icon" id="services-chevron" src="img/interface-icon8.svg" />
+                </div>
+                <div class="global-nav-nav-item" id="patients-nav-item">
+                  <div class="global-nav-nav-label">Patients &amp; Visitors</div>
+                  <img class="global-nav-nav-icon" id="patients-chevron" src="img/interface-icon9.svg" />
+                </div>
+                <div class="global-nav-nav-item">
+                  <div class="global-nav-nav-label">Find a Doctor</div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-main-right">
+              <div class="global-nav-search-button">
+                <img class="global-nav-search-icon" src="img/interface-icon11.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Get Care Dropdown Menu -->
+    <div class="global-nav-get-care-dropdown" id="get-care-dropdown" style="display: none;">
+      <div class="global-nav-get-care-container">
+        <div class="global-nav-get-care-content">
+          <div class="global-nav-get-care-main">
+            <div class="global-nav-get-care-left-column">
+              <div class="global-nav-get-care-header">
+                <div class="global-nav-get-care-title-section">
+                  <div class="global-nav-get-care-title">
+                    <div class="global-nav-get-care-title-text">Find Care</div>
+                  </div>
+                  <div class="global-nav-get-care-description">
+                    Find and access urgent care, appointments, and health services quickly for all your medical needs.
+                  </div>
+                </div>
+                <div class="global-nav-get-care-button">
+                  <div class="global-nav-get-care-button-content">
+                    <div class="global-nav-get-care-button-text">
+                      See all care options
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-get-care-middle-section">
+              <div class="global-nav-get-care-actions">
+                <div class="global-nav-get-care-action-column">
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-get-care-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-get-care-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Find a provider</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <img class="global-nav-get-care-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Find a location</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Request an appointment</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-layer" src="img/layer-13.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Get a second opinion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-get-care-right-column">
+              <div class="global-nav-get-care-featured">
+                <div class="global-nav-get-care-featured-content">
+                  <div class="global-nav-get-care-featured-title">Types of care</div>
+                  <div class="global-nav-get-care-featured-item">Urgent Care</div>
+                  <div class="global-nav-get-care-featured-item">Emergency Care</div>
+                  <div class="global-nav-get-care-featured-item">Virtual Care</div>
+                  <div class="global-nav-get-care-featured-item">Home Care</div>
+                  <div class="global-nav-get-care-featured-item">International Patient Care</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services & Treatments Dropdown Menu -->
+    <div class="global-nav-services-dropdown" id="services-dropdown" style="display: none;">
+      <div class="global-nav-services-container">
+        <div class="global-nav-services-content">
+          <div class="global-nav-services-main">
+            <div class="global-nav-services-left-column">
+              <div class="global-nav-services-header">
+                <div class="global-nav-services-title-section">
+                  <div class="global-nav-services-title">
+                    <div class="global-nav-services-title-text">Services and Treatments</div>
+                  </div>
+                  <div class="global-nav-services-description">
+                    Mass General Brigham offers a full range of patient services
+                    for common to complex health conditions. Learn about our
+                    services and treatments.
+                  </div>
+                </div>
+                <div class="global-nav-services-button">
+                  <div class="global-nav-services-button-content">
+                    <div class="global-nav-services-button-text">
+                      See all services and treatments
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-services-middle-section">
+              <div class="global-nav-services-actions">
+                <div class="global-nav-services-action-column">
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-services-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-services-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a service</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <img class="global-nav-services-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a treatment</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a condition</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-layer" src="img/layer-13.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Get a second opinion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-services-right-column">
+              <div class="global-nav-services-featured">
+                <div class="global-nav-services-featured-content">
+                  <div class="global-nav-services-featured-title">Featured Services</div>
+                  <div class="global-nav-services-featured-item">Cancer Institute</div>
+                  <div class="global-nav-services-featured-item"><a href="/Users/mjd/Documents/UWSP/institute/institute.html">Heart and Vascular Institute</a></div>
+                  <div class="global-nav-services-featured-item">Neurosciences Institute</div>
+                  <div class="global-nav-services-featured-item">Orthopedics and Sports Medicine</div>
+                  <div class="global-nav-services-featured-item">Home Hospital</div>
+                  <div class="global-nav-services-featured-link">See all services</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Patients & Visitors Dropdown Menu -->
+    <div class="global-nav-patients-dropdown" id="patients-dropdown" style="display: none;">
+      <div class="global-nav-patients-container">
+        <div class="global-nav-patients-content">
+          <div class="global-nav-patients-main">
+            <div class="global-nav-patients-left-column">
+              <div class="global-nav-patients-header">
+                <div class="global-nav-patients-title-section">
+                  <div class="global-nav-patients-title">
+                    <div class="global-nav-patients-title-text">Patients and Visitors</div>
+                  </div>
+                  <div class="global-nav-patients-description">
+                    We're here to help you navigate your patient and visitor experience from start to finish. View our resources and policies to guide your journey.
+                  </div>
+                </div>
+                <div class="global-nav-patients-button">
+                  <div class="global-nav-patients-button-content">
+                    <div class="global-nav-patients-button-text">
+                      See all patients and visitors
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-patients-middle-section">
+              <div class="global-nav-patients-actions">
+                <div class="global-nav-patients-action-column">
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <div class="global-nav-patients-icon-wrapper">
+                          <img class="global-nav-patients-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-patients-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-patients-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">Plan Your Visit</div>
+                  </div>
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <img class="global-nav-patients-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">International Patients</div>
+                  </div>
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <div class="global-nav-patients-icon-wrapper">
+                          <img class="global-nav-patients-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">Health and Wellness</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-patients-right-column">
+              <div class="global-nav-patients-featured">
+                <div class="global-nav-patients-featured-content">
+                  <div class="global-nav-patients-featured-title">Quick Links</div>
+                  <div class="global-nav-patients-featured-item">Billing and Insurance</div>
+                  <div class="global-nav-patients-featured-item">Caregiver Resources</div>
+                  <div class="global-nav-patients-featured-item">Home Care</div>
+                  <div class="global-nav-patients-featured-item">Patient Resources</div>
+                  <div class="global-nav-patients-featured-item">Medical Records</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="breadcrumb-small-service">
   <div class="left-container">
     <div class="page-nests">
@@ -4763,4 +5124,113 @@ document.addEventListener('DOMContentLoaded', function() {
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', initFAQAccordion);
 </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const alertBanner = document.getElementById('global-nav-alert-banner');
+    const alertStrip = document.getElementById('global-nav-alert-strip');
+    const closeButton = document.getElementById('global-nav-alert-close');
+    
+    // Alert banner close functionality
+    closeButton.addEventListener('click', function() {
+      alertBanner.style.display = 'none';
+      alertStrip.style.display = 'block';
+    });
+
+    // Get Care dropdown functionality
+    const getCareNavItem = document.getElementById('get-care-nav-item');
+    const getCareDropdown = document.getElementById('get-care-dropdown');
+    const getCareChevron = document.getElementById('get-care-chevron');
+    let isGetCareOpen = false;
+
+    getCareNavItem.addEventListener('click', function() {
+      // Close other dropdowns first
+      closeAllDropdowns();
+      
+      if (isGetCareOpen) {
+        getCareDropdown.style.display = 'none';
+        getCareChevron.style.transform = 'rotate(0deg)';
+        isGetCareOpen = false;
+      } else {
+        getCareDropdown.style.display = 'block';
+        getCareChevron.style.transform = 'rotate(180deg)';
+        isGetCareOpen = true;
+      }
+    });
+
+    // Services dropdown functionality
+    const servicesNavItem = document.getElementById('services-nav-item');
+    const servicesDropdown = document.getElementById('services-dropdown');
+    const servicesChevron = document.getElementById('services-chevron');
+    let isServicesOpen = false;
+
+    servicesNavItem.addEventListener('click', function() {
+      // Close other dropdowns first
+      closeAllDropdowns();
+      
+      if (isServicesOpen) {
+        servicesDropdown.style.display = 'none';
+        servicesChevron.style.transform = 'rotate(0deg)';
+        isServicesOpen = false;
+      } else {
+        servicesDropdown.style.display = 'block';
+        servicesChevron.style.transform = 'rotate(180deg)';
+        isServicesOpen = true;
+      }
+    });
+
+    // Patients dropdown functionality
+    const patientsNavItem = document.getElementById('patients-nav-item');
+    const patientsDropdown = document.getElementById('patients-dropdown');
+    const patientsChevron = document.getElementById('patients-chevron');
+    let isPatientsOpen = false;
+
+    patientsNavItem.addEventListener('click', function() {
+      // Close other dropdowns first
+      closeAllDropdowns();
+      
+      if (isPatientsOpen) {
+        patientsDropdown.style.display = 'none';
+        patientsChevron.style.transform = 'rotate(0deg)';
+        isPatientsOpen = false;
+      } else {
+        patientsDropdown.style.display = 'block';
+        patientsChevron.style.transform = 'rotate(180deg)';
+        isPatientsOpen = true;
+      }
+    });
+
+    // Function to close all dropdowns
+    function closeAllDropdowns() {
+      // Close Get Care
+      if (isGetCareOpen) {
+        getCareDropdown.style.display = 'none';
+        getCareChevron.style.transform = 'rotate(0deg)';
+        isGetCareOpen = false;
+      }
+      
+      // Close Services
+      if (isServicesOpen) {
+        servicesDropdown.style.display = 'none';
+        servicesChevron.style.transform = 'rotate(0deg)';
+        isServicesOpen = false;
+      }
+      
+      // Close Patients
+      if (isPatientsOpen) {
+        patientsDropdown.style.display = 'none';
+        patientsChevron.style.transform = 'rotate(0deg)';
+        isPatientsOpen = false;
+      }
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+      if (!getCareNavItem.contains(event.target) && !getCareDropdown.contains(event.target) &&
+          !servicesNavItem.contains(event.target) && !servicesDropdown.contains(event.target) &&
+          !patientsNavItem.contains(event.target) && !patientsDropdown.contains(event.target)) {
+        closeAllDropdowns();
+      }
+    });
+  });
+  </script>
 </html>
