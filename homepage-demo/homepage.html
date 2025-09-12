@@ -29,7 +29,7 @@
   position: relative;
 }
 .footer-global-cta-bar {
-  background: var(--global-cta-bar-bg, #004268);
+  background: var(--global-cta-bar-bg, #213243);
   padding: var(--spacing-base-space-700, 56px) 88px
     var(--spacing-base-space-700, 56px) 88px;
   display: flex;
@@ -790,6 +790,29 @@ background-image: url("img/icon-4.png");
 }
   /* CSS for the footer component */
 
+#fake-suggestions { 
+  font-family: var(--body-large-400-font-family, 'Roboto-Regular', sans-serif);
+  line-height: 24px;
+  display: none;
+  position: absolute; 
+  top: 100%; 
+  left: 185px; 
+  right: 0px; 
+  background: white; 
+  border-width: medium 1px 1px; 
+  border-style: none solid solid; 
+  border-color: currentcolor rgb(204, 204, 204) rgb(204, 204, 204); 
+  border-image: none; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; 
+  z-index: 999; 
+  width: 75.4%; 
+  border-radius: 12px; 
+  padding: 22px; }
+
+#fake-suggestions [data-suggestion]:hover {
+  padding: 8px 12px;
+  transition: background-color 0.2s;
+  background-color: #D9F0F2;
+}
 
 </style>
 
@@ -1067,7 +1090,7 @@ background-image: url("img/icon-4.png");
                 <div class="global-nav-services-featured-content">
                   <div class="global-nav-services-featured-title">Featured Services</div>
                   <div class="global-nav-services-featured-item">Cancer Institute</div>
-                  <div class="global-nav-services-featured-item"><a href="../institute/institute.html">Heart and Vascular Institute</a></div>
+                  <div class="global-nav-services-featured-item"><a href="/Users/mjd/Documents/UWSP/institute/institute.html">Heart and Vascular Institute</a></div>
                   <div class="global-nav-services-featured-item">Neurosciences Institute</div>
                   <div class="global-nav-services-featured-item">Orthopedics and Sports Medicine</div>
                   <div class="global-nav-services-featured-item">Home Hospital</div>
@@ -1179,6 +1202,8 @@ background-image: url("img/icon-4.png");
               <div class="search-home-tab-category">Search by category</div>
             </div>
             <div class="search-home-search-bar">
+              <div id="fake-suggestions"></div>
+
               <div class="search-home-dropdown">
                 <div class="search-home-dropdown-container" id="search-dropdown-trigger">
                   <div class="search-home-dropdown-content">
@@ -1195,7 +1220,7 @@ background-image: url("img/icon-4.png");
               
               <!-- All Search Bar (Default) -->
               <div class="search-home-input-container" id="search-bar-all">
-                <div class="search-home-input-wrapper">
+                <div class="search-home-input-wrapper" style="position: relative;">
                   <div class="search-home-search-icon-container">
                     <img class="search-home-search-icon" src="img/search/interface-icon1.svg" />
                   </div>
@@ -1942,6 +1967,70 @@ background-image: url("img/icon-4.png");
   <script src="js/navigation.js"></script>
   <script src="js/search.js"></script>
   <script src="js/ribbon.js"></script>
+
+<script>
+  const input = document.querySelector('.search-home-input-field');
+  const suggestionsBox = document.getElementById('fake-suggestions');
+
+  const fakeSuggestions = [
+    { name: "Heart & Vascular Institute", url: "https://mjdemarco65.github.io/prototyping/institute/institute.html" },
+    { name: "Cardiology Center", url: "https://example.com/cardiology" },
+    { name: "Vascular Health Clinic", url: "https://example.com/vascular-health" },
+    { name: "Heart Wellness Program", url: "https://example.com/heart-wellness" },
+    { name: "Massachusetts General Hospital, Boston", url: "https://example.com/mgh-boston" },
+    { name: "Brigham and Women's Hospital, Boston", url: "https://example.com/brigham-womens" },
+    { name: "Newton-Wellesley Hospital", url: "https://example.com/newton-wellesley" },
+    { name: "Faulkner Hospital", url: "https://example.com/faulkner" },
+    { name: "North Shore Medical Center", url: "https://example.com/north-shore" },
+    { name: "Martha's Vineyard Hospital", url: "https://example.com/marthas-vineyard" },
+    { name: "Dr. Emily Chen, Cardiology", url: "https://example.com/doctors/emily-chen" },
+    { name: "Dr. Lisa Moreno, Heart Failure Specialist", url: "https://example.com/doctors/lisa-moreno" },
+    { name: "Dr. Marcus Lee, Interventional Cardiology", url: "https://example.com/doctors/marcus-lee" },
+    { name: "Dr. Hannah Kim, Electrophysiology", url: "https://example.com/doctors/hannah-kim" },
+    { name: "Dr. Daniel Brooks, Cardiac Imaging", url: "https://example.com/doctors/daniel-brooks" },
+  ];
+
+  input.addEventListener('input', () => {
+    const value = input.value.trim().toLowerCase();
+    if (!value) {
+      suggestionsBox.style.display = 'none';
+      return;
+    }
+
+    const matches = fakeSuggestions.filter(item =>
+      item.name.toLowerCase().includes(value)
+    );
+
+    if (matches.length) {
+      const regex = new RegExp(`(${value})`, 'ig');
+      suggestionsBox.innerHTML = matches
+        .map(m => {
+          const highlighted = m.name.replace(regex, '<strong>$1</strong>');
+          return `<div data-suggestion data-url="${m.url}" style="padding:8px; cursor:pointer;">${highlighted}</div>`;
+        })
+        .join('');
+      suggestionsBox.style.display = 'block';
+    } else {
+      suggestionsBox.style.display = 'none';
+    }
+  });
+
+  suggestionsBox.addEventListener('click', e => {
+    if (e.target.hasAttribute('data-suggestion')) {
+      const url = e.target.getAttribute('data-url');
+      window.location.href = url;
+    }
+  });
+
+  document.addEventListener('click', e => {
+    if (!suggestionsBox.contains(e.target) && e.target !== input) {
+      suggestionsBox.style.display = 'none';
+    }
+  });
+</script>
+
+
+
 </body>
 </html>
 
