@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+/* Reset default browser margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.global-nav-component,
+.global-nav-component * {
+  box-sizing: border-box;
+}
+
+.global-nav-component {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.global-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-banner {
+  background: var(--dark-teal-color, #007d85);
+  padding: 10px 40px 10px 39px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+
+.global-nav-alert-strip {
+  background: var(--dark-teal-color, #007d85);
+  height: 9px;
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-text-section {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-alert-title {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: 'Roboto', var(--body-medium-600-font-family, "Roboto-SemiBold", sans-serif);
+  font-size: var(--body-medium-600-font-size, 16px);
+  line-height: var(--body-medium-600-line-height, 150%);
+  font-weight: var(--body-medium-600-font-weight, 600);
+  position: relative;
+}
+
+.global-nav-alert-description {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: 'Roboto', var(--body-medium-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-medium-400-font-size, 16px);
+  line-height: var(--body-medium-400-line-height, 150%);
+  font-weight: var(--body-medium-400-font-weight, 400);
+  position: relative;
+}
+
+.global-nav-alert-button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-alert-link {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.global-nav-alert-button-content {
+  border-style: solid;
+  border-color: var(--buttons-tertiary-button-default-underline, transparent);
+  border-width: 0px 0px 1px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-button-text {
+  color: var(--buttons-tertiary-button-default-text-and-icon, #d9f0f2);
+  text-align: center;
+  font-family: 'Roboto', var(--body-medium-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-medium-500-font-size, 16px);
+  line-height: var(--body-medium-500-line-height, 150%);
+  font-weight: var(--body-medium-500-font-weight, 500);
+  position: relative;
+}
+
+.global-nav-alert-button-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-alert-close {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.global-nav-secondary-bar {
+  background: #e7e7e0;
+  padding: 4px 40px 4px 39px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-secondary-left {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-secondary-button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-050, 4px);
+  row-gap: 4px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-secondary-link {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-050, 4px);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.global-nav-secondary-button-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-secondary-text {
+  color: var(--buttons-tertiary-button-default-text-and-icon, #003a96);
+  text-align: center;
+  font-family: 'Roboto', var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+
+.global-nav-secondary-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-secondary-right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-secondary-group {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-language-button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-050, 4px);
+  row-gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-language-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-language-dropdown {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-main-section {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-main-container {
+  background: var(--primary-white, #ffffff);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  padding: 0px 60px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.global-nav-main-content {
+  padding: 18px 0px 18px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.global-nav-main-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.global-nav-main-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+}
+
+.global-nav-logo {
+  padding: 8px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 270.16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-logo-image {
+  flex-shrink: 0;
+  width: 250.16px;
+  height: 36px;
+  position: relative;
+  overflow: visible;
+}
+
+.global-nav-main-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-nav-item {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.global-nav-nav-label {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: center;
+  font-family: 'Roboto', var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+
+.global-nav-nav-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+  transition: transform 0.3s ease;
+}
+
+.global-nav-main-right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-search-button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  position: relative;
+}
+
+.global-nav-search-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+/* Shared Dropdown Styles */
+.global-nav-get-care-dropdown,
+.global-nav-services-dropdown,
+.global-nav-patients-dropdown {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #01828e;
+  border-width: 0.5px 0px 0px 0px;
+  padding: 40px 88px 80px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 506px;
+  position: relative;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.global-nav-get-care-container,
+.global-nav-services-container,
+.global-nav-patients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-content,
+.global-nav-services-content,
+.global-nav-patients-content {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-main,
+.global-nav-services-main,
+.global-nav-patients-main {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-left-column,
+.global-nav-services-left-column,
+.global-nav-patients-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 346px;
+  position: relative;
+}
+
+.global-nav-get-care-header,
+.global-nav-services-header,
+.global-nav-patients-header {
+  border-style: solid;
+  border-color: #007d85;
+  border-width: 0px 1px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 406px;
+  height: 274px;
+  position: relative;
+}
+
+.global-nav-get-care-title-section,
+.global-nav-services-title-section,
+.global-nav-patients-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 346px;
+  position: relative;
+}
+
+.global-nav-get-care-title,
+.global-nav-services-title,
+.global-nav-patients-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-title-text,
+.global-nav-services-title-text,
+.global-nav-patients-title-text {
+  color: #213243;
+  text-align: left;
+  font-family: 'Roboto Slab', var(--heading-h2-font-family, "Roboto-SemiBold", sans-serif);
+  font-size: 48px;
+  line-height: 53px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  position: relative;
+  align-self: stretch;
+}
+
+.global-nav-get-care-description,
+.global-nav-services-description,
+.global-nav-patients-description {
+  color: #000000;
+  text-align: left;
+  font-family: 'Roboto', var(--body-medium-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-medium-400-font-size, 16px);
+  line-height: var(--body-medium-400-line-height, 150%);
+  font-weight: var(--body-medium-400-font-weight, 400);
+  position: relative;
+}
+
+.global-nav-get-care-button,
+.global-nav-services-button,
+.global-nav-patients-button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-get-care-button-content,
+.global-nav-services-button-content,
+.global-nav-patients-button-content {
+  border-radius: 50px;
+  background: #8BFFCD;
+  border: 1px solid #213243;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.global-nav-get-care-button-content:hover,
+.global-nav-services-button-content:hover,
+.global-nav-patients-button-content:hover {
+  background: #7AEFBC;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(33, 50, 67, 0.15);
+}
+
+.global-nav-get-care-button-text,
+.global-nav-services-button-text,
+.global-nav-patients-button-text {
+  color: #213243;
+  text-align: center;
+  font-family: 'Roboto', var(--body-medium-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-medium-500-font-size, 16px);
+  line-height: var(--body-medium-500-line-height, 150%);
+  font-weight: var(--body-medium-500-font-weight, 500);
+  position: relative;
+}
+
+.global-nav-get-care-middle-section,
+.global-nav-services-middle-section,
+.global-nav-patients-middle-section {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-actions,
+.global-nav-services-actions,
+.global-nav-patients-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-action-column,
+.global-nav-services-action-column,
+.global-nav-patients-action-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-action-item,
+.global-nav-services-action-item,
+.global-nav-patients-action-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-action-icon,
+.global-nav-services-action-icon,
+.global-nav-patients-action-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-icon-container,
+.global-nav-services-icon-container,
+.global-nav-patients-icon-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-icon-wrapper,
+.global-nav-services-icon-wrapper,
+.global-nav-patients-icon-wrapper {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.global-nav-get-care-icon-group,
+.global-nav-services-icon-group,
+.global-nav-patients-icon-group {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.global-nav-get-care-icon-vector,
+.global-nav-services-icon-vector,
+.global-nav-patients-icon-vector {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+
+.global-nav-get-care-icon-vector2,
+.global-nav-services-icon-vector2,
+.global-nav-patients-icon-vector2 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+
+.global-nav-get-care-icon-layer,
+.global-nav-services-icon-layer,
+.global-nav-patients-icon-layer {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.global-nav-get-care-action-text,
+.global-nav-services-action-text,
+.global-nav-patients-action-text {
+  color: #003A96;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+  position: relative;
+}
+
+.global-nav-get-care-right-column,
+.global-nav-services-right-column,
+.global-nav-patients-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-featured,
+.global-nav-services-featured,
+.global-nav-patients-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-featured-content,
+.global-nav-services-featured-content,
+.global-nav-patients-featured-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-featured-title,
+.global-nav-services-featured-title,
+.global-nav-patients-featured-title {
+  color: #213243;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 500;
+  position: relative;
+}
+
+.global-nav-get-care-featured-item,
+.global-nav-services-featured-item,
+.global-nav-patients-featured-item {
+  color: #003A96;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+  position: relative;
+}
+
+.global-nav-services-featured-link {
+  color: #003A96;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+ <body>
+  <div class="global-nav-component">
+    <div class="global-nav-menu">
+      <div class="global-nav-alert-banner" id="global-nav-alert-banner">
+        <div class="global-nav-alert-content">
+          <div class="global-nav-alert-text-section">
+            <img class="global-nav-alert-icon" src="img/nav/interface-icon0.svg" />
+            <div class="global-nav-alert-title">Severe weather notice</div>
+            <div class="global-nav-alert-description">
+              All elective surgeries, diagnostic, therapy and in-person
+              appointments are canceled Wednesday, January 22nd.
+            </div>
+          </div>
+          <div class="global-nav-alert-button">
+            <a href="https://www.massgeneralbrigham.org/" class="global-nav-alert-link">
+              <div class="global-nav-alert-button-content">
+                <div class="global-nav-alert-button-text">View latest updates</div>
+              </div>
+              <img class="global-nav-alert-button-icon" src="img/interface-icon1.svg" />
+            </a>
+          </div>
+        </div>
+        <img class="global-nav-alert-close" src="img/interface-icon2.svg" id="global-nav-alert-close" />
+      </div>
+      <div class="global-nav-alert-strip" id="global-nav-alert-strip" style="display: none;"></div>
+      <div class="global-nav-secondary-bar">
+        <div class="global-nav-secondary-left">
+          <div class="global-nav-secondary-button">
+            <a href="https://massgeneralbrighamhealthplan.org/" class="global-nav-secondary-link">
+              <div class="global-nav-secondary-button-content">
+                <div class="global-nav-secondary-text">Health Plan</div>
+              </div>
+              <img class="global-nav-secondary-icon" src="img/interface-icon4.svg" />
+            </a>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Research</div>
+            </div>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Education and Training</div>
+            </div>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Donate</div>
+            </div>
+          </div>
+        </div>
+        <div class="global-nav-secondary-right">
+          <div class="global-nav-secondary-group">
+            <div class="global-nav-secondary-button">
+              <a href="https://patientgateway.massgeneralbrigham.org/mychart-PRD/Authentication/Login" class="global-nav-secondary-link">
+                <div class="global-nav-secondary-button-content">
+                  <div class="global-nav-secondary-text">Patient Gateway</div>
+                </div>
+                <img class="global-nav-secondary-icon" src="img/interface-icon4.svg" />
+              </a>
+            </div>
+            <div class="global-nav-language-button">
+              <img class="global-nav-language-icon" src="img/interface-icon5.svg" />
+              <div class="global-nav-secondary-button-content">
+                <div class="global-nav-secondary-text">English</div>
+              </div>
+              <img class="global-nav-language-dropdown" src="img/interface-icon6.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="global-nav-main-section">
+      <div class="global-nav-main-container">
+        <div class="global-nav-main-content">
+          <div class="global-nav-main-row">
+            <div class="global-nav-main-left">
+              <div class="global-nav-logo">
+                <img class="global-nav-logo-image" src="img/group-13213176770.svg" />
+              </div>
+              <div class="global-nav-main-menu">
+                <div class="global-nav-nav-item" id="get-care-nav-item">
+                  <div class="global-nav-nav-label">Find Care</div>
+                  <img class="global-nav-nav-icon" id="get-care-chevron" src="img/interface-icon7.svg" />
+                </div>
+                <div class="global-nav-nav-item" id="services-nav-item">
+                  <div class="global-nav-nav-label">Services &amp; Treatments</div>
+                  <img class="global-nav-nav-icon" id="services-chevron" src="img/interface-icon8.svg" />
+                </div>
+                <div class="global-nav-nav-item" id="patients-nav-item">
+                  <div class="global-nav-nav-label">Patients &amp; Visitors</div>
+                  <img class="global-nav-nav-icon" id="patients-chevron" src="img/interface-icon9.svg" />
+                </div>
+                <div class="global-nav-nav-item">
+                  <div class="global-nav-nav-label">Find a Doctor</div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-main-right">
+              <div class="global-nav-search-button">
+                <img class="global-nav-search-icon" src="img/interface-icon11.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Get Care Dropdown Menu -->
+    <div class="global-nav-get-care-dropdown" id="get-care-dropdown" style="display: none;">
+      <div class="global-nav-get-care-container">
+        <div class="global-nav-get-care-content">
+          <div class="global-nav-get-care-main">
+            <div class="global-nav-get-care-left-column">
+              <div class="global-nav-get-care-header">
+                <div class="global-nav-get-care-title-section">
+                  <div class="global-nav-get-care-title">
+                    <div class="global-nav-get-care-title-text">Find Care</div>
+                  </div>
+                  <div class="global-nav-get-care-description">
+                    Find and access urgent care, appointments, and health services quickly for all your medical needs.
+                  </div>
+                </div>
+                <div class="global-nav-get-care-button">
+                  <div class="global-nav-get-care-button-content">
+                    <div class="global-nav-get-care-button-text">
+                      See all care options
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-get-care-middle-section">
+              <div class="global-nav-get-care-actions">
+                <div class="global-nav-get-care-action-column">
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-get-care-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-get-care-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Find a provider</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <img class="global-nav-get-care-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Find a location</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Request an appointment</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-layer" src="img/layer-13.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Get a second opinion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-get-care-right-column">
+              <div class="global-nav-get-care-featured">
+                <div class="global-nav-get-care-featured-content">
+                  <div class="global-nav-get-care-featured-title">Types of care</div>
+                  <div class="global-nav-get-care-featured-item">Urgent Care</div>
+                  <div class="global-nav-get-care-featured-item">Emergency Care</div>
+                  <div class="global-nav-get-care-featured-item">Virtual Care</div>
+                  <div class="global-nav-get-care-featured-item">Home Care</div>
+                  <div class="global-nav-get-care-featured-item">International Patient Care</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services & Treatments Dropdown Menu -->
+    <div class="global-nav-services-dropdown" id="services-dropdown" style="display: none;">
+      <div class="global-nav-services-container">
+        <div class="global-nav-services-content">
+          <div class="global-nav-services-main">
+            <div class="global-nav-services-left-column">
+              <div class="global-nav-services-header">
+                <div class="global-nav-services-title-section">
+                  <div class="global-nav-services-title">
+                    <div class="global-nav-services-title-text">Services and Treatments</div>
+                  </div>
+                  <div class="global-nav-services-description">
+                    Mass General Brigham offers a full range of patient services
+                    for common to complex health conditions. Learn about our
+                    services and treatments.
+                  </div>
+                </div>
+                <div class="global-nav-services-button">
+                  <div class="global-nav-services-button-content">
+                    <div class="global-nav-services-button-text">
+                      See all services and treatments
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-services-middle-section">
+              <div class="global-nav-services-actions">
+                <div class="global-nav-services-action-column">
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-services-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-services-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a service</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <img class="global-nav-services-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a treatment</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a condition</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-layer" src="img/layer-13.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Get a second opinion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-services-right-column">
+              <div class="global-nav-services-featured">
+                <div class="global-nav-services-featured-content">
+                  <div class="global-nav-services-featured-title">Featured Services</div>
+                  <div class="global-nav-services-featured-item">Cancer Institute</div>
+                  <div class="global-nav-services-featured-item"><a href="/Users/mjd/Documents/UWSP/institute/institute.html">Heart and Vascular Institute</a></div>
+                  <div class="global-nav-services-featured-item">Neurosciences Institute</div>
+                  <div class="global-nav-services-featured-item">Orthopedics and Sports Medicine</div>
+                  <div class="global-nav-services-featured-item">Home Hospital</div>
+                  <div class="global-nav-services-featured-link">See all services</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Patients & Visitors Dropdown Menu -->
+    <div class="global-nav-patients-dropdown" id="patients-dropdown" style="display: none;">
+      <div class="global-nav-patients-container">
+        <div class="global-nav-patients-content">
+          <div class="global-nav-patients-main">
+            <div class="global-nav-patients-left-column">
+              <div class="global-nav-patients-header">
+                <div class="global-nav-patients-title-section">
+                  <div class="global-nav-patients-title">
+                    <div class="global-nav-patients-title-text">Patients and Visitors</div>
+                  </div>
+                  <div class="global-nav-patients-description">
+                    We're here to help you navigate your patient and visitor experience from start to finish. View our resources and policies to guide your journey.
+                  </div>
+                </div>
+                <div class="global-nav-patients-button">
+                  <div class="global-nav-patients-button-content">
+                    <div class="global-nav-patients-button-text">
+                      See all patients and visitors
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-patients-middle-section">
+              <div class="global-nav-patients-actions">
+                <div class="global-nav-patients-action-column">
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <div class="global-nav-patients-icon-wrapper">
+                          <img class="global-nav-patients-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-patients-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-patients-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">Plan Your Visit</div>
+                  </div>
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <img class="global-nav-patients-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">International Patients</div>
+                  </div>
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <div class="global-nav-patients-icon-wrapper">
+                          <img class="global-nav-patients-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">Health and Wellness</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-patients-right-column">
+              <div class="global-nav-patients-featured">
+                <div class="global-nav-patients-featured-content">
+                  <div class="global-nav-patients-featured-title">Quick Links</div>
+                  <div class="global-nav-patients-featured-item">Billing and Insurance</div>
+                  <div class="global-nav-patients-featured-item">Caregiver Resources</div>
+                  <div class="global-nav-patients-featured-item">Home Care</div>
+                  <div class="global-nav-patients-featured-item">Patient Resources</div>
+                  <div class="global-nav-patients-featured-item">Medical Records</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
