@@ -1,0 +1,4766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>small-service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+
+<style>
+body {
+  margin: 0;
+}
+
+/* CSS for the breadcrumb component */
+.breadcrumb-small-service,
+.breadcrumb-small-service * {
+  box-sizing: border-box;
+}
+.breadcrumb-small-service {
+  background: #004268;
+  padding-top: var(--spacing-base-space-100, 8px);
+  padding-bottom: var(--spacing-base-space-100, 8px);
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.left-container {
+  padding: var(--spacing-base-space-150, 12px) 0px
+    var(--spacing-base-space-150, 12px) 39px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 606px;
+  position: relative;
+  backdrop-filter: blur(15px);
+}
+.page-nests {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-050, 4px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text-links-default-medium-dark {
+  padding: 2px var(--spacing-base-space-050, 4px) 2px
+    var(--spacing-base-space-050, 4px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-0, 0px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 24px;
+  position: relative;
+}
+.medium-text-link {
+  color: var(--foreground-text-body-copy-link, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --body-medium-400-link-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--body-medium-400-link-font-size, 16px);
+  line-height: var(--body-medium-400-link-line-height, 150%);
+  font-weight: var(--body-medium-400-link-font-weight, 400);
+  text-decoration: underline;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.interface-icon2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.radiation-oncology {
+  color: var(--foreground-text-body-copy, #ffffff);
+  text-align: left;
+  font-family: var(--body-medium-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-medium-400-font-size, 16px);
+  line-height: var(--body-medium-400-line-height, 150%);
+  font-weight: var(--body-medium-400-font-weight, 400);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* CSS for the breadcrumb component */
+
+/* CSS for the header component */
+.standard-hero,
+.standard-hero * {
+  box-sizing: border-box;
+}
+.standard-hero {
+  background: var(--canvas-default-bg-palette, #004268);
+  display: flex;
+  flex-direction: row;
+  gap: 49px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 560px;
+  position: relative;
+}
+.hero-left-container {
+  padding: 80px 88px 80px 88px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 759px;
+  position: relative;
+}
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-others-rtf-divider-line-mobile, 40px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 672px;
+  position: relative;
+}
+.hero-text-lockup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-others-preheader-header-mobile, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.tags2 {
+  background: var(--tag-link-bg, #d9f0f2);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--tag-link-stroke, #b1e4e3);
+  border-width: 0.5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.tag-name {
+  color: #003a96;
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  /*text-decoration: underline;*/
+  position: relative;
+}
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.h-1-page-title {
+  color: var(--canvas-default-text-hero-headline, #b1e4e3);
+  text-align: left;
+  font-family: var(
+    --headline-h1-slab-font-family,
+    "Roboto Slab",
+    serif
+  );
+  font-size: var(--headline-h1-slab-font-size, 64px);
+  line-height: var(--headline-h1-slab-line-height, 70px);
+  font-weight: var(--headline-h1-slab-font-weight, 400);
+  position: relative;
+  width: 672px;
+}
+.description {
+  color: var(--canvas-default-text-text, #ffffff);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 672px;
+}
+
+.intro-description {
+color: #ffffff; /* White text */
+text-align: left; /* Left-aligned text */
+font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+font-size: var(--body-large-400-font-size, 18px);
+line-height: var(--body-large-400-line-height, 150%);
+font-weight: var(--body-large-400-font-weight, 400);
+position: relative;
+width: 100%; /* Full width of parent */
+box-sizing: border-box; /* Include padding and borders in width */
+overflow-wrap: break-word; /* Break long words */
+}
+
+.hero-row-of-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-standalone-ctas-buttons-desktop, 12px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.hero-primary-button {
+  background: var(--buttons-primary-default-bg, #8bffcd);
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-default-stroke, #213243);
+  border-width: 1px;
+  padding: var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.hero-primary-button:hover {
+  background: #00E682; /* Change background color on hover */
+}
+
+.hero-primary-button-label {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.primary-button {
+  color: var(--buttons-primary-default-fg, #213243);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+.hero-secondary-button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-default-stroke, #d9f0f2);
+  border-width: 1px;
+  padding: var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.hero-secondary-button:hover {
+  background: #003A96; /* Change background color on hover */
+}
+
+
+.hero-secondary-button-label {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.request-an-appointment {
+  color: var(--buttons-secondary-default-fg, #ffffff);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+.find-a-provider {
+  color: var(--buttons-secondary-default-fg, #ffffff);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+.standard-hero-lib-18 {
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CSS for the header component */
+
+/* CSS for the intro component */
+.intro-container,
+.intro-container * {
+  box-sizing: border-box;
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-others-rtf-desktop-and-mobile, 24px);
+  align-items: center;
+  justify-content: center;
+  height: 279px;
+  position: relative;
+}
+.heading {
+  color: var(--foreground-text-headline, #213243);
+  text-align: center;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  max-width: 824px;
+  width: 100%;
+}
+.intro-body-copy {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  max-width: 824px;
+  width: 100%;
+}
+/* CSS for the intro component */
+/* CSS for the conditions and treatments component */
+
+.conditions-and-treatments-intro,
+.conditions-and-treatments-intro * {
+  box-sizing: border-box;
+}
+.conditions-and-treatments-intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-others-rtf-desktop-and-mobile, 24px);
+  align-items: center;
+  justify-content: center;
+  height: 279px;
+  position: relative;
+}
+.conditions-and-treatments-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1336px;
+  height: 131px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.conditions-and-treatments-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.conditions-and-treatments-inner-inner-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.conditions-and-treatments-centered-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 878px;
+  position: relative;
+}
+.related-conditions-and-treatments {
+  color: var(--primary-deep-blue, #213243);
+  text-align: center;
+  font-family: var(
+    --headline-h2-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 878px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  font-family: var( --headline-h1-slab-font-family, "Roboto Slab", serif );
+}
+.conditions-treatments-body {
+  color: var(--primary-deep-blue, #213243);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 800px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+/* CSS for the conditions and treatments component */
+
+/* CSS for the conditions lazy load component */
+
+.conditions-lazy-load-container,
+.conditions-lazy-load-container * {
+  box-sizing: border-box;
+}
+.conditions-lazy-load-container {
+  background: #ffffff;
+  padding: 0px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.conditions-centered {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-500, 40px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.container-title {
+  border-style: solid;
+  border-color: var(--primary-deep-blue, #213243);
+  border-width: 0px 0px 0.5px 0px;
+  padding: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.conditions {
+  color: var(--foreground-fg-primary, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h3-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h3-sans-font-size, 36px);
+  line-height: var(--headline-h3-sans-line-height, 42px);
+  font-weight: var(--headline-h3-sans-font-weight, 400);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.conditions-box-outer {
+  padding: 0px var(--spacing-base-space-500, 40px) 0px
+    var(--spacing-base-space-500, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.conditions-box-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.conditions-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 354px;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-199 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.atrial-fibrillation-a-fib {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  /*width: 244px; */
+}
+.aortic-stenosis {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 354px;
+}
+.conditions-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 354px;
+  position: relative;
+}
+.angina {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 354px;
+}
+.aortic-aneurysm {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 329px;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  aspect-ratio: 1;
+}
+.conditions-column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 354px;
+  position: relative;
+}
+.arrhythmia {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.atrial-septal-defect-asd {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 329px;
+}
+.conditions-show-more {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-250, 20px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1184px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.frame-1686563259 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.show-more-conditions-10 {
+  color: var(--color-primary-mgb-blue, #003a96);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.show-more-conditions-10.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.interface-icon2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.treatments {
+  color: var(--foreground-fg-primary, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h3-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h3-sans-font-size, 36px);
+  line-height: var(--headline-h3-sans-line-height, 42px);
+  font-weight: var(--headline-h3-sans-font-weight, 400);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.featured-container {
+  background: #ecf7f9;
+  border-radius: 12px;
+  padding: var(--spacing-base-space-500, 40px)
+    var(--spacing-base-space-500, 40px) 40px var(--spacing-base-space-500, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.featured-title-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.featured-treatments {
+  color: var(--foreground-fg-primary, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+/* CSS for the conditions lazy load component */
+
+/* CSS for the section separator component */
+.section-separator,
+.section-separator * {
+  box-sizing: border-box;
+}
+.section-separator {
+  background: #ffffff;
+  padding: 0px 124px 128px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.line-centered {
+  border-style: solid;
+  border-color: var(--primary-deep-blue, #213243);
+  border-width: 0px 0px 0.5px 0px;
+  padding: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  height: 25px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+/* CSS for the section separator component */
+
+
+/* CSS for the team ribbon */
+
+.meet-team-container,
+.meet-team-container * {
+  box-sizing: border-box;
+}
+.meet-team-container {
+  background: #ffffff;
+  padding: 48px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 675px;
+  position: relative;
+  overflow: hidden;
+}
+.meet-teem-container-centered {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.team-controller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1270px;
+  position: relative;
+}
+.meet-the-team-lockup {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.team-intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 824px;
+  position: relative;
+}
+.h-3 {
+  color: var(--foreground-text-headline, #213243);
+  text-align: left;
+  font-family: var(--headline-h2-slab-family, "RobotoSlab-Regular", sans-serif);
+  font-size: var(--headline-h2-slab-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.team-intro-text {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-300-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-300-size, 18px);
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  width: 748px;
+}
+.team-button {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 322px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.button {
+  background: #8bffcd;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: var(--spacing-space-150, 12px) var(--spacing-space-300, 24px)
+    var(--spacing-space-150, 12px) var(--spacing-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 430px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background: #00E682; /* Change background color on hover */
+}
+.primary-button {
+  color: var(--buttons-primary-button-default-text, #003a96);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.controller {
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-250, 20px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.numbering {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: left;
+  font-family: var(--body-small-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-small-400-font-size, 14px);
+  line-height: var(--body-small-400-line-height, 150%);
+  font-weight: var(--body-small-400-font-weight, 400);
+  position: relative;
+}
+.team-arrows-container {
+  padding: 2px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.arrow-button {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-disabled-stroke, #757575);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.arrow-button2 {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.team-ribbon-container {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* Hide scrollbar for Webkit browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.team-ribbon-container::-webkit-scrollbar {
+  display: none;
+}
+.team-container-ribbon {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  min-width: max-content;
+  padding-right: 40vw; /* allow cards to peek out to edge of viewport */
+}
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 260px;
+  position: relative;
+}
+.image-container {
+/* background: #d9d9d9;  Removed to allow inline background images */
+  border-radius: 9px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 215px;
+  position: relative;
+}
+.lecia-sequist-md-mph {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.team-tag-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 157px;
+  position: relative;
+}
+
+.intro-tags {
+  border-radius: 5px;
+  padding: 5px 12px 5px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.tags {
+  background: var(--tag-disabled-bg, #e7e7e0);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--tag-disabled-stroke, #757575);
+  border-width: 0.5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.radiation-oncologist {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.diagnostic-radiology {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+
+/* CSS for the team ribbon */
+
+
+/*CSS for the locations component */
+
+.related-locations,
+.related-locations * {
+  box-sizing: border-box;
+}
+.related-locations {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-0, 0px);
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 88px;
+}
+.top-line {
+  padding: 0px 88px 0px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.related-locations-outer-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.locations-intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1265px;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 801px;
+  position: relative;
+}
+.h-3 {
+  color: var(--canvas-default-text-headline, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h2-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  font-family: var( --headline-h1-slab-font-family, "Roboto Slab", serif );
+}
+.locations-introcopy {
+  color: var(--canvas-default-text-text, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.button {
+  background: var(--buttons-primary-default-bg, #8bffcd);
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-default-stroke, #213243);
+  border-width: 1px;
+  padding: var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-1686563306 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.primary-button {
+  color: var(--buttons-primary-default-fg, #213243);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+.cards-container {
+  background: #ffffff;
+  padding: 0px 88px 0px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 88px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  height: 233px;
+  position: relative;
+}
+.related-locations-slider-card {
+  background: var(--canvas-default-bg-palette, #ecf7f9);
+  border-radius: var(--radius-radius-120, 12px);
+  padding: var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 622px;
+  position: relative;
+}
+.related-locations-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.related-locations-card-upper-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 318px;
+  position: relative;
+  
+}
+.tags {
+  background: var(--tag-disabled-bg, #e7e7e0);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--tag-disabled-stroke, #757575);
+  border-width: 0.5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+}
+.tag-name {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.related-locations-line-1 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  row-gap: 6px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.brigham-and-womens {
+  color: var(--canvas-default-text-headline-link, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.related-locations-line-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.hospital {
+  color: var(--canvas-default-text-headline-link, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.location-caret {
+  padding: 0px 0px 6px 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.related-locations-card-lower-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.locations {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.interface-icon2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.address-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+._75-frances-street-boston-ma-02115 {
+  color: var(--canvas-default-text-text, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.interface-icon3 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.interface-icon4 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.bottom-line {
+  padding: 0px 88px 0px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+
+/* CSS for the locations component */
+
+/* CSS for related services header */
+.related-services-container,
+.related-services-container * {
+  box-sizing: border-box;
+}
+.related-services-container {
+  background: #ffffff;
+  padding: 0px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 176px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 88px;
+}
+.related-services-centered {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-500, 40px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.title-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.dolor-elementum-a-aliquet-nec-massa-est-ridiculus-amet-nulla-porta-mi-in {
+  color: var(--canvas-default-text-headline, #213243);
+  text-align: center;
+  font-family: var(
+    --headline-h2-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 878px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  font-family: var( --headline-h1-slab-font-family, "Roboto Slab", serif );
+}
+.description {
+  color: var(--canvas-default-text-text, #213243);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 878px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+
+/* CSS for the related services header */
+
+
+
+/*CSS for featured related services component */
+
+.featured-services-container,
+.featured-services-container * {
+  box-sizing: border-box;
+}
+.featured-services-container {
+  background: #ffffff;
+  padding: 0px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 299px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+.featured-services-centered {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.related-services-card {
+  background: var(--canvas-default-bg-palette, #ecf7f9);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 405px;
+  height: 299px;
+  position: relative;
+}
+.related-services-title {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  position: relative;
+}
+.related-services-title-span {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.related-services-title-span2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.related-services-title-span3 {
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+}
+.related-services-body {
+  color: var(--canvas-default-text-text, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-size, 18px);
+  line-height: 162%;
+  font-weight: var(--body-large-400-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.related-services-title-span {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.related-services-title-span2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.related-services-title-span3 {
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+}
+.related-services-title-span {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.related-services-title-span2 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.related-services-title-span3 {
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+}
+
+
+
+/* CSS for featured related services component */
+
+/* CSS for rest of related services component */
+
+.related-services-list-container,
+.related-services-list-container * {
+  box-sizing: border-box;
+}
+.related-services-list-container {
+  padding: 18px 0px 18px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.related-services-list-outer-container {
+  align-self: stretch;
+  flex-shrink: 0;
+  /*height: 243px;*/
+  position: relative;
+  overflow: hidden;
+}
+.related-services-container-inner {
+display: flex;
+flex-direction: row;
+gap: 25px;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+.related-services-column-1 {
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 405px;
+  position: relative;
+}
+.h-6-related-services-text {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(--headline-h6-sans-family, "Roboto-Regular", sans-serif);
+  font-size: var(--headline-h6-sans-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.related-services-column-3 {
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 405px;
+  position: relative;
+}
+.related-services-column-2 {
+  padding: 0px 45px 0px 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 405px;
+  position: relative;
+}
+.show-more-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+ margin-top: 30px;
+}
+.text-links {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-0, 0px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 27px;
+  position: relative;
+}
+.show-more-services-9 {
+  color: #003a96;
+  text-align: center;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  text-decoration: underline;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.show-more-services-9.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.show-more-services-9.disabled + .interface-icon {
+  display: none; 
+}
+
+.show-more-conditions-10.disabled + .interface-icon2 {
+  display: none;
+}
+
+/* --- Related Services Lazy-Load Button Styles --- */
+.related-services-show-more {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+/* CSS for the rest of related services component */
+
+.conditions-box-inner-hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  margin-top: -50px;
+}
+
+.conditions-box-inner-hidden.show {
+  display: flex;
+  opacity: 1;
+}
+
+/* CSS for video player component */
+
+.video-player-block-container,
+.video-player-block-container * {
+  box-sizing: border-box;
+}
+.video-player-block-container {
+  background: #004268;
+  padding: var(--spacing-base-space-1100, 100px) 88px
+    var(--spacing-base-space-1100, 100px) 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 1015px;
+  position: relative;
+  overflow: hidden;
+}
+.title-block-container-outer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1359px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.title-block-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1264px;
+  position: relative;
+}
+.left-side-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.optional-preheader {
+  color: var(--color-primary-white, #ffffff);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.understanding-heart-surgery {
+  color: var(--color-primary-medium-teal, #b1e4e3);
+  text-align: left;
+font-family: var( --headline-h1-slab-font-family, "Roboto Slab", serif );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  width: 624px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.right-side-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 496px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.line-287 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: var(--color-primary-white, #ffffff);
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.thor-sundt-md-director-of-the-cardiac-surgery-clinical-service-at-mass-general-brigham-heart-explains-the-symptoms-of-coronary-artery-disease-and-how-to-prepare-for-heart-surgery {
+  color: var(--color-primary-white, #ffffff);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  font-weight: lighter;
+}
+.button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-default-stroke, #d9f0f2);
+  border-width: 1px;
+  padding: var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+    var(--spacing-base-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 72px;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+.label-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.secondary-button {
+  color: var(--buttons-secondary-button-default-text-and-icon, #d9f0f2);
+  text-align: center;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+.video-block-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.background-image {
+  background: linear-gradient(
+    to left,
+    rgba(33, 50, 67, 0.2),
+    rgba(33, 50, 67, 0.2)
+  );
+  border-radius: 12px;
+  padding: 208px 565px 208px 565px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1320px;
+  height: 450px;
+  position: relative;
+}
+.video-icon-container-outer {
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  backdrop-filter: blur(4px);
+}
+.video-icon-container-inner {
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.frame-1686562915 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1320px;
+  position: relative;
+}
+.description {
+  color: var(--color-primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 726px;
+}
+.lower-section-right-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.view-transcript {
+  color: var(--color-primary-light-teal, #d9f0f2);
+  text-align: left;
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+
+/* CSS for video player component */
+
+/* CSS for the supporting content */
+
+.supporting-content-container,
+.supporting-content-container * {
+  box-sizing: border-box;
+}
+.supporting-content-container {
+  background: #ffffff;
+  padding: 48px 124px 92px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.supporting-content-container-centered {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-controller-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1270px;
+  position: relative;
+}
+.supporting-content-the-team-lockup {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 824px;
+  position: relative;
+}
+.h-3-supporting-content {
+  color: var(--foreground-text-headline, #213243);
+  text-align: left;
+  font-family: var( --headline-h1-slab-font-family, "Roboto Slab", serif );
+  font-size: var(--headline-h2-slab-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.supporting-content-intro-text {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-300-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-300-size, 18px);
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  width: 748px;
+}
+.supporting-content-button {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 322px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.another-button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--buttons-primary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: var(--spacing-space-150, 12px) var(--spacing-space-300, 24px)
+    var(--spacing-space-150, 12px) var(--spacing-space-300, 24px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 430px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  overflow: hidden;
+}
+.supporting-content-primary-button {
+  color: var(--buttons-primary-button-default-text, #003a96);
+  text-align: center;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.supporting-content-controller {
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-250, 20px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-numbering {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: left;
+  font-family: var(--body-small-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-small-400-font-size, 14px);
+  line-height: var(--body-small-400-line-height, 150%);
+  font-weight: var(--body-small-400-font-weight, 400);
+  position: relative;
+}
+.supporting-content-arrows-container {
+  padding: 2px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-arrow-button {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-disabled-stroke, #757575);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.supporting-contentinterface-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.supporting-contentarrow-button2 {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: var(--buttons-secondary-button-default-stroke, #003a96);
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.supporting-content-ribbon-container {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* Hide scrollbar for Webkit browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.supporting-content-ribbon-container::-webkit-scrollbar {
+  display: none;
+}
+.supporting-content-container-ribbon {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  min-width: max-content;
+  padding-right: 40vw; /* allow cards to peek out to edge of viewport */
+}
+.supporting-content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 408px;
+  position: relative;
+}
+.supporting-contentimage-container {
+/* background: #d9d9d9;  Removed to allow inline background images */
+  border-radius: 9px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 215px;
+  position: relative;
+}
+.lecia-sequist-md-mph {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.supporting-content-tag-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 157px;
+  position: relative;
+}
+.tags {
+  background: var(--tag-disabled-bg, #e7e7e0);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--tag-disabled-stroke, #757575);
+  border-width: 0.5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.radiation-oncologist {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.diagnostic-radiology {
+  color: var(--tag-disabled-text, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+
+.supporting-content-card,
+.supporting-content-card * {
+  box-sizing: border-box;
+}
+.supporting-content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.supporting-content-image {
+  background: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 215px;
+  position: relative;
+  overflow: hidden;
+}
+.screenshot-2024-10-27-at-10-29-20-pm {
+  width: 408px;
+  height: 215px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.supporting-content-description {
+  background: #ffffff;
+  border-radius: 0px 0px 12px 12px;
+  border-style: solid;
+  border-color: #003a96;
+  border-width: 0px 0.5px 0.5px 0.5px;
+  padding: 24px 20px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-card-tag-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.supporting-content-card-tag {
+  background: #e7e7e0;
+  border-radius: 5px;
+  padding: 5px 12px 5px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.tag-name {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: center;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.january-24-2024 {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+  align-self: stretch;
+}
+.cutting-edge-discoveries {
+  color: var(--foreground-text-headline-link, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-slab-font-size, 22px);
+  line-height: var(--headline-h6-slab-line-height, 29px);
+  font-weight: var(--headline-h6-slab-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.read-article {
+  color: #303133;
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+
+/* CSS for the supporting content */
+
+/* CSS for the our approach component */
+
+.our-approach-container,
+.our-approach-container * {
+  box-sizing: border-box;
+}
+.our-approach-container {
+  background: #004268;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  height: 875px;
+  position: relative;
+}
+.expandabale-list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 137px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1336px;
+  height: 672px;
+  position: relative;
+}
+.image-left {
+  border-radius: 10px;
+  flex-shrink: 0;
+  width: 496px;
+  height: 672px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  object-fit: cover;
+}
+.container-accordion-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  height: 672px;
+  position: relative;
+}
+.accordion-open-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.accordion-cell {
+  border-style: solid;
+  border-color: var(--primary-white, #ffffff);
+  border-width: 0.5px 0px 0px 0px;
+  padding: var(--spacing-base-space-300, 24px) 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+.illustration-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  width: calc(100% - 64px); /* Fixed width to prevent arrow movement */
+}
+.illustration-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.brand-icon {
+  align-self: stretch;
+  flex: 1;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.h-3 {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--headline-h5-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--headline-h5-font-size, 24px);
+  line-height: var(--headline-h5-line-height, 29px);
+  font-weight: var(--headline-h5-font-weight, 400);
+  position: relative;
+  width: 441px;
+}
+.up-down-arrow {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 24px;
+  overflow: visible;
+  cursor: pointer;
+}
+.approach-section-container-open {
+  padding: 0px 0px var(--spacing-base-space-300, 24px) 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.copy {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--body-medium-500-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-medium-500-size, 16px);
+  line-height: 150%;
+  font-weight: var(--body-medium-500-weight, 500);
+  position: relative;
+  width: 583px;
+}
+.accordion-cell-closed {
+  border-style: solid;
+  border-color: var(--primary-white, #ffffff);
+  border-width: 0.5px 0px 0px 0px;
+  padding: var(--spacing-base-space-300, 24px) 0px
+    var(--spacing-base-space-300, 24px) 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+.title-and-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  width: calc(100% - 64px); /* Fixed width to match open state */
+}
+.h-32 {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: var(--headline-h5-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--headline-h5-font-size, 24px);
+  line-height: var(--headline-h5-line-height, 29px);
+  font-weight: var(--headline-h5-font-weight, 400);
+  position: relative;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 24px;
+  overflow: visible;
+  cursor: pointer;
+}
+.interface-icon5 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 24px;
+  overflow: visible;
+  cursor: pointer;
+}
+.accordion-cell-closed-bottom {
+  border-style: solid;
+  border-color: var(--primary-white, #ffffff);
+  border-width: 0.5px 0px 0.5px 0px;
+  padding: var(--spacing-base-space-300, 24px) 0px
+    var(--spacing-base-space-300, 24px) 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+.interface-icon3 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 24px;
+  overflow: visible;
+  cursor: pointer;
+}
+
+
+
+/* CSS for the our approach component */
+
+  /* CSS for the footer component */
+    .footer-1-2-3-container,
+.footer-1-2-3-container * {
+  box-sizing: border-box;
+}
+.footer-1-2-3-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.footer-global-cta-bar {
+  background: var(--global-cta-bar-bg, #213243);
+  padding: var(--spacing-base-space-700, 56px) 88px
+    var(--spacing-base-space-700, 56px) 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 170px;
+  position: relative;
+}
+.footer-frame-1686563793 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-doctor {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-doctor-icon {
+  background-image: url("icon-1.png");
+  flex-shrink: 0;
+  width: 44px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-doctor-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-find-a-location {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-find-a-location-icon {
+  background-image: url("icon-2.png");
+  flex-shrink: 0;
+  width: 44px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-location-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-request-an-appointment {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-request-appointment-icon {
+  background-image: url("icon-3.png");
+  flex-shrink: 0;
+  width: 44px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-request-appointment-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-log-into-patient-gateway {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-gateway-icon {
+  background-image: url("icon-4.png");
+  flex-shrink: 0;
+  width: 44px;
+  height: 54px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-gateway-label {
+  color: var(--global-cta-bar-text, #d9f0f2);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  width: 165px;
+}
+.footer-footer-links-container {
+  background: #e7e7e0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 794px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-middle-block {
+  background: var(--footer-top-bg, #e7e7e0);
+  padding: 80px 88px 80px 88px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1512px;
+  height: 794px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.footer-middle-block-outer {
+  /*padding: 0px 88px 0px 88px; */
+  display: flex;
+  flex-direction: row;
+  gap: 215px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1506px;
+  height: 714px;
+  position: relative;
+}
+.footer-middle-block-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-group {
+  flex-shrink: 0;
+  width: 368px;
+  height: 51.3px;
+  position: relative;
+  overflow: visible;
+}
+.footer-middle-block-column-1-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-300, 24px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-patient-care {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-research-and-innovation {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-education-and-training {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-mass-general-brigham-health-plan {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-lorem-ipsum {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h4-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h4-sans-font-size, 28px);
+  line-height: var(--headline-h4-sans-line-height, 34px);
+  font-weight: var(--headline-h4-sans-font-weight, 400);
+  position: relative;
+}
+.footer-middle-block-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-700, 56px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 682px;
+  position: relative;
+}
+.footer-middle-block-row-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-take-the-next-step {
+  color: var(--footer-top-preheader, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+}
+.footer-section-links {
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 676px;
+  position: relative;
+}
+.footer-section-links-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 227.5px;
+  position: relative;
+}
+.footer-pay-my-bill {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-participate-in-research {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-get-in-touch {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  margin-top: 18px;
+}
+.footer-ipsum-lorem {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.footer-section-links-column-12 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.footer-request-an-appointment2 {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.footer-for-medical-professionals {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  margin-top: 18px;
+}
+.footer-ipsum-lorem2 {
+  color: var(--footer-top-text, #003a96);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.footer-middle-block-row-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+.footer-section-links-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-section-links-2-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 227.5px;
+  position: relative;
+}
+.section-links-2-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.footer-middle-block-row-3 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-200, 16px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 624px;
+  position: relative;
+}
+.footer-labels {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-label {
+  color: var(--canvas-default-text-preheader, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+}
+.footer-social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-social-icons {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: var(--footer-top-icons, #213243);
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.footer-layer-1 {
+  flex-shrink: 0;
+  width: 11.83px;
+  height: 21.31px;
+  position: relative;
+  overflow: visible;
+}
+.footer-layer-12 {
+  flex-shrink: 0;
+  width: 17.72px;
+  height: 18.24px;
+  position: relative;
+  overflow: visible;
+}
+.footer-layer-13 {
+  flex-shrink: 0;
+  width: 22.06px;
+  height: 22.06px;
+  position: relative;
+  overflow: hidden;
+}
+.footer-group2 {
+  width: 94.97%;
+  height: 94.97%;
+  position: absolute;
+  right: 2.53%;
+  left: 2.5%;
+  bottom: 2.53%;
+  top: 2.5%;
+  overflow: visible;
+}
+.footer-layer-14 {
+  flex-shrink: 0;
+  width: 24.92px;
+  height: 18.74px;
+  position: relative;
+  overflow: visible;
+}
+.footer-layer-15 {
+  flex-shrink: 0;
+  width: 21.3px;
+  height: 21.21px;
+  position: relative;
+  overflow: visible;
+}
+.footer-bottom-container {
+  background: var(--footer-bottom-bg, #01828e);
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1512px;
+  height: 606px;
+  position: relative;
+}
+.footer-top-section {
+  padding: 64px 88px var(--spacing-base-space-1000, 80px) 88px;
+  display: flex;
+  flex-direction: row;
+  gap: 137px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-third-outer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1266px;
+  position: relative;
+}
+.footer-third-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-we-recognize-that-increasing-value-and-continuously-improving-quality-are-essential-to-maintaining-excellence {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var( --headline-h1-slab-font-family, "Roboto Slab", serif );
+  font-size: var(--headline-h1-slab-font-size, 64px);
+  line-height: var(--headline-h1-slab-line-height, 70px);
+  font-weight: var(--headline-h1-slab-font-weight, 400);
+  position: relative;
+  width: 1225px;
+}
+.footer-third-logo-container {
+  padding: 8px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.footer-logo-avatar {
+  flex-shrink: 0;
+  width: 76px;
+  height: 108.98px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 76/108.98;
+}
+.footer-group3 {
+  width: 100.43%;
+  height: 100.53%;
+  position: absolute;
+  right: -0.43%;
+  left: 0%;
+  bottom: -0.53%;
+  top: 0%;
+  overflow: visible;
+}
+.footer-bottom-section {
+  border-style: solid;
+  border-color: var(--footer-bottom-border, #ffffff);
+  border-width: 0.5px 0px 0px 0px;
+  padding: 32px 88px 32px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-bottom-section-inner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-2025-mass-general-brigham-incorporated-all-rights-reserved {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.footer-bottom-section-inner-container-right {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.footer-compliance {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-privacy-policy {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-non-discrimination {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+.footer-sitemap {
+  color: var(--footer-bottom-text, #ffffff);
+  text-align: left;
+  font-family: var(
+    --body-small-500-link-font-family,
+    "Roboto-Medium",
+    sans-serif
+  );
+  font-size: var(--body-small-500-link-font-size, 14px);
+  line-height: var(--body-small-500-link-line-height, 150%);
+  font-weight: var(--body-small-500-link-font-weight, 500);
+  text-decoration: underline;
+  position: relative;
+}
+  /* CSS for the footer component */
+
+</style>    
+</head>
+<body>
+  <div><img src="ALERT-closed.png" /></div>
+<div class="breadcrumb-small-service">
+  <div class="left-container">
+    <div class="page-nests">
+      <div class="text-links-default-medium-dark">
+        <div class="medium-text-link">Path</div>
+      </div>
+      <img class="interface-icon1" src="interface-icon0.svg" />
+      <div class="medium-text-link">Path</div>
+      <img class="interface-icon1" src="interface-icon0.svg" />
+      <div class="radiation-oncology">Urology</div>
+    </div>
+  </div>
+</div>
+<div class="standard-hero">
+  <div class="hero-left-container">
+    <div class="hero-text-container">
+      <div class="hero-text-lockup">
+        <div class="intro-tags">
+          <div class="tags2">
+            <div class="tag-name">Urology</div>
+          </div>
+          <!--<div class="tags2">
+            <div class="tag-name">Topic name</div>
+          </div> -->
+        </div>
+        <div class="text-block">
+          <div class="h-1-page-title">Urology</div>
+          <div class="intro-description">
+            At Mass General Brigham, our skilled urologists expertly treat urinary and reproductive system conditions, including urologic cancers. We perform a high volume of complex procedures, often using robotic technology, to provide the best possible outcomes.  .
+          </div>
+        </div>
+      </div>
+      <div class="hero-row-of-buttons">
+        <div class="hero-primary-button">
+          <div class="hero-primary-button-label">
+            <img src="interface-icon-phone.svg" />
+            <div class="primary-button">Contact us</div>
+          </div>
+        </div>
+        <div class="hero-secondary-button">
+          <div class="hero-secondary-button-label">
+            <div class="request-an-appointment">Find a Doctor</div>
+          </div>
+        </div>
+        <div class="hero-secondary-button">
+          <div class="hero-secondary-button-label">
+            <div class="find-a-provider">View our Locations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="standard-hero-lib-18" src="urology-hero.jpg" />
+</div>
+<div class="intro-container">
+  <div class="heading">World-renowned urology and reproductive care</div>
+  <div class="intro-body-copy">
+    Patients from across the world seek the expertise of Mass General Brigham urologists for the treatment of complex and common urologic conditions and cancers. These conditions affect your urinary tract and reproductive organs. Our doctors are setting the standard for international excellence in urologic care
+  </div>
+</div>
+<div class="our-approach-container">
+  <div class="expandabale-list-container">
+    <img class="image-left" src="image-lefttext.png" />
+    <div class="container-accordion-right">
+      <div class="accordion-open-container">
+        <div class="accordion-cell">
+          <div class="illustration-title-container">
+
+            <div class="h-3">Our approach to urology care</div>
+          </div>
+          <img class="interface-icon2" src="up-down-arrow.svg" />
+        </div>
+        <div class="approach-section-container-open">
+          <div class="copy">
+            Our internationally recognized urologists provide personalized care and the latest treatments for a range of urinary and reproductive system conditions.  
+          </div>
+        </div>
+      </div>
+      <div class="accordion-cell-closed">
+        <div class="title-and-icon">
+          <div class="h-32">Compassionate, personalized care</div>
+        </div>
+        <img class="interface-icon2" src="down-arrow.svg" />
+      </div>
+      <div class="accordion-cell-closed">
+        <div class="title-and-icon">
+          <div class="h-32">Experienced, high-volume team</div>
+        </div>
+        <img class="interface-icon2" src="down-arrow.svg" />
+      </div>
+      <div class="accordion-cell-closed-bottom">
+        <div class="title-and-icon">
+          <div class="h-32">
+            Research-driven innovation 
+          </div>
+        </div>
+        <img class="interface-icon2" src="down-arrow.svg" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="conditions-and-treatments-intro">
+  <div class="conditions-and-treatments-container">
+    <div class="conditions-and-treatments-inner-container">
+      <div class="conditions-and-treatments-inner-inner-container">
+        <div class="conditions-and-treatments-centered-container">
+          <div class="related-conditions-and-treatments">
+            Urology conditions and treatments
+          </div>
+          <div class="conditions-treatments-body">
+            We offer the latest evidence-backed treatments for all types of urinary and reproductive system conditions, including cancers.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="conditions-lazy-load-container">
+  <div class="conditions-centered">
+    <div class="container-title">
+      <div class="conditions">Conditions</div>
+    </div>
+    <div class="conditions-box-outer">
+      <div class="conditions-box-inner">
+        <div class="conditions-column-1">
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">
+                Bladder cancer › 
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Cystocele</div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-2">
+          <div class="text">
+            <div class="frame-199">
+              <div class="angina">Enlarged prostate</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-aneurysm">Erectile dysfunction ›</div>
+              <div class="interface-icon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-3">
+          <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Female incontinence › </div>
+            </div>
+          </div>
+          <div class="frame-199">
+            <div class="atrial-septal-defect-asd">
+              Interstitial cystitis ›  
+            </div>
+            <div class="interface-icon"></div>
+          </div>
+        </div>
+      </div>
+      <div class="conditions-box-inner conditions-box-inner-hidden">
+        <div class="conditions-column-1">
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">Kidney and ureteral stones ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">Male infertility ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">Penile cancer ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">Testicular cancer ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Myelomeningocele</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="conditions-column-2">
+          <div class="text">
+            <div class="frame-199">
+              <div class="angina">Kidney cancer</div>
+            </div>
+          </div>
+                    <div class="text">
+            <div class="frame-199">
+              <div class="angina">Male urethral stricture</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">Prostate cancer ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">Ureteropelvic junction obstruction ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-aneurysm">Undescended testicles ›</div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-3">
+          <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Male incontinence ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">Pelvic floor disorders ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">Prostatitis ›</div>
+            </div>
+          </div>
+                    <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Urinary tract infection ›</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-septal-defect-asd"> ›</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="conditions-show-more">
+        <div class="frame-1686563259">
+          <div class="show-more-conditions-10">Show more conditions (14)</div>
+          <img class="interface-icon2" src="interface-icon-plus.svg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="conditions-lazy-load-container">
+  <div class="conditions-centered">
+    <div class="container-title">
+      <div class="treatments">Treatments</div>
+    </div>
+   <!-- <div class="featured-container">
+      <div class="featured-title-container">
+        <div class="featured-treatments">Featured Treatments</div>
+      </div>
+      <div class="conditions-box-inner">
+        <div class="conditions-column-1">
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">
+                Brachytherapy › 
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Orchiectomy</div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-2">
+          <div class="text">
+            <div class="frame-199">
+              <div class="angina">Genitourinary reconstruction</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-aneurysm">Prostatectomy ›</div>
+              <div class="interface-icon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-3">
+          <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Laser photovaporization › </div>
+            </div>
+          </div>
+          <div class="frame-199">
+            <div class="atrial-septal-defect-asd">
+              Phalloplasty ›  
+            </div>
+            <div class="interface-icon"></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="conditions-box-outer">
+      <div class="conditions-box-inner">
+        <div class="conditions-column-1">
+          <div class="text">
+            <div class="frame-199">
+              <div class="atrial-fibrillation-a-fib">
+                Brachytherapy › 
+              </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Orchiectomy</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Robotic and minimally invasive urologic surgery</div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-2">
+          <div class="text">
+            <div class="frame-199">
+              <div class="angina">Genitourinary reconstruction</div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="aortic-aneurysm">Phalloplasty</div>
+              <div class="interface-icon"></div>
+            </div>
+          </div>
+                    <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Urethroplasty</div>
+            </div>
+          </div>
+        </div>
+        <div class="conditions-column-3">
+          <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Laser photovaporization › </div>
+            </div>
+          </div>
+          <div class="text">
+            <div class="frame-199">
+              <div class="arrhythmia">Prostatectomy › </div>
+            </div>
+          </div>
+                    <div class="text">
+            <div class="frame-199">
+              <div class="aortic-stenosis">Vaginoplasty</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!--  <div class="conditions-show-more">
+        <div class="frame-1686563259">
+          <div class="show-more-conditions-10">Show more treatments (8)</div>
+          <img class="interface-icon2" src="interface-icon-plus.svg" />
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+<div class="section-separator">
+  <div class="line-centered"></div>
+</div>
+<div class="meet-team-container">
+  <div class="meet-teem-container-centered">
+    <div class="team-controller-container">
+      <div class="meet-the-team-lockup">
+        <div class="team-intro-container">
+          <div class="h-3-supporting-content">Learn about our<br> skilled urologists</div>
+          <div class="team-intro-text">
+            Our urologists are experts in urinary and reproductive system conditions,<br> urologic cancers, gender-affirming surgeries, robotic surgeries, and more. 
+          </div>
+        </div>
+        <div class="team-button">
+          <div class="button">
+            <div class="primary-button">
+              Meet our urologists
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controller">
+        <div class="numbering">1/8</div>
+        <div class="team-arrows-container">
+          <div class="arrow-button">
+            <img class="interface-icon2" src="Left-arrow.svg" />
+          </div>
+          <div class="arrow-button2">
+            <img class="interface-icon2" src="Right-arrow.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-ribbon-container">
+      <div class="team-container-ribbon">
+        <div class="team-member-card">
+          <div class="image-container" style="background-image: url('headshot-1.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="lecia-sequist-md-mph">Michael Blute, MD ›  </div>
+          <div class="team-tag-container">
+            <div class="tags">
+              <div class="radiation-oncologist">Urologist</div>
+            </div>
+            <div class="tags">
+              <div class="diagnostic-radiology">Urologic Oncologist</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <div class="image-container" style="background-image: url('headshot-2.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="lecia-sequist-md-mph">Douglas Dahl, MD ›  </div>
+          <div class="team-tag-container">
+            <div class="tags">
+              <div class="radiation-oncologist">Urologic Oncologist</div>
+            </div>
+                       <div class="tags">
+              <div class="diagnostic-radiology">Urologic Surgeon</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <div class="image-container" style="background-image: url('headshot-3.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="lecia-sequist-md-mph">Octavia Devon, MD ›  </div>
+          <div class="team-tag-container">
+            <div class="tags">
+              <div class="radiation-oncologist">Urologist</div>
+            </div>
+            <div class="tags">
+              <div class="diagnostic-radiology">Urologic Surgeon</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <div class="image-container" style="background-image: url('headshot-4.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="lecia-sequist-md-mph">Beth Drzewiecki, MD ›  </div>
+          <div class="team-tag-container">
+            <div class="tags">
+              <div class="radiation-oncologist">Urologist</div>
+            </div>
+            <div class="tags">
+              <div class="diagnostic-radiology">Urologist</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <div class="image-container" style="background-image: url('headshot-5.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="lecia-sequist-md-mph">Jack Elder, MD ›  </div>
+          <div class="team-tag-container">
+            <div class="tags">
+              <div class="radiation-oncologist">Urologist</div>
+            </div>
+            <div class="tags">
+              <div class="diagnostic-radiology">Pediatric Urologist</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-member-card">
+          <div class="image-container" style="background-image: url('headshot-6.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="lecia-sequist-md-mph">Adam Feldman, MD ›  </div>
+          <div class="team-tag-container">
+            <div class="tags">
+              <div class="radiation-oncologist">Urologist</div>
+            </div>
+            <div class="tags">
+              <div class="diagnostic-radiology">Urologic Oncologist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="related-locations">
+  <div class="top-line"></div>
+  <div class="related-locations-outer-container">
+    <div class="locations-intro-text">
+      <div class="top">
+        <div class="text">
+          <div class="h-3-supporting-content">Urology locations</div>
+          <div class="locations-introcopy">
+            Our convenient locations make it easier to get the urology care you need
+          </div>
+        </div>
+        <div class="button">
+          <div class="frame-1686563306">
+            <div class="primary-button">See all Urology locations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cards-container">
+      <div class="cards">
+        <div class="related-locations-slider-card">
+          <div class="related-locations-card-container">
+            <div class="related-locations-card-upper-section">
+              <div class="tags">
+                <div class="tag-name">Hospital</div>
+              </div>
+              <div class="related-locations-line-1">
+                <div class="brigham-and-womens">Brigham and Women’s</div>
+                <div class="related-locations-line-2">
+                  <div class="hospital">Hospital</div>
+
+                </div>
+              </div>
+            </div>
+            <div class="related-locations-card-lower-section">
+              <div class="locations">
+                <img class="interface-icon2" src="interface-icon-pin.svg" />
+                <div class="address-container">
+                  <div class="_75-frances-street-boston-ma-02115">
+                    75 Frances Street
+                    <br />
+                    Boston, MA 02115
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="related-locations-slider-card">
+          <div class="related-locations-card-container">
+            <div class="related-locations-card-upper-section">
+              <div class="tags">
+                <div class="tag-name">Hospital</div>
+              </div>
+              <div class="related-locations-line-1">
+                <div class="brigham-and-womens">Brigham and Women’s</div>
+                <div class="related-locations-line-2">
+                  <div class="hospital">Hospital</div>
+
+                </div>
+              </div>
+            </div>
+            <div class="related-locations-card-lower-section">
+              <div class="locations">
+                <img class="interface-icon4" src="interface-icon-pin.svg" />
+                <div class="address-container">
+                  <div class="_75-frances-street-boston-ma-02115">
+                    75 Frances Street
+                    <br />
+                    Boston, MA 02115
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-line"></div>
+</div>
+<div class="section-separator">
+  <div class="line-centered"></div>
+</div>
+<div class="video-player-block-container">
+  <div class="title-block-container-outer">
+    <div class="title-block-container">
+      <div class="left-side-title-container">
+        <div class="optional-preheader">Staying healthy with kidney stones</div>
+        <div class="understanding-heart-surgery">
+          Diagnosis, treatment, prevention, and common myths
+        </div>
+      </div>
+      <div class="right-side-content-container">
+        <div class="line-287"></div>
+        <div
+          class="thor-sundt-md-director-of-the-cardiac-surgery-clinical-service-at-mass-general-brigham-heart-explains-the-symptoms-of-coronary-artery-disease-and-how-to-prepare-for-heart-surgery"
+        >
+          Can your diet cause kidney stones? Are they preventable? What are the differences between calcium stones and uric acid stones? Walter Mutter, MD, chief of nephrology at Newton-Wellesley Hospital, discusses the best ways to stay healthy and decrease your risk of developing kidney stones.
+        </div>
+       <!-- <div class="button">
+          <div class="label-container">
+           <div class="secondary-button">Secondary button</div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="video-block-container">
+    <div
+      class="background-image"
+      style="
+        background: url(urology-video-background.png) center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="video-icon-container-outer">
+        <img
+          class="video-icon-container-inner"
+          src="play-button.png"
+        />
+      </div>
+    </div>
+    <div class="frame-1686562915">
+      <div class="description">
+        Mass General Brigham kidney expert, Walter Mutty, MD, shares how to prevent kidney stones
+      </div>
+      <div class="lower-section-right-container">
+        <div class="view-transcript">View transcript</div>
+        <img class="interface-icon" src="interface-icon0.svg" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="related-services-container">
+  <div class="related-services-centered">
+    <div class="title-description">
+      <div
+        class="dolor-elementum-a-aliquet-nec-massa-est-ridiculus-amet-nulla-porta-mi-in"
+      >
+        Dolor elementum a aliquet nec massa. Est ridiculus amet nulla porta. Mi
+        in.
+      </div>
+      <div class="description">
+        Morbi sed pellentesque morbi habitant. Iaculis quisque nunc bibendum
+        tincidunt ut neque non placerat sodales. Fermentum in leo quisque enim
+        et consectetur. Morbi nec nunc enim pretium amet nibh elementum.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="featured-services-container">
+  <div class="featured-services-centered">
+    <div class="related-services-card">
+      <div class="related-services-title">
+        <span>
+          <span class="related-services-title-span">
+            Lorem Ipsum Dolor
+            <br />
+          </span>
+          <span class="related-services-title-span2">Sit Amet</span>
+          <span class="related-services-title-span3">› </span>
+        </span>
+      </div>
+      <div class="related-services-body">
+        Arcu mauris vitae hendrerit velit duis mattis tempor quam pellentesque.
+        Sed neque donec tortor consequat velit gravida nulla augue. Id dolor
+        vestibulum mus tristique mauris porta. Id facilisis.
+      </div>
+    </div>
+    <div class="related-services-card">
+      <div class="related-services-title">
+        <span>
+          <span class="related-services-title-span">
+            Lorem Ipsum Dolor
+            <br />
+          </span>
+          <span class="related-services-title-span2">Sit Amet</span>
+          <span class="related-services-title-span3">› </span>
+        </span>
+      </div>
+      <div class="related-services-body">
+        Arcu mauris vitae hendrerit velit duis mattis tempor quam pellentesque.
+        Sed neque donec tortor consequat velit gravida nulla augue. Id dolor
+        vestibulum mus tristique mauris porta. Id facilisis.
+      </div>
+    </div>
+    <div class="related-services-card">
+      <div class="related-services-title">
+        <span>
+          <span class="related-services-title-span">
+            Lorem Ipsum Dolor
+            <br />
+          </span>
+          <span class="related-services-title-span2">Sit Amet</span>
+          <span class="related-services-title-span3">› </span>
+        </span>
+      </div>
+      <div class="related-services-body">
+        Arcu mauris vitae hendrerit velit duis mattis tempor quam pellentesque.
+        Sed neque donec tortor consequat velit gravida nulla augue. Id dolor
+        vestibulum mus tristique mauris porta. Id facilisis.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="related-services-list-container">
+  <div class="related-services-list-outer-container">
+    <div class="related-services-container-inner">
+      <div class="related-services-column-1">
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+      </div>
+      <div class="related-services-column-3">
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+      </div>
+      <div class="related-services-column-2">
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+        <div class="h-6-related-services-text">H6 Lorem Ipsum Dolor Sit › </div>
+      </div>
+    </div>
+  </div>
+  <div class="show-more-container">
+    <div class="text-links">
+      <div class="show-more-services-9">Show more services (9)</div>
+    </div>
+    <img class="interface-icon" src="interface-icon-plus.svg" />
+  </div>
+</div>
+<div class="supporting-content-container">
+  <div class="supporting-content-container-centered">
+    <div class="supporting-content-controller-container">
+      <div class="supporting-content-the-team-lockup">
+        <div class="supporting-content-intro-container">
+          <div class="h-3-supporting-content">Related news, education,<br> and stories</div>
+          <div class="supporting-content-intro-text">
+            Explore articles featuring expert insights on urologic care, patient experiences, and tips for maintaining urinary and reproductive health. 
+          </div>
+        </div>
+        <div class="supporting-content-button">
+          <div class="another-button">
+            <div class="supporting-content-primary-button">
+              Explore all articles
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="supporting-content-controller">
+        <div class="supporting-content-numbering">1/8</div>
+        <div class="supporting-content-arrows-container">
+          <div class="supporting-content-arrow-button">
+            <img class="supporting-contentinterface-icon" src="Left-arrow.svg" />
+          </div>
+          <div class="supporting-contentarrow-button2">
+            <img class="supporting-contentinterface-icon" src="Right-arrow.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="supporting-content-ribbon-container">
+      <div class="supporting-content-container-ribbon">
+       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="uti-image.jpeg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Urology</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Newsroom</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Urinary Tract Infection (UTI): Common Questions and Myths ›</div>
+            <div class="read-article">
+            Urinary tract infections (UTIs) are one of the most common infections in women and people assigned female at birth (AFAB)...
+            </div>
+        </div>
+        </div>       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="back-pain-image.jpeg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Urology</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Newsroom</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">What Are the First Signs of Kidney Stones? ›</div>
+            <div class="read-article">
+            It takes time for kidney stones to form, but when a stone gets stuck in your urinary tract, the pain is sudden and surprising...
+            </div>
+        </div>
+        </div>       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="bladder-cancer-image.jpeg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Urology</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Newsroom</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Bladder Cancer: Risk Factors, Symptoms, Screening ›</div>
+            <div class="read-article">
+            Men are more prone to get bladder cancer than women. According to the American Cancer Society (ACS)...
+            </div>
+        </div>
+        </div>       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="article-4.jpg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Urology</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Newsroom</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Harvard Urologic Surgery Residency Program ›</div>
+            <div class="read-article">
+            The Harvard Urologic Surgery Residency Program at Massachusetts General Hospital is a 5-year program...
+            </div>
+        </div>
+        </div>       <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="article-4.jpg"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Cutting-Edge Discoveries ›</div>
+            <div class="read-article">
+            Mass General leads with cutting-edge imaging that enhances early diagnosis
+            and personalized treatment plans, improving patient outcomes dramatically
+            </div>
+        </div>
+        </div>
+        <div class="supporting-content-card">
+        <div class="supporting-content-image">
+            <img
+            class="screenshot-2024-10-27-at-10-29-20-pm"
+            src="screenshot-2024-10-27-at-10-29-20-pm0.png"
+            />
+        </div>
+        <div class="supporting-content-description">
+            <div class="supporting-content-card-tag-container">
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            <div class="supporting-content-card-tag">
+                <div class="tag-name">Tag name</div>
+            </div>
+            </div>
+            <div class="january-24-2024">January 24, 2024</div>
+            <div class="cutting-edge-discoveries">Cutting-Edge Discoveries ›</div>
+            <div class="read-article">
+            Mass General leads with cutting-edge imaging that enhances early diagnosis
+            and personalized treatment plans, improving patient outcomes dramatically
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-1-2-3-container">
+  <div class="footer-global-cta-bar">
+    <div class="footer-frame-1686563793">
+      <div class="footer-find-a-doctor">
+        <div class="footer-find-a-doctor-icon"></div>
+        <div class="footer-doctor-label">Find a doctor</div>
+      </div>
+      <div class="footer-find-a-location">
+        <div class="footer-find-a-location-icon"></div>
+        <div class="footer-location-label">Find a location</div>
+      </div>
+      <div class="footer-request-an-appointment">
+        <div class="footer-request-appointment-icon"></div>
+        <div class="footer-request-appointment-label">Request an appointment</div>
+      </div>
+      <div class="footer-log-into-patient-gateway">
+        <div class="footer-gateway-icon"></div>
+        <div class="footer-gateway-label">Log into Patient Gateway</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-footer-links-container">
+    <div class="footer-middle-block">
+      <div class="footer-middle-block-outer">
+        <div class="footer-middle-block-column-1">
+          <div class="footer-logo-container">
+            <img class="group" src="logo-footer-full.png" />
+          </div>
+          <div class="footer-middle-block-column-1-inner">
+            <div class="footer-patient-care">Patient Care</div>
+            <div class="footer-research-and-innovation">Research and Innovation</div>
+            <div class="footer-education-and-training">Education and Training</div>
+            <div class="footer-mass-general-brigham-health-plan">
+              Mass General Brigham Health Plan
+            </div>
+           <!-- <div class="footer-lorem-ipsum">Lorem Ipsum</div>
+            <div class="footer-lorem-ipsum">Lorem Ipsum</div>
+            <div class="footer-lorem-ipsum">Lorem Ipsum</div> -->
+          </div>
+        </div>
+        <div class="footer-middle-block-column-2">
+          <div class="footer-middle-block-row-1">
+            <div class="footer-take-the-next-step">Take the Next Step</div>
+            <div class="footer-section-links">
+              <div class="footer-section-links-column-1">
+                <div class="footer-pay-my-bill">Pay My Bill</div>
+                <div class="footer-participate-in-research">
+                  Participate in Research
+                </div>
+                <div class="footer-get-in-touch">Get in touch</div>
+              </div>
+              <div class="footer-section-links-column-2">
+                <div class="footer-request-an-appointment2">
+                  Request an Appointment
+                </div>
+                <div class="footer-for-medical-professionals">
+                  For Medical Professionals
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-middle-block-row-2">
+            <div class="footer-take-the-next-step">About Mass General Brigham</div>
+            <div class="footer-section-links-2">
+              <div class="footer-section-links-2-column-1">
+                <div class="footer-pay-my-bill">About Us</div>
+                <div class="footer-participate-in-research">Careers</div>
+                <div class="footer-get-in-touch">Community</div>
+              </div>
+              <div class="footer-section-links-2-column-2">
+                <div class="footer-request-an-appointment2">Giving</div>
+                <div class="footer-get-in-touch">Newsroom</div>
+                <div class="footer-for-medical-professionals">For Employees</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-middle-block-row-3">
+            <div class="footer-labels">
+              <div class="footer-label">Connect with us</div>
+            </div>
+            <div class="footer-social-media">
+              <div class="footer-social-icons">
+                <img class="footer-layer-1" src="facebook.png" />
+              </div>
+              <div class="footer-social-icons">
+                <img class="footer-layer-12" src="x.png" />
+              </div>
+              <div class="footer-social-icons">
+                <div class="footer-layer-13">
+                  <img class="footer-group2" src="instagram.png" />
+                </div>
+              </div>
+              <div class="footer-social-icons">
+                <img class="footer-layer-14" src="youtube.png" />
+              </div>
+              <div class="footer-social-icons">
+                <img class="footer-layer-15" src="linkedin.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom-container">
+    <div class="footer-top-section">
+      <div class="footer-third-outer-container">
+        <div class="footer-third-inner-container">
+          <div
+            class="footer-we-recognize-that-increasing-value-and-continuously-improving-quality-are-essential-to-maintaining-excellence"
+          >
+            We recognize that increasing value and continuously improving
+            quality are essential to maintaining excellence.
+          </div>
+        </div>
+        <div class="footer-third-logo-container">
+          <div class="footer-logo-avatar">
+            <img class="footer-group3" src="footer-logo.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-section">
+      <div class="footer-bottom-section-inner-container">
+        <div
+          class="footer-2025-mass-general-brigham-incorporated-all-rights-reserved"
+        >
+          © 2025 Mass General Brigham Incorporated. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-section-inner-container-right">
+          <div class="footer-compliance">Privacy Policy</div>
+          <div class="footer-compliance">Terms &amp; Conditions</div>
+          <div class="footer-privacy-policy">Accessibility</div>
+          <div class="footer-compliance">Price Transparency</div>
+          <div class="footer-non-discrimination">Supplier/Vendor Information</div>
+          <div class="footer-sitemap">Ethics</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Team ribbon scroll interactivity
+  var teamRibbon = document.querySelector('.team-ribbon-container');
+  var leftArrow = document.querySelector('.arrow-button');
+  var rightArrow = document.querySelector('.arrow-button2');
+  var card = teamRibbon.querySelector('.team-member-card');
+  var cardWidth = card ? card.offsetWidth + 25 : 260 + 25; // 25px gap
+
+  leftArrow.addEventListener('click', function() {
+    teamRibbon.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+  rightArrow.addEventListener('click', function() {
+    teamRibbon.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+
+  // Optional: hide left arrow if at start, right arrow if at end
+  function updateArrows() {
+    leftArrow.style.opacity = teamRibbon.scrollLeft > 0 ? '1' : '0.5';
+    rightArrow.style.opacity =
+      teamRibbon.scrollLeft + teamRibbon.offsetWidth < teamRibbon.scrollWidth ? '1' : '0.5';
+  }
+  teamRibbon.addEventListener('scroll', updateArrows);
+  updateArrows();
+
+  // Show more conditions code
+  var showMoreBtns = document.querySelectorAll('.show-more-conditions-10');
+  showMoreBtns.forEach(function(showMoreBtn) {
+    var conditionsBoxOuter = showMoreBtn.closest('.conditions-box-outer');
+    var hiddenBox = conditionsBoxOuter.querySelector('.conditions-box-inner-hidden');
+    
+    showMoreBtn.addEventListener('click', function() {
+      if (hiddenBox && !showMoreBtn.classList.contains('disabled')) {
+        hiddenBox.classList.add('show');
+        showMoreBtn.classList.add('disabled');
+        showMoreBtn.style.pointerEvents = 'none';
+        showMoreBtn.textContent = showMoreBtn.textContent.replace(/\s*\(8\)/, '');
+      }
+    });
+    showMoreBtn.addEventListener('mouseover', function() {
+      if (!showMoreBtn.classList.contains('disabled')) {
+        showMoreBtn.style.textDecoration = 'underline';
+      }
+    });
+    showMoreBtn.addEventListener('mouseout', function() {
+      showMoreBtn.style.textDecoration = 'underline';
+      showMoreBtn.style.color = '';
+    });
+  });
+
+  // Show more services functionality for .show-more-services-9
+  var showMoreServicesBtns = document.querySelectorAll('.show-more-services-9');
+  showMoreServicesBtns.forEach(function(showMoreBtn) {
+    var servicesListContainer = showMoreBtn.closest('.related-services-list-container');
+    var firstInner = servicesListContainer.querySelector('.related-services-container-inner');
+    var showMoreContainer = servicesListContainer.querySelector('.show-more-container');
+    showMoreBtn.addEventListener('click', function() {
+      if (!servicesListContainer.querySelector('.related-services-container-inner.clone')) {
+        var clone = firstInner.cloneNode(true);
+        clone.classList.add('clone');
+        clone.style.marginTop = '30px';
+        clone.style.opacity = '0';
+        // Insert clone right after the first .related-services-container-inner, before the button
+        firstInner.parentNode.insertBefore(clone, firstInner.nextSibling);
+        setTimeout(function() {
+          clone.style.transition = 'opacity 0.4s';
+          clone.style.opacity = '1';
+        }, 10);
+        showMoreBtn.classList.add('disabled');
+        showMoreBtn.style.pointerEvents = 'none';
+        showMoreBtn.textContent = showMoreBtn.textContent.replace(/\s*\(9\)/, '');
+      }
+    });
+    showMoreBtn.addEventListener('mouseover', function() {
+      if (!showMoreBtn.classList.contains('disabled')) {
+        showMoreBtn.style.textDecoration = 'underline';
+      }
+    });
+    showMoreBtn.addEventListener('mouseout', function() {
+      showMoreBtn.style.textDecoration = 'underline';
+      showMoreBtn.style.color = '';
+    });
+  });
+});
+// SUpporting content scroll interactivity
+  var teamRibbon = document.querySelector('.supporting-content-ribbon-container');
+  var leftArrow = document.querySelector('.supporting-content-arrow-button');
+  var rightArrow = document.querySelector('.supporting-contentarrow-button2');
+  var card = teamRibbon.querySelector('.supporting-content-card');
+  var cardWidth = card ? card.offsetWidth + 25 : 260 + 25; // 25px gap
+
+  leftArrow.addEventListener('click', function() {
+    teamRibbon.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  });
+  rightArrow.addEventListener('click', function() {
+    teamRibbon.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  });
+
+  // Optional: hide left arrow if at start, right arrow if at end
+  function updateArrows() {
+    leftArrow.style.opacity = teamRibbon.scrollLeft > 0 ? '1' : '0.5';
+    rightArrow.style.opacity =
+      teamRibbon.scrollLeft + teamRibbon.offsetWidth < teamRibbon.scrollWidth ? '1' : '0.5';
+  }
+  teamRibbon.addEventListener('scroll', updateArrows);
+  updateArrows();  
+  function initFAQAccordion() {
+  // Content for each FAQ item
+  var faqContent = {
+    'Our approach to urology care': 'Our internationally recognized urologists provide personalized care and the latest treatments for a range of urinary and reproductive system conditions.',
+    'Compassionate, personalized care': 'Our internationally recognized urologists provide personalized care and the latest treatments for a range of urinary and reproductive system conditions.  ',
+    'Experienced, high-volume team': 'Our board-certified, fellowship-trained urologists perform thousands of urologic and reproductive system procedures every year, with excellent outcomes. Your care team may also include physician assistants, nurses, and clinical staff, along with administrative coordinators who help with scheduling and billing.',
+    'Research-driven innovation': 'Mass General Brigham urologists lead clinical trials and research to improve the detection, treatment, and prevention of urologic cancers and other conditions. Patients benefit from access to promising new therapies still in development and not widely available.'
+  };
+
+  // Get all arrow elements
+  var arrows = document.querySelectorAll('.interface-icon2, .interface-icon2, .interface-icon2, .interface-icon2');
+  
+  arrows.forEach(function(arrow) {
+    arrow.addEventListener('click', function() {
+      // Find the parent container
+      var parentContainer = arrow.closest('.accordion-open-container, .accordion-cell-closed, .accordion-cell-closed-bottom');
+      var isCurrentlyOpen = parentContainer.classList.contains('accordion-open-container');
+      
+      // Get the title text
+      var titleElement = parentContainer.querySelector('.h-3, .h-32');
+      var titleText = titleElement.textContent.trim();
+      
+      // Close all items first
+      var allContainers = document.querySelectorAll('.accordion-open-container, .accordion-cell-closed, .accordion-cell-closed-bottom');
+      allContainers.forEach(function(container) {
+        if (container.classList.contains('accordion-open-container')) {
+          // Convert to closed state
+          container.className = 'accordion-cell-closed';
+          
+          // Remove content section
+          var contentSection = container.querySelector('.approach-section-container-open');
+          if (contentSection) {
+            contentSection.remove();
+          }
+          
+          // Change arrow to down arrow
+          var containerArrow = container.querySelector('.up-down-arrow');
+          if (containerArrow) {
+            containerArrow.src = 'down-arrow.svg';
+            containerArrow.className = 'interface-icon';
+          }
+        }
+      });
+      
+      // If the clicked item wasn't already open, open it
+      if (!isCurrentlyOpen) {
+        // Set to open state
+        parentContainer.className = 'accordion-open-container';
+        
+        // Change arrow to up-down arrow
+        arrow.src = 'up-down-arrow.svg';
+        arrow.className = 'up-down-arrow';
+        
+        // Add content section
+        var content = faqContent[titleText] || 'Content not available.';
+        var contentHTML = '<div class="approach-section-container-open"><div class="copy">' + content + '</div></div>';
+        parentContainer.insertAdjacentHTML('beforeend', contentHTML);
+      }
+    });
+  });
+}
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', initFAQAccordion);
+</script>
+</html>
