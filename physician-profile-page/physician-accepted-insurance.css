@@ -1,0 +1,173 @@
+.accepted-insurances,
+.accepted-insurances * {
+  box-sizing: border-box;
+}
+.accepted-insurances {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 100px;
+}
+.insurances-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 801px;
+  position: relative;
+}
+.h-3 {
+  color: #000000;
+  text-align: left;
+  font-family: var(
+    --headline-h2-slab-font-family,
+    "RobotoSlab-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h2-slab-font-size, 48px);
+  line-height: var(--headline-h2-slab-line-height, 53px);
+  letter-spacing: var(--headline-h2-slab-letter-spacing, -0.5px);
+  font-weight: var(--headline-h2-slab-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.insurance-this-example {
+  color: #000000;
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.frame-1686563633 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-700, 56px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.insurance-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.insurance-column-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.insurance-item {
+  border-style: solid;
+  border-color: var(--foreground-surface-deep-blue-white, #213243);
+  border-width: 0px 0px 0.5px 0px;
+  padding: var(--spacing-base-space-200, 16px) 0px
+    var(--spacing-base-space-200, 16px) 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-199 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.aetna {
+  color: var(--foreground-text-hero-headline, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-h6-sans-font-family,
+    "Roboto-Regular",
+    sans-serif
+  );
+  font-size: var(--headline-h6-sans-font-size, 22px);
+  line-height: var(--headline-h6-sans-line-height, 29px);
+  font-weight: var(--headline-h6-sans-font-weight, 400);
+  position: relative;
+}
+.insurance-column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.insurance-column-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.frame-16865636332 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.interface-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+.insurance-this-example2 {
+  color: var(--foreground-text-body-copy, #213243);
+  text-align: left;
+  font-family: var(--body-large-500-family, "-", sans-serif);
+  font-size: var(--body-large-500-size, 18px);
+  line-height: 150%;
+  font-weight: var(--body-large-500-weight, 400);
+  position: relative;
+  width: 1129px;
+  height: 27px;
+}
+.insurance-this-example-2-span {
+  font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+}
+.insurance-this-example-2-span2 {
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+}

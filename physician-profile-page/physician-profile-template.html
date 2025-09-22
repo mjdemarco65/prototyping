@@ -1,0 +1,3171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physician Profile - Steven Arnold, MD</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS Files - Keep separate as requested -->
+  <link rel="stylesheet" href="./vars.css">
+  <link rel="stylesheet" href="provider-breadcrumbs-style.css">
+  <link rel="stylesheet" href="physician-profile-hero-style.css">
+  <link rel="stylesheet" href="physician-profile-menu-style.css">
+  <link rel="stylesheet" href="physician-about-style.css">
+  <link rel="stylesheet" href="physician-location-style.css">
+  <link rel="stylesheet" href="physician-feedback-style.css">
+  <link rel="stylesheet" href="physician-accepted-insurance.css">
+  <link rel="stylesheet" href="physician-profile-sticky-nav.css">
+  <link rel="stylesheet" href="physician-related.css">
+  
+  <!-- Footer Component Styles -->
+ 
+  
+  <!-- CTA Component Styles -->
+  <style>
+
+
+    .cta,
+    .cta * {
+      box-sizing: border-box;
+    }
+    .cta {
+      border-style: solid;
+      border-color: #213243;
+      border-width: 0px 0px 0px 0.5px;
+      padding: 0px 30px 0px 30px;
+      display: flex;
+      flex-direction: row;
+      gap: 39px;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+    }
+    .name-and-face {
+      display: flex;
+      flex-direction: row;
+      gap: 7px;
+      align-items: center;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .ellipse-1 {
+      flex-shrink: 0;
+      width: 39px;
+      height: 39px;
+      position: relative;
+      overflow: visible;
+      object-fit: cover;
+    }
+     .steven-arnold-md-breadcrumbs {
+      color: var(--foreground-text-body-copy, #fff);
+      text-align: left;
+      font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+      font-size: var(--body-large-400-font-size, 18px);
+      line-height: var(--body-large-400-line-height, 150%);
+      font-weight: var(--body-large-400-font-weight, 400);
+      position: relative;
+    }
+    .steven-arnold-md {
+      color: var(--foreground-text-body-copy, #213243);
+      text-align: left;
+      font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+      font-size: var(--body-large-400-font-size, 18px);
+      line-height: var(--body-large-400-line-height, 150%);
+      font-weight: var(--body-large-400-font-weight, 400);
+      position: relative;
+    }
+    .number-button {
+      display: flex;
+      flex-direction: row;
+      gap: 44px;
+      align-items: center;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .cta .button {
+      background: var(--buttons-primary-button-default-background, #8bffcd);
+      border-radius: 50px;
+      border-style: solid;
+      border-color: var(--buttons-primary-button-default-stroke, #213243);
+      border-width: 1px;
+      padding: var(--spacing-base-space-150, 12px)
+        var(--spacing-base-space-300, 24px) var(--spacing-base-space-150, 12px)
+        var(--spacing-base-space-300, 24px);
+      display: flex;
+      flex-direction: row;
+      gap: var(--spacing-base-space-075, 6px);
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      min-width: 72px;
+      max-width: 490px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cta .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .button-label {
+      display: flex;
+      flex-direction: row;
+      gap: var(--spacing-base-space-075, 6px);
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .cta .interface-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      position: relative;
+      overflow: visible;
+      aspect-ratio: 1;
+    }
+    .cta .primary-button {
+      color: var(--buttons-primary-button-default-text-and-icon, #213243);
+      text-align: center;
+      font-family: var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+      font-size: var(--body-large-500-font-size, 18px);
+      line-height: var(--body-large-500-line-height, 150%);
+      font-weight: var(--body-large-500-font-weight, 500);
+      position: relative;
+    }
+    
+    /* Sticky navigation styles */
+    .group-1321317749 {
+      position: sticky;
+      top: -54px; /* Move the entire sticky container up */
+      z-index: 1000;
+    }
+    
+    .frame-1686563322 {
+      background: #ffffff;
+      padding: 51px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      height: 110px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    
+    .jump-links {
+      background: #ffffff;
+      border-style: solid;
+      border-color: var(--primary-deep-blue, #213243);
+      border-width: 0px 0px 0.5px 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      align-self: stretch;
+      flex-shrink: 0;
+      position: relative;
+      overflow: auto;
+      padding: 0px 0px 0px 70px;
+      height: 100px;
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .jump-links.is-sticky {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    /* CTA styling with proper alignment */
+    .cta {
+      border-style: solid;
+      border-color: #213243;
+      border-width: 0px 0px 0px 0.5px;
+      padding: 0px 30px 0px 30px;
+      display: flex;
+      flex-direction: row;
+      gap: 39px;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      top: -15px;
+    }
+    
+    /* Show CTA when sticky */
+    .sticky-cta {
+      display: none;
+    }
+    
+    .jump-links.is-sticky .sticky-cta {
+      display: block !important;
+    }
+  </style>
+  
+  <!-- Global Reset Styles -->
+  <style>
+   *,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+   }
+   
+   body {
+       margin: 0;
+       padding: 0;
+   }
+   
+   /* Centered container for content sections - exclude research section */
+   .content-container:not(.research-and-studies-container .content-container) {
+       max-width: calc(100vw - 150px);
+       margin: 0 auto;
+       padding: 0 75px;
+       width: 100%;
+   }
+   
+   /* Ensure components stack properly and stretch full width */
+   .breadcrumb-providers {
+       position: relative !important;
+       width: 100% !important;
+       margin: 0 !important;
+   }
+
+
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+
+   /* Add this inside a <style> tag in your <head> section */
+
+.review { display: none; }
+#page1:checked ~ .reviews .page1,
+#page2:checked ~ .reviews .page2,
+#page3:checked ~ .reviews .page3,
+#page20:checked ~ .reviews .page20 {
+  display: block;
+}
+
+.pagination-controls {
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* Non-selected pagination button style */
+.pagination-controls label {
+  cursor: pointer;
+  margin: 0 4px;
+  padding: 15px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  color: #003A96;
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  background: none;
+  border: none;
+}
+
+/* Selected pagination button style */
+input[type="radio"]:checked ~ .pagination-controls label[for="page1"],
+input[type="radio"]:checked#page2 ~ .pagination-controls label[for="page2"],
+input[type="radio"]:checked#page3 ~ .pagination-controls label[for="page3"],
+input[type="radio"]:checked#page20 ~ .pagination-controls label[for="page20"] {
+  background: #213243;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #213243;
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  color: #fff;
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+}
+
+input[type="radio"]:checked + .pagination-controls label[for] {
+  background: #ccc;
+}
+
+/* Optional: Add a little spacing between reviews */
+.reviews .review {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+input[type="radio"]:checked ~ .pagination-controls label[for="page1"],
+input[type="radio"]:checked#page2 ~ .pagination-controls label[for="page2"],
+input[type="radio"]:checked#page3 ~ .pagination-controls label[for="page3"],
+input[type="radio"]:checked#page20 ~ .pagination-controls label[for="page20"] {
+  background: #213243;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #213243;
+  border-width: 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacings-buttons-icon-text, 8px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  color: #fff;
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+}
+
+.reviews-pagination {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* global navigation styles */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fixed-width {
+  width: 1512px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;       /* fixed demo width */
+  max-width: 100%;     /* prevent overflow on smaller screens */
+  margin-left: auto;   /* center horizontally */
+  margin-right: auto;
+ 
+}
+
+.global-nav-component,
+.global-nav-component * {
+  box-sizing: border-box;
+}
+
+.global-nav-component {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.global-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-banner {
+  background: var(--dark-teal-color, #007d85);
+  padding: 10px 40px 10px 39px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+
+.global-nav-alert-strip {
+  background: var(--dark-teal-color, #007d85);
+  height: 9px;
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-text-section {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-alert-title {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: 'Roboto', var(--body-medium-600-font-family, "Roboto-SemiBold", sans-serif);
+  font-size: var(--body-medium-600-font-size, 16px);
+  line-height: var(--body-medium-600-line-height, 150%);
+  font-weight: var(--body-medium-600-font-weight, 600);
+  position: relative;
+}
+
+.global-nav-alert-description {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: 'Roboto', var(--body-medium-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-medium-400-font-size, 16px);
+  line-height: var(--body-medium-400-line-height, 150%);
+  font-weight: var(--body-medium-400-font-weight, 400);
+  position: relative;
+}
+
+.global-nav-alert-button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-alert-link {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.global-nav-alert-button-content {
+  border-style: solid;
+  border-color: var(--buttons-tertiary-button-default-underline, transparent);
+  border-width: 0px 0px 1px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-alert-button-text {
+  color: var(--buttons-tertiary-button-default-text-and-icon, #d9f0f2);
+  text-align: center;
+  font-family: 'Roboto', var(--body-medium-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-medium-500-font-size, 16px);
+  line-height: var(--body-medium-500-line-height, 150%);
+  font-weight: var(--body-medium-500-font-weight, 500);
+  position: relative;
+}
+
+.global-nav-alert-button-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-alert-close {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.global-nav-secondary-bar {
+  background: #e7e7e0;
+  padding: 4px 40px 4px 39px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-secondary-left {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-secondary-button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-050, 4px);
+  row-gap: 4px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-secondary-link {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-050, 4px);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.global-nav-secondary-button-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-secondary-text {
+  color: var(--buttons-tertiary-button-default-text-and-icon, #003a96);
+  text-align: center;
+  font-family: 'Roboto', var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+
+.global-nav-secondary-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-secondary-right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-secondary-group {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-language-button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-050, 4px);
+  row-gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-language-icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-language-dropdown {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+.global-nav-main-section {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-main-container {
+  background: var(--primary-white, #ffffff);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  padding: 0px 60px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.global-nav-main-content {
+  padding: 18px 0px 18px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.global-nav-main-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.global-nav-main-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+}
+
+.global-nav-logo {
+  padding: 8px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 270.16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-logo-image {
+  flex-shrink: 0;
+  width: 250.16px;
+  height: 36px;
+  position: relative;
+  overflow: visible;
+}
+
+.global-nav-main-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-nav-item {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.global-nav-nav-label {
+  color: var(--primary-mgb-blue, #003a96);
+  text-align: center;
+  font-family: 'Roboto', var(--body-large-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-large-500-font-size, 18px);
+  line-height: var(--body-large-500-line-height, 150%);
+  font-weight: var(--body-large-500-font-weight, 500);
+  position: relative;
+}
+
+.global-nav-nav-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+  transition: transform 0.3s ease;
+}
+
+.global-nav-main-right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-search-button {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  position: relative;
+}
+
+.global-nav-search-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
+
+/* Shared Dropdown Styles */
+.global-nav-get-care-dropdown,
+.global-nav-services-dropdown,
+.global-nav-patients-dropdown {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #01828e;
+  border-width: 0.5px 0px 0px 0px;
+  padding: 40px 88px 80px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 506px;
+  position: relative;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.global-nav-get-care-container,
+.global-nav-services-container,
+.global-nav-patients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-content,
+.global-nav-services-content,
+.global-nav-patients-content {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-main,
+.global-nav-services-main,
+.global-nav-patients-main {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-left-column,
+.global-nav-services-left-column,
+.global-nav-patients-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 346px;
+  position: relative;
+}
+
+.global-nav-get-care-header,
+.global-nav-services-header,
+.global-nav-patients-header {
+  border-style: solid;
+  border-color: #007d85;
+  border-width: 0px 1px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 406px;
+  height: 274px;
+  position: relative;
+}
+
+.global-nav-get-care-title-section,
+.global-nav-services-title-section,
+.global-nav-patients-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 346px;
+  position: relative;
+}
+
+.global-nav-get-care-title,
+.global-nav-services-title,
+.global-nav-patients-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-title-text,
+.global-nav-services-title-text,
+.global-nav-patients-title-text {
+  color: #213243;
+  text-align: left;
+  font-family: 'Roboto Slab', var(--heading-h2-font-family, "Roboto-SemiBold", sans-serif);
+  font-size: 48px;
+  line-height: 53px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  position: relative;
+  align-self: stretch;
+}
+
+.global-nav-get-care-description,
+.global-nav-services-description,
+.global-nav-patients-description {
+  color: #000000;
+  text-align: left;
+  font-family: 'Roboto', var(--body-medium-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-medium-400-font-size, 16px);
+  line-height: var(--body-medium-400-line-height, 150%);
+  font-weight: var(--body-medium-400-font-weight, 400);
+  position: relative;
+}
+
+.global-nav-get-care-button,
+.global-nav-services-button,
+.global-nav-patients-button {
+  padding: var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px)
+    var(--spacing-base-space-100, 8px) var(--spacing-base-space-0, 0px);
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-base-space-075, 6px);
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 490px;
+  position: relative;
+  overflow: hidden;
+}
+
+.global-nav-get-care-button-content,
+.global-nav-services-button-content,
+.global-nav-patients-button-content {
+  border-radius: 50px;
+  background: #8BFFCD;
+  border: 1px solid #213243;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.global-nav-get-care-button-content:hover,
+.global-nav-services-button-content:hover,
+.global-nav-patients-button-content:hover {
+  background: #00E682;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.global-nav-get-care-button-text,
+.global-nav-services-button-text,
+.global-nav-patients-button-text {
+  color: #213243;
+  text-align: center;
+  font-family: 'Roboto', var(--body-medium-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-medium-500-font-size, 16px);
+  line-height: var(--body-medium-500-line-height, 150%);
+  font-weight: var(--body-medium-500-font-weight, 500);
+  position: relative;
+}
+
+.global-nav-get-care-middle-section,
+.global-nav-services-middle-section,
+.global-nav-patients-middle-section {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-actions,
+.global-nav-services-actions,
+.global-nav-patients-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-action-column,
+.global-nav-services-action-column,
+.global-nav-patients-action-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-action-item,
+.global-nav-services-action-item,
+.global-nav-patients-action-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-action-icon,
+.global-nav-services-action-icon,
+.global-nav-patients-action-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-icon-container,
+.global-nav-services-icon-container,
+.global-nav-patients-icon-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-icon-wrapper,
+.global-nav-services-icon-wrapper,
+.global-nav-patients-icon-wrapper {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.global-nav-get-care-icon-group,
+.global-nav-services-icon-group,
+.global-nav-patients-icon-group {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.global-nav-get-care-icon-vector,
+.global-nav-services-icon-vector,
+.global-nav-patients-icon-vector {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+
+.global-nav-get-care-icon-vector2,
+.global-nav-services-icon-vector2,
+.global-nav-patients-icon-vector2 {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+
+.global-nav-get-care-icon-layer,
+.global-nav-services-icon-layer,
+.global-nav-patients-icon-layer {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.global-nav-get-care-action-text,
+.global-nav-services-action-text,
+.global-nav-patients-action-text {
+  color: #003A96;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+  position: relative;
+}
+
+.global-nav-get-care-right-column,
+.global-nav-services-right-column,
+.global-nav-patients-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-featured,
+.global-nav-services-featured,
+.global-nav-patients-featured {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-featured-content,
+.global-nav-services-featured-content,
+.global-nav-patients-featured-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.global-nav-get-care-featured-title,
+.global-nav-services-featured-title,
+.global-nav-patients-featured-title {
+  color: #213243;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 500;
+  position: relative;
+}
+
+.global-nav-get-care-featured-item,
+.global-nav-services-featured-item,
+.global-nav-patients-featured-item {
+  color: #003A96;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+  position: relative;
+}
+
+.global-nav-services-featured-link {
+  color: #003A96;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* global navigation styles */
+
+   </style>
+  
+  <title>Physician Profile Template - Provider Breadcrumbs</title>
+</head>
+<body>
+
+    <div class="global-nav-component">
+    <div class="global-nav-menu">
+      <div class="global-nav-alert-banner" id="global-nav-alert-banner">
+        <div class="global-nav-alert-content">
+          <div class="global-nav-alert-text-section">
+            <img class="global-nav-alert-icon" src="img/nav/interface-icon0.svg" />
+            <div class="global-nav-alert-title">Severe weather notice</div>
+            <div class="global-nav-alert-description">
+              All elective surgeries, diagnostic, therapy and in-person
+              appointments are canceled Wednesday, January 22nd.
+            </div>
+          </div>
+          <div class="global-nav-alert-button">
+            <a href="https://www.massgeneralbrigham.org/" class="global-nav-alert-link">
+              <div class="global-nav-alert-button-content">
+                <div class="global-nav-alert-button-text">View latest updates</div>
+              </div>
+              <img class="global-nav-alert-button-icon" src="img/interface-icon1.svg" />
+            </a>
+          </div>
+        </div>
+        <img class="global-nav-alert-close" src="img/interface-icon2.svg" id="global-nav-alert-close" />
+      </div>
+      <div class="global-nav-alert-strip" id="global-nav-alert-strip" style="display: none;"></div>
+      <div class="global-nav-secondary-bar">
+        <div class="global-nav-secondary-left">
+          <div class="global-nav-secondary-button">
+            <a href="https://massgeneralbrighamhealthplan.org/" class="global-nav-secondary-link">
+              <div class="global-nav-secondary-button-content">
+                <div class="global-nav-secondary-text">Health Plan</div>
+              </div>
+              <img class="global-nav-secondary-icon" src="img/interface-icon4.svg" />
+            </a>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Research</div>
+            </div>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Education and Training</div>
+            </div>
+          </div>
+          <div class="global-nav-secondary-button">
+            <div class="global-nav-secondary-button-content">
+              <div class="global-nav-secondary-text">Donate</div>
+            </div>
+          </div>
+        </div>
+        <div class="global-nav-secondary-right">
+          <div class="global-nav-secondary-group">
+            <div class="global-nav-secondary-button">
+              <a href="https://patientgateway.massgeneralbrigham.org/mychart-PRD/Authentication/Login" class="global-nav-secondary-link">
+                <div class="global-nav-secondary-button-content">
+                  <div class="global-nav-secondary-text">Patient Gateway</div>
+                </div>
+                <img class="global-nav-secondary-icon" src="img/interface-icon4.svg" />
+              </a>
+            </div>
+            <div class="global-nav-language-button">
+              <img class="global-nav-language-icon" src="img/interface-icon5.svg" />
+              <div class="global-nav-secondary-button-content">
+                <div class="global-nav-secondary-text">English</div>
+              </div>
+              <img class="global-nav-language-dropdown" src="img/interface-icon6.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="global-nav-main-section">
+      <div class="global-nav-main-container">
+        <div class="global-nav-main-content">
+          <div class="global-nav-main-row">
+            <div class="global-nav-main-left">
+              <div class="global-nav-logo">
+                <img class="global-nav-logo-image" src="img/group-13213176770.svg" />
+              </div>
+              <div class="global-nav-main-menu">
+                <div class="global-nav-nav-item" id="get-care-nav-item">
+                  <div class="global-nav-nav-label">Find Care</div>
+                  <img class="global-nav-nav-icon" id="get-care-chevron" src="img/interface-icon7.svg" />
+                </div>
+                <div class="global-nav-nav-item" id="services-nav-item">
+                  <div class="global-nav-nav-label">Services &amp; Treatments</div>
+                  <img class="global-nav-nav-icon" id="services-chevron" src="img/interface-icon8.svg" />
+                </div>
+                <div class="global-nav-nav-item" id="patients-nav-item">
+                  <div class="global-nav-nav-label">Patients &amp; Visitors</div>
+                  <img class="global-nav-nav-icon" id="patients-chevron" src="img/interface-icon9.svg" />
+                </div>
+                <div class="global-nav-nav-item">
+                  <div class="global-nav-nav-label">Find a Doctor</div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-main-right">
+              <div class="global-nav-search-button">
+                <img class="global-nav-search-icon" src="img/interface-icon11.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Get Care Dropdown Menu -->
+    <div class="global-nav-get-care-dropdown" id="get-care-dropdown" style="display: none;">
+      <div class="global-nav-get-care-container">
+        <div class="global-nav-get-care-content">
+          <div class="global-nav-get-care-main">
+            <div class="global-nav-get-care-left-column">
+              <div class="global-nav-get-care-header">
+                <div class="global-nav-get-care-title-section">
+                  <div class="global-nav-get-care-title">
+                    <div class="global-nav-get-care-title-text">Find Care</div>
+                  </div>
+                  <div class="global-nav-get-care-description">
+                    Find and access urgent care, appointments, and health services quickly for all your medical needs.
+                  </div>
+                </div>
+                <div class="global-nav-get-care-button">
+                  <div class="global-nav-get-care-button-content">
+                    <div class="global-nav-get-care-button-text">
+                      See all care options
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-get-care-middle-section">
+              <div class="global-nav-get-care-actions">
+                <div class="global-nav-get-care-action-column">
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-get-care-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-get-care-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Find a provider</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <img class="global-nav-get-care-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Find a location</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Request an appointment</div>
+                  </div>
+                  <div class="global-nav-get-care-action-item">
+                    <div class="global-nav-get-care-action-icon">
+                      <div class="global-nav-get-care-icon-container">
+                        <div class="global-nav-get-care-icon-wrapper">
+                          <img class="global-nav-get-care-icon-layer" src="img/layer-13.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-get-care-action-text">Get a second opinion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-get-care-right-column">
+              <div class="global-nav-get-care-featured">
+                <div class="global-nav-get-care-featured-content">
+                  <div class="global-nav-get-care-featured-title">Types of care</div>
+                  <div class="global-nav-get-care-featured-item">Urgent Care</div>
+                  <div class="global-nav-get-care-featured-item">Emergency Care</div>
+                  <div class="global-nav-get-care-featured-item">Virtual Care</div>
+                  <div class="global-nav-get-care-featured-item">Home Care</div>
+                  <div class="global-nav-get-care-featured-item">International Patient Care</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services & Treatments Dropdown Menu -->
+    <div class="global-nav-services-dropdown" id="services-dropdown" style="display: none;">
+      <div class="global-nav-services-container">
+        <div class="global-nav-services-content">
+          <div class="global-nav-services-main">
+            <div class="global-nav-services-left-column">
+              <div class="global-nav-services-header">
+                <div class="global-nav-services-title-section">
+                  <div class="global-nav-services-title">
+                    <div class="global-nav-services-title-text">Services and Treatments</div>
+                  </div>
+                  <div class="global-nav-services-description">
+                    Mass General Brigham offers a full range of patient services
+                    for common to complex health conditions. Learn about our
+                    services and treatments.
+                  </div>
+                </div>
+                <div class="global-nav-services-button">
+                  <div class="global-nav-services-button-content">
+                    <div class="global-nav-services-button-text">
+                      See all services and treatments
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-services-middle-section">
+              <div class="global-nav-services-actions">
+                <div class="global-nav-services-action-column">
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-services-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-services-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a service</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <img class="global-nav-services-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a treatment</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Find a condition</div>
+                  </div>
+                  <div class="global-nav-services-action-item">
+                    <div class="global-nav-services-action-icon">
+                      <div class="global-nav-services-icon-container">
+                        <div class="global-nav-services-icon-wrapper">
+                          <img class="global-nav-services-icon-layer" src="img/layer-13.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-services-action-text">Get a second opinion</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-services-right-column">
+              <div class="global-nav-services-featured">
+                <div class="global-nav-services-featured-content">
+                  <div class="global-nav-services-featured-title">Featured Services</div>
+                  <div class="global-nav-services-featured-item">Cancer Institute</div>
+                  <div class="global-nav-services-featured-item"><a href="/Users/mjd/Documents/UWSP/institute/institute.html">Heart and Vascular Institute</a></div>
+                  <div class="global-nav-services-featured-item">Neurosciences Institute</div>
+                  <div class="global-nav-services-featured-item">Orthopedics and Sports Medicine</div>
+                  <div class="global-nav-services-featured-item">Home Hospital</div>
+                  <div class="global-nav-services-featured-link">See all services</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Patients & Visitors Dropdown Menu -->
+    <div class="global-nav-patients-dropdown" id="patients-dropdown" style="display: none;">
+      <div class="global-nav-patients-container">
+        <div class="global-nav-patients-content">
+          <div class="global-nav-patients-main">
+            <div class="global-nav-patients-left-column">
+              <div class="global-nav-patients-header">
+                <div class="global-nav-patients-title-section">
+                  <div class="global-nav-patients-title">
+                    <div class="global-nav-patients-title-text">Patients and Visitors</div>
+                  </div>
+                  <div class="global-nav-patients-description">
+                    We're here to help you navigate your patient and visitor experience from start to finish. View our resources and policies to guide your journey.
+                  </div>
+                </div>
+                <div class="global-nav-patients-button">
+                  <div class="global-nav-patients-button-content">
+                    <div class="global-nav-patients-button-text">
+                      See all patients and visitors
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-patients-middle-section">
+              <div class="global-nav-patients-actions">
+                <div class="global-nav-patients-action-column">
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <div class="global-nav-patients-icon-wrapper">
+                          <img class="global-nav-patients-icon-group" src="img/group0.svg" />
+                          <img class="global-nav-patients-icon-vector" src="img/vector0.svg" />
+                          <img class="global-nav-patients-icon-vector2" src="img/vector1.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">Plan Your Visit</div>
+                  </div>
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <img class="global-nav-patients-icon-layer" src="img/layer-11.svg" />
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">International Patients</div>
+                  </div>
+                  <div class="global-nav-patients-action-item">
+                    <div class="global-nav-patients-action-icon">
+                      <div class="global-nav-patients-icon-container">
+                        <div class="global-nav-patients-icon-wrapper">
+                          <img class="global-nav-patients-icon-layer" src="img/layer-12.svg" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="global-nav-patients-action-text">Health and Wellness</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="global-nav-patients-right-column">
+              <div class="global-nav-patients-featured">
+                <div class="global-nav-patients-featured-content">
+                  <div class="global-nav-patients-featured-title">Quick Links</div>
+                  <div class="global-nav-patients-featured-item">Billing and Insurance</div>
+                  <div class="global-nav-patients-featured-item">Caregiver Resources</div>
+                  <div class="global-nav-patients-featured-item">Home Care</div>
+                  <div class="global-nav-patients-featured-item">Patient Resources</div>
+                  <div class="global-nav-patients-featured-item">Medical Records</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Component 1: Provider Breadcrumbs -->
+  <div class="breadcrumb-providers">
+    <div class="frame-1686562750">
+      <div class="frame-1686562758">
+        <div class="text-links-default-medium-dark">
+          <div class="medium-text-link">Providers</div>
+        </div>
+        <img class="interface-icon" src="interface-icon12.svg" />
+      </div>
+      <div class="frame-1686562749">
+        <div class="steven-arnold-md-breadcrumbs">Steven Arnold, MD</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Component 2: Physician Profile Hero -->
+  <div class="physician-profile-hero">
+    <div class="frame-1686563307">
+      <img class="frame-1686562912" src="frame-16865629120.png" />
+      <div class="frame-1686563303">
+        <div class="frame-1686562889">
+          <div class="frame-1686563035">
+            <div class="frame-1686563304">
+              <div class="frame-1686563306-hero">
+                <div class="h-1">Steven Arnold, MD</div>
+                <div class="frame-1686563381">
+                  <div class="frame-1686563296">
+                    <div class="atom">
+                      <div class="tag-name">Sports Medicine</div>
+                    </div>
+                    <div class="atom">
+                      <div class="tag-name">Orthopedic Sports Medicine</div>
+                    </div>
+                    <div class="atom">
+                      <div class="tag-name">Orthopedic Surgery</div>
+                    </div>
+                    <div class="atom">
+                      <div class="tag-name">
+                        Hip &amp; Knee Orthopedic Surgery
+                      </div>
+                    </div>
+                    <div class="atom">
+                      <div class="tag-name">
+                        Physical Medicine and Rehabilitation
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-1686562991">
+              <div class="frame-1686562886">
+                <div class="frame-1686562881">
+                  <div class="frame-1321317679">
+                    <div class="frame-1686562907">
+                      <div class="frame-1686563028">
+                        <div class="frame-1686562409">
+                          <img class="star-1" src="star-10.svg" />
+                          <img class="star-2" src="star-20.svg" />
+                          <img class="star-3" src="star-30.svg" />
+                          <img class="star-4" src="star-40.svg" />
+                          <img
+                            class="group-1321317430"
+                            src="group-13213174300.svg"
+                          />
+                        </div>
+                        <div class="_4-8-5-89">4.8/5 (89)</div>
+                      </div>
+                    </div>
+                    <div class="frame-1686563308">
+                      <div class="frame-1686562908">
+                        <div class="locations">
+                          <div class="frame-1686563558">
+                            <img
+                              class="interface-icon"
+                              src="interface-icon2.svg"
+                            />
+                            <div class="locations2">Locations</div>
+                          </div>
+                          <div class="frame-1686562352">
+                            <div class="frame-1686562662">
+                              <div class="boston-ma">Boston, MA</div>
+                              <img class="vector-18" src="vector-180.svg" />
+                              <div class="cambridge-ma">Cambridge, MA</div>
+                              <img class="vector-19" src="vector-190.svg" />
+                              <div class="wellesley-ma">Wellesley, MA</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-1686563032">
+          <div class="frame-1686563304">
+            <div class="labels">
+              <div class="rectangle-2135437"></div>
+              <div class="accepting-new-patients">Accepting new Patients</div>
+            </div>
+            <div class="button">
+              <div class="frame-16865633062">
+                <img class="interface-icon2" src="interface-icon1.svg" />
+                <div class="primary-button">Call 866-726-5608</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Component 3: Physician Profile Menu -->
+  <div class="group-1321317749">
+    <div class="frame-1686563322">
+      <div class="jump-links">
+        <div class="tabs">
+          <div class="component-17">
+            <div class="contact">About</div>
+          </div>
+          <div class="component-19">
+            <div class="contact2">Locations</div>
+          </div>
+          <div class="component-20">
+            <div class="contact2">Patient Feedback(89)</div>
+          </div>
+          <div class="component-22">
+            <div class="contact2">Insurance</div>
+          </div>
+          <div class="component-23">
+            <div class="contact3">Similar Locations</div>
+          </div>
+          <!-- CTA Component - Only visible when sticky -->
+          <div class="sticky-cta" style="margin-left: 135px; display: none;">
+            <div class="cta">
+              <div class="name-and-face">
+                <img class="ellipse-1" src="ellipse-10.svg" />
+                <div class="steven-arnold-md">Steven Arnold, MD</div>
+              </div>
+              <div class="number-button">
+                <div class="button">
+                  <div class="button-label">
+                    <img class="interface-icon" src="interface-icon0.svg" />
+                    <div class="primary-button">Call 866-726-5608</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Container for Centered Sections -->
+  <div class="content-container">
+    <!-- Component 4: Physician About Section -->
+    <div class="about" id="about">
+      <div class="left-column">
+        <div class="bio">
+          <div class="frame-1686563344">
+            <div class="h-3">About</div>
+            <div class="this-is-an-example-o">
+              Dr. Steven E. Arnold is Professor of Neurology at Harvard Medical
+              School. At the Massachusetts General Hospital, Dr. Arnold is the
+              Translational Neurology Head and Managing Director of
+              Interdisciplinary Brain Center and the inaugural E. Gerald Corrigan,
+              PhD Endowed Chair in Alzheimer's Therapeutic Sciences.
+              <br />
+              <br />
+              Dr. Arnold receivied his M.D. from Boston University. He completed
+              residency training in Psychiatry at the New York State Psychiatric
+              Institute / Columbia Presbyterian Medical Center in New York and then
+              another residency training in Neurology at the University of Iowa
+              Hospitals and Clinics in Iowa City.
+            </div>
+          </div>
+        </div>
+        <div class="_2-column">
+          <div class="education-and-training">
+            <div class="h-32">Education &amp; Training</div>
+            <div class="line-1993"></div>
+            <div class="frame-1686563317">
+              <div class="frame-1686562667">
+                <div class="board-certifications">Board Certifications</div>
+                <div class="frame-1686563312">
+                  <div class="neurology-american-board-of-psychiatry-and-neurology">
+                    Neurology, American Board of Psychiatry
+                    <br />
+                    and Neurology
+                  </div>
+                  <div
+                    class="psychiatry-american-board-of-psychiatry-and-neurology"
+                  >
+                    Psychiatry, American Board of Psychiatry
+                    <br />
+                    and Neurology
+                  </div>
+                </div>
+              </div>
+              <div class="frame-1686563315">
+                <div class="medical-education">Medical Education</div>
+                <div class="fellowship-massachusetts-general-hospital">
+                  Fellowship: Massachusetts General Hospital
+                </div>
+                <div class="residency-university-of-iowa-hospital-clinics">
+                  Residency: University of Iowa Hospital &amp; Clinics
+                </div>
+                <div
+                  class="residency-new-york-presbyterian-columbia-university-college-of-physicians-surgeons"
+                >
+                  Residency: New York Presbyterian - Columbia University College of
+                  Physicians &amp; Surgeons
+                </div>
+                <div class="medical-school-boston-university">
+                  Medical School: Boston University
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="titles-and-positions">
+            <div class="h-33">Titles &amp; Positions</div>
+            <div class="line-1993"></div>
+            <div
+              class="clinical-instructor-in-orthopaedic-surgery-harvard-medical-school"
+            >
+              Clinical Instructor in Orthopaedic Surgery, Harvard Medical School
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quick-card">
+        <div class="h-34">Steven Arnold, MD</div>
+        <div class="line-19932"></div>
+        <div class="languages-spoken">
+          <div class="languages-spoken2">Languages Spoken</div>
+          <div class="frame-16865633122">
+            <div class="english">English</div>
+            <div class="portuguese">Portuguese</div>
+          </div>
+        </div>
+        <div class="ages-treated">
+          <div class="age-group-treated">Age Group Treated</div>
+          <div class="frame-16865633122">
+            <div class="adult">Adult</div>
+            <div class="geriatrics">Geriatrics</div>
+          </div>
+        </div>
+        <div class="clinical-interests">
+          <div class="clinical-interests2">Clinical Interests</div>
+          <div class="frame-16865633122">
+            <div class="foot-and-ankle-injuries-hip-injuries-sports-injuries">
+              Foot and ankle injuries
+              <br />
+              Hip injuries
+              <br />
+              Sports injuries
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="locations-container" id="locations-container">
+        <div class="locations-frame">
+    <div class="locations-info">
+      <div class="h-3">Locations</div>
+      <div
+        class="lorem-ipsum-dolor-sit-amet-consectetur-tortor-id-laoreet-purus-pulvinar-est-mi-aenean-viverra-at-id-semper-morbi-a-ut-vitae-bibendum-tincidunt-mauris"
+      >
+        Lorem ipsum dolor sit amet consectetur. Tortor id laoreet purus pulvinar
+        est. Mi aenean viverra at id semper morbi a ut vitae. Bibendum tincidunt
+        mauris.
+      </div>
+    </div>
+    <div class="locations-panel-block">
+      <div class="locations-panel-block-container">
+        <div class="location-1">
+          <div class="location-1-inner">
+            <div class="location-1-title">
+              <div class="location-1-pin">
+                <div class="pin">
+                  <img class="pin-1-container" src="pin-1-container0.svg" />
+                  <div class="_1">1</div>
+                </div>
+              </div>
+              <div class="mass-general-brigham-healthcare-center-foxborough">
+                Mass General Brigham Healthcare Center (Foxborough)
+              </div>
+            </div>
+            <div class="location-1-address">
+              <div class="location-1-address2">
+                <div class="location-1-address-inner">
+                  <img class="interface-icon" src="interface-icon2.svg" />
+                  <div class="location-1-address-text-container">
+                    <div class="_20-patriot-place-suite-3300-foxborough-ma-02035">
+                      20 Patriot Place, Suite 3300 Foxborough, MA 02035
+                    </div>
+                  </div>
+                </div>
+                <div class="location-1-directions-row">
+                  <div class="location-1-directions-container">
+                    <div class="get-directions">Get Directions</div>
+                    <img class="interface-icon2" src="interface-icon3.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="location-1-ct-as">
+                <div class="button-1-container">
+                  <div class="button">
+                    <div class="frame-1686563306">
+                      <img class="interface-icon3" src="interface-icon0.svg" />
+                      <div class="primary-button">Call 617-219-1280</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button2locations">
+                  <div class="frame-1686563306">
+                    <div class="primary-button2-location">Location Details</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-1">
+          <div class="location-1-inner">
+            <div class="location-1-title">
+              <div class="location-1-pin">
+                <div class="pin">
+                  <img class="pin-1-container2" src="pin-1-container1.svg" />
+                  <div class="_2">2</div>
+                </div>
+              </div>
+              <div class="mass-general-brigham-healthcare-center-foxborough">
+                Mass General Brigham Healthcare Center (Foxborough)
+              </div>
+            </div>
+            <div class="location-1-address">
+              <div class="location-1-address2">
+                <div class="location-1-address-inner">
+                  <img class="interface-icon4" src="interface-icon2.svg" />
+                  <div class="location-1-address-text-container">
+                    <div class="_20-patriot-place-suite-3300-foxborough-ma-02035">
+                      20 Patriot Place, Suite 3300 Foxborough, MA 02035
+                    </div>
+                  </div>
+                </div>
+                <div class="location-1-directions-row">
+                  <div class="location-1-directions-container">
+                    <div class="get-directions">Get Directions</div>
+                    <img class="interface-icon5" src="interface-icon3.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="location-1-ct-as">
+                <div class="button-1-container">
+                  <div class="button">
+                    <div class="frame-1686563306">
+                      <img class="interface-icon6" src="interface-icon0.svg" />
+                      <div class="primary-button">Call 617-219-1280</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button2locations">
+                  <div class="frame-1686563306">
+                    <div class="primary-button2-location">Location Details</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-1">
+          <div class="location-1-inner">
+            <div class="location-1-title">
+              <div class="location-1-pin">
+                <div class="pin">
+                  <img class="pin-1-container3" src="pin-1-container2.svg" />
+                  <div class="_3">3</div>
+                </div>
+              </div>
+              <div class="mass-general-brigham-healthcare-center-foxborough">
+                Mass General Brigham Healthcare Center (Foxborough)
+              </div>
+            </div>
+            <div class="location-1-address">
+              <div class="location-1-address2">
+                <div class="location-1-address-inner">
+                  <img class="interface-icon7" src="interface-icon2.svg" />
+                  <div class="location-1-address-text-container">
+                    <div class="_20-patriot-place-suite-3300-foxborough-ma-02035">
+                      20 Patriot Place, Suite 3300 Foxborough, MA 02035
+                    </div>
+                  </div>
+                </div>
+                <div class="location-1-directions-row">
+                  <div class="location-1-directions-container">
+                    <div class="get-directions">Get Directions</div>
+                    <img class="interface-icon8" src="interface-icon3.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="location-1-ct-as">
+                <div class="button-1-container">
+                  <div class="button">
+                    <div class="frame-1686563306">
+                      <img class="interface-icon9" src="interface-icon0.svg" />
+                      <div class="primary-button">Call 617-219-1280</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button2locations">
+                  <div class="frame-1686563306">
+                    <div class="primary-button2-location">Location Details</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-1">
+          <div class="location-1-inner">
+            <div class="location-1-title">
+              <div class="location-1-pin">
+                <div class="pin">
+                  <img class="pin-1-container4" src="pin-1-container3.svg" />
+                  <div class="_4">4</div>
+                </div>
+              </div>
+              <div class="mass-general-brigham-healthcare-center-foxborough">
+                Mass General Brigham Healthcare Center (Foxborough)
+              </div>
+            </div>
+            <div class="location-1-address">
+              <div class="location-1-address2">
+                <div class="location-1-address-inner">
+                  <img class="interface-icon10" src="interface-icon2.svg" />
+                  <div class="location-1-address-text-container">
+                    <div class="_20-patriot-place-suite-3300-foxborough-ma-02035">
+                      20 Patriot Place, Suite 3300 Foxborough, MA 02035
+                    </div>
+                  </div>
+                </div>
+                <div class="location-1-directions-row">
+                  <div class="location-1-directions-container">
+                    <div class="get-directions">Get Directions</div>
+                    <img class="interface-icon11" src="interface-icon3.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="location-1-ct-as">
+                <div class="button-1-container">
+                  <div class="button">
+                    <div class="frame-1686563306">
+                      <img class="interface-icon12" src="interface-icon0.svg" />
+                      <div class="primary-button">Call 617-219-1280</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button2locations">
+                  <div class="frame-1686563306">
+                    <div class="primary-button2-location">Location Details</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <img
+          class="screenshot-2025-03-06-at-9-51-19-pm-1"
+          src="screenshot-2025-03-06-at-9-51-19-pm-10.png"
+        />
+        <div class="frame-1686563609">
+          <div class="group-1321317734">
+            <img class="rectangle-2135436" src="rectangle-21354360.svg" />
+            <div class="map-pin-1">1</div>
+          </div>
+        </div>
+        <div class="group-1321317735">
+          <img class="rectangle-21354362" src="rectangle-21354361.svg" />
+          <div class="map-pin-2">2</div>
+        </div>
+        <div class="group-1321317736">
+          <img class="rectangle-21354363" src="rectangle-21354362.svg" />
+          <div class="map-pin-3">3</div>
+        </div>
+        <div class="group-1321317737">
+          <img class="rectangle-21354364" src="rectangle-21354363.svg" />
+          <div class="map-pin-4">4</div>
+        </div>
+        <div class="frame-1686563564">
+          <div class="group-1321317730">
+            <div class="rectangle-2135439"></div>
+            <img class="group-1321317728" src="group-13213177280.svg" />
+          </div>
+          <img class="group-1321317731" src="group-13213177310.svg" />
+          <div class="group-1321317732">
+            <div class="rectangle-2135441"></div>
+            <img class="group-1321317729" src="group-13213177290.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-2135438"></div>
+    </div>
+
+
+  </div>
+     </div>
+    <div class="feedback-container" id="feedback-container">
+        <div class="feedback-section">
+    <div class="feedback-heading">
+      <div class="h-3">Patient Feedback</div>
+      <div class="button-feedback">
+        <div class="frame-1686562823-feedback">
+          <div class="about-our-review-process">About our review process</div>
+        </div>
+        <img class="interface-icon" src="interface-icon12.svg" />
+      </div>
+    </div>
+    <div class="feedback-block">
+      <div class="stars">
+        <div class="reviews-left-column">
+          <div class="frame-1686562489">
+            <div class="frame-1686562436">
+              <div class="average-rating">Average Rating</div>
+              <div class="frame-1686562408">
+                <div class="_4-8">4.8</div>
+                <div class="frame-1686562437">
+                  <div class="frame-1686562409">
+                    <img class="star-1" src="star-10.svg" />
+                    <img class="star-2" src="star-20.svg" />
+                    <img class="star-3" src="star-30.svg" />
+                    <img class="star-4" src="star-40.svg" />
+                    <img class="group-1321317430" src="group-13213174300.svg" />
+                  </div>
+                  <div class="_89-reviews">89 reviews</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ratings">
+            <div class="star-ratings">
+              <div class="bar">
+                <div class="_5-stars">5 stars</div>
+                <div class="bar2">
+                  <div class="frame-1686563360"></div>
+                </div>
+                <div class="_42">42</div>
+              </div>
+              <div class="bar">
+                <div class="_4-stars">4 stars</div>
+                <div class="bar2">
+                  <div class="frame-16865633602"></div>
+                </div>
+                <div class="_28">28</div>
+              </div>
+              <div class="bar">
+                <div class="_3-stars">3 stars</div>
+                <div class="bar3">
+                  <div class="frame-16865633603"></div>
+                </div>
+                <div class="_8">8</div>
+              </div>
+              <div class="bar">
+                <div class="_2-stars">2 stars</div>
+                <div class="bar3">
+                  <div class="frame-16865633604"></div>
+                </div>
+                <div class="_7">7</div>
+              </div>
+              <div class="bar">
+                <div class="_1-stars">1 stars</div>
+                <div class="bar3">
+                  <div class="frame-16865633605"></div>
+                </div>
+                <div class="_3">3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-right-column">
+        <div class="context-toggle">
+          <div class="showing-1-6-of-89-reviews">Showing 1-6 of 89 reviews</div>
+        </div>
+        <div class="reviews">
+          <div class="review page1">
+            <div class="star-date"><div class="december-2024">January 2025</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">
+                  Dr. Steven Arnold was attentive and supportive throughout my visit. He answered all my questions and ensured I felt at ease. I highly recommend his expertise!
+              </div>
+            </div>
+          </div>
+          <div class="review page1">
+            <div class="star-date"><div class="december-2024">February 2025</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">
+                Dr. Steven Arnold provided exceptional care and listened to my concerns. He explained everything clearly and made sure I was comfortable. Highly recommend his services!
+              </div>
+            </div>
+          </div>
+          <div class="review page1">
+            <div class="star-date"><div class="december-2024">March 2025</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">
+                Dr. Steven Arnold was knowledgeable and kind. He listened carefully and addressed all my concerns. I felt comfortable and confident in his care. Highly recommended!
+              </div>
+            </div>
+          </div>
+          <div class="review page1">
+            <div class="star-date"><div class="december-2024">March 2025</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">
+                  Dr. Steven Arnold was thorough and compassionate. He took time to explain my treatment options and made sure I felt comfortable. I appreciate his dedication and care. Thank you
+              </div>
+            </div>
+          </div>
+          <!-- Example reviews for other pages -->
+          <div class="review page2">
+            <div class="star-date"><div class="december-2024">March 2025</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold was friendly and professional during my appointment. He listened carefully and explained my treatment plan. I felt confident in his care!</div>
+            </div>
+          </div>
+          <div class="review page2">
+            <div class="star-date"><div class="december-2024">December 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold was patient and understanding during my visit. He explained my diagnosis clearly and made sure I felt comfortable. I highly recommend his care!</div>
+            </div>
+          </div>
+          <div class="review page2">
+            <div class="star-date"><div class="december-2024">December 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold was kind and attentive throughout my appointment. He took time to answer my questions and made sure I understood everything. I truly appreciate his thoughtful care</div>
+            </div>
+          </div>
+          <div class="review page2">
+            <div class="star-date"><div class="december-2024">November 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold was professional and compassionate. He listened closely to my concerns and explained everything in a way that was easy to understand. I felt very well cared for.</div>
+            </div>
+          </div>
+          <div class="review page3">
+            <div class="star-date"><div class="december-2024">October 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold was thoughtful and thorough. He made sure I understood my options and answered all of my questions with care. I highly recommend him</div>
+            </div>
+          </div>
+          <div class="review page3">
+            <div class="star-date"><div class="december-2024">September 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold provided excellent care. He was calm, respectful, and made me feel at ease throughout the entire visit. Great experience</div>
+            </div>
+          </div>
+          <div class="review page3">
+            <div class="star-date"><div class="december-2024">July 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold took time to listen and explain things clearly. His approach was both professional and reassuring. I felt very supported</div>
+            </div>
+          </div>
+          <div class="review page3">
+            <div class="star-date"><div class="december-2024">June 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold was attentive and kind. He addressed my concerns without rushing and made sure I felt comfortable every step of the way</div>
+            </div>
+          </div>
+          <div class="review page20">
+            <div class="star-date"><div class="december-2024">May 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold was easy to talk to and very informative. He explained my treatment plan clearly and showed genuine concern for my health</div>
+            </div>
+          </div>
+          <div class="review page20">
+            <div class="star-date"><div class="december-2024">April 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold treated me with compassion and patience. He made a stressful situation much easier to handle. I'm grateful for his care</div>
+            </div>
+          </div>
+          <div class="review page20">
+            <div class="star-date"><div class="december-2024">March 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold was incredibly respectful and detailed. He made sure I understood everything and took my concerns seriously. Excellent care</div>
+            </div>
+          </div>
+          <div class="review page20">
+            <div class="star-date"><div class="december-2024">February 2024</div></div>
+            <div class="frame-1686562709">
+              <div class="dr-sama-e-abdul-aziz-her-assistant-redacted-they-all-were-great-and-provided-me-with-the-best-care-possible-they-are-very-professional-and-caring-thank-you">Dr. Steven Arnold is a fantastic physician. He listens, explains things clearly, and treats you like a person, not just a patient. Highly recommend</div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-pagination">
+  <div class="frame-1686563143">
+    <div class="frame-1686563141" onclick="previousPage()">
+      <img class="interface-icon" src="interface-icon16.svg" />
+      <div class="this-is-an-example-o">Previous</div>
+    </div>
+    <div class="pagenation-buttons">
+      <div class="button-feedback" onclick="goToPage(1)">
+        <div class="this-is-an-example-o2">1</div>
+      </div>
+    </div>
+    <div class="pagenation-buttons">
+      <div class="button-feedback" onclick="goToPage(2)">
+        <div class="this-is-an-example-o3">2</div>
+      </div>
+    </div>
+    <div class="pagenation-buttons">
+      <div class="button-feedback" onclick="goToPage(3)">
+        <div class="this-is-an-example-o3">3</div>
+      </div>
+    </div>
+    <div class="this-is-an-example-o4">...</div>
+    <div class="pagenation-buttons">
+      <div class="button-feedback" onclick="goToPage(20)">
+        <div class="this-is-an-example-o3">20</div>
+      </div>
+    </div>
+    <div class="frame-1686563142" onclick="nextPage()">
+      <div class="this-is-an-example-o5">Next</div>
+      <img class="interface-icon2" src="interface-icon15.svg" />
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+  <div class="accepted-insurances">
+  <div class="insurances-intro">
+    <div class="h-3">Accepted Insurances</div>
+    <div class="insurance-this-example">
+      Lorem ipsum dolor sit amet consectetur. Tortor id laoreet purus pulvinar
+      est. Mi aenean viverra at id semper morbi a ut vitae. Bibendum tincidunt
+      mauris.
+    </div>
+  </div>
+  <div class="frame-1686563633">
+    <div class="insurance-grid">
+      <div class="insurance-column-1">
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Aetna</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Ambetter</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">AmeriHealth</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Beech Street</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Blue Cross Blue Shield</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Cigna</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Coventry</div>
+          </div>
+        </div>
+      </div>
+      <div class="insurance-column-2">
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Fallon Health</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Harvard Pilgrim Health Care</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Humana</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Mass General Brigham Health Plan</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Medicare</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Medicare ACO</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Multiplan</div>
+          </div>
+        </div>
+      </div>
+      <div class="insurance-column-3">
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">TriCare</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Tufts Health Plan</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">United Healthcare</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">WellSense</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">United Healthcare</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">Wellpoint</div>
+          </div>
+        </div>
+        <div class="insurance-item">
+          <div class="frame-199">
+            <div class="aetna">WellSense</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="frame-16865636332">
+      <img class="interface-icon" src="interface-icon0.svg" />
+      <div class="insurance-this-example2">
+        <span>
+          <span class="insurance-this-example-2-span">Insurance Check:</span>
+          <span class="insurance-this-example-2-span2">
+            Insurance coverage changes regularly. Contact the provider’s office
+            to verify coverage.
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="research-and-studies-container">
+    <div class="research-and-studies-container2">
+      <div class="header">
+        <div class="title">Research &amp; Studies</div>
+        <div class="controller">
+          <div class="this-is-an-example-o">1/8</div>
+          <div class="pagination-controls">
+            <div class="arrow-button">
+              <img class="interface-icon" src="interface-icon0.svg" />
+            </div>
+            <div class="arrow-button2">
+              <img class="interface-icon2" src="interface-icon1.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="location-card">
+          <div class="cards-wrapper">
+            <div class="cards-wrapper-inner">
+              <div class="container">
+                <div class="state">
+                  <div class="tag">Publication</div>
+                </div>
+                <div class="content-container2">
+                  <div class="title2">
+                    Plasma biomarkers for diagnosis of Alzheimer’s disease and
+                    prediction of cognitive decline in individuals with mild
+                    cognitive impairment
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-card">
+          <div class="cards-wrapper">
+            <div class="cards-wrapper-inner">
+              <div class="container">
+                <div class="state">
+                  <div class="tag">Publication</div>
+                </div>
+                <div class="content-container2">
+                  <div class="title2">
+                    Plasma biomarkers for diagnosis of Alzheimer’s disease and
+                    prediction of cognitive decline in individuals with mild
+                    cognitive impairment
+                  </div>
+                </div>
+                <div class="footer-container">
+                  <div class="footer-content-container">
+                    <div class="footer-content-container2">
+                      <div class="footer-content-container3">
+                        <div class="publication-info-container">
+                          <div class="publication-info">
+                            <span>
+                              <span class="publication-info-span">
+                                Frontiers In Neurology
+                                <br />
+                              </span>
+                              <span class="publication-info-span2">
+                                March 2023
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="location-card">
+          <div class="cards-wrapper">
+            <div class="cards-wrapper-inner">
+              <div class="container">
+                <div class="state">
+                  <div class="tag">Publication</div>
+                </div>
+                <div class="content-container2">
+                  <div class="title2">
+                    Plasma biomarkers for diagnosis of Alzheimer’s disease and
+                    prediction of cognitive decline in individuals with mild
+                    cognitive impairment
+                  </div>
+                </div>
+                <div class="footer-container">
+                  <div class="footer-content-container">
+                    <div class="footer-content-container2">
+                      <div class="footer-content-container3">
+                        <div class="publication-info-container">
+                          <div class="publication-info">
+                            <span>
+                              <span class="publication-info-span">
+                                Frontiers In Neurology
+                                <br />
+                              </span>
+                              <span class="publication-info-span2">
+                                March 2023
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+  </div>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Provider breadcrumbs functionality
+    const providersLink = document.querySelector('.medium-text-link');
+    if (providersLink) {
+      providersLink.style.cursor = 'pointer';
+      
+      providersLink.addEventListener('click', function() {
+        console.log('Clicked on: Providers breadcrumb');
+        // Here you would typically navigate to the providers page
+      });
+      
+      // Add hover effect
+      providersLink.addEventListener('mouseenter', function() {
+        this.style.textDecoration = 'underline';
+      });
+      
+      providersLink.addEventListener('mouseleave', function() {
+        this.style.textDecoration = 'none';
+      });
+    }
+    
+    // Physician profile hero functionality
+    const callButton = document.querySelector('.physician-profile-hero .button');
+    if (callButton) {
+      callButton.style.cursor = 'pointer';
+      callButton.style.transition = 'all 0.3s ease';
+      
+      callButton.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+        this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+      });
+      
+      callButton.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = 'none';
+      });
+      
+      callButton.addEventListener('click', function() {
+        console.log('Clicked on: Call 866-726-5608');
+        // Here you would typically initiate a phone call or show a modal
+      });
+    }
+    
+    // Physician profile menu functionality
+    const menuItems = document.querySelectorAll('.group-1321317749 .component-17, .group-1321317749 .component-19, .group-1321317749 .component-20, .group-1321317749 .component-22, .group-1321317749 .component-23');
+    menuItems.forEach(item => {
+      item.style.cursor = 'pointer';
+      // Remove transition to prevent border animation issues
+      
+      item.addEventListener('click', function() {
+        const menuText = this.querySelector('div').textContent.trim();
+        console.log(`Clicked on menu item: ${menuText}`);
+        
+        // Remove selected state from all items
+        menuItems.forEach(menuItem => {
+          menuItem.style.borderBottomColor = 'transparent';
+          const textElement = menuItem.querySelector('div');
+          textElement.style.color = '#213243';
+          textElement.style.fontWeight = '400';
+        });
+        
+        // Add selected state to clicked item
+        this.style.borderBottomColor = '#003a96';
+        const textElement = this.querySelector('div');
+        textElement.style.color = '#003a96';
+        textElement.style.fontWeight = '500';
+        
+        // TODO: Add anchor link functionality here when we implement it
+      });
+    });
+    
+    // Sticky navigation functionality - Improved scroll detection
+    const jumpLinks = document.querySelector('.jump-links');
+    const groupContainer = document.querySelector('.group-1321317749');
+    
+    if (jumpLinks && groupContainer) {
+      let isSticky = false;
+      
+      function checkSticky() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const originalTop = groupContainer.offsetTop;
+        
+        console.log('Scroll check - scrollTop:', scrollTop, 'originalTop:', originalTop);
+        
+        // Check if we should be sticky
+        const shouldBeSticky = scrollTop >= originalTop;
+        
+        if (shouldBeSticky && !isSticky) {
+          jumpLinks.classList.add('is-sticky');
+          isSticky = true;
+          console.log('Added is-sticky class - CTA should be visible');
+        } else if (!shouldBeSticky && isSticky) {
+          jumpLinks.classList.remove('is-sticky');
+          isSticky = false;
+          console.log('Removed is-sticky class - CTA should be hidden');
+        }
+      }
+      
+      // Check on scroll with throttling
+      let ticking = false;
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            checkSticky();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+      
+      window.addEventListener('scroll', requestTick);
+      window.addEventListener('load', checkSticky);
+      window.addEventListener('resize', checkSticky);
+      
+      // Initial check
+      checkSticky();
+    }
+    
+    // CTA button functionality
+    const ctaButton = document.querySelector('.sticky-cta .button');
+    if (ctaButton) {
+      ctaButton.addEventListener('click', function() {
+        console.log('Clicked on sticky CTA: Call 866-726-5608');
+        // Here you would typically initiate a phone call or show a modal
+      });
+    }
+    
+  });
+
+  
+  </script>
+
+    <script>
+    // Minimal interactivity for existing elements
+    document.addEventListener('DOMContentLoaded', function() {
+      // Make call buttons functional
+      document.querySelectorAll('.primary-button').forEach(btn => {
+        if (btn.textContent.includes('Call')) {
+          btn.style.cursor = 'pointer';
+          btn.addEventListener('click', () => {
+            const phone = btn.textContent.match(/\d{3}-\d{3}-\d{4}/);
+            if (phone) window.location.href = `tel:${phone[0].replace(/-/g, '')}`;
+          });
+        }
+      });
+      
+      // Make directions buttons functional
+      document.querySelectorAll('.get-directions').forEach(btn => {
+        btn.style.cursor = 'pointer';
+        btn.addEventListener('click', () => {
+          // Use the address from the same location block
+          const locationBlock = btn.closest('.location-1');
+          const addressElement = locationBlock.querySelector('._20-patriot-place-suite-3300-foxborough-ma-02035');
+          if (addressElement) {
+            const address = encodeURIComponent(addressElement.textContent);
+            window.open(`https://www.google.com/maps/dir/?api=1&destination=${address}`, '_blank');
+          }
+        });
+      });
+      
+      // Make map pins clickable
+      document.querySelectorAll('.pin, .frame-1686563609, [class*="rectangle-"]').forEach(pin => {
+        pin.style.cursor = 'pointer';
+        pin.addEventListener('click', () => {
+          pin.style.transform = 'scale(1.2)';
+          setTimeout(() => pin.style.transform = '', 200);
+        });
+      });
+
+      // Add click functionality for location cards to change map pin styling
+      document.querySelectorAll('.location-1').forEach((locationCard, index) => {
+        locationCard.style.cursor = 'pointer';
+        locationCard.addEventListener('click', () => {
+          selectLocationAndPin(index + 1);
+        });
+      });
+      
+      // Add reciprocal click functionality for map pins
+      document.querySelector('.group-1321317734').addEventListener('click', () => selectLocationAndPin(1));
+      document.querySelector('.group-1321317735').addEventListener('click', () => selectLocationAndPin(2));
+      document.querySelector('.group-1321317736').addEventListener('click', () => selectLocationAndPin(3));
+      document.querySelector('.group-1321317737').addEventListener('click', () => selectLocationAndPin(4));
+      
+      function selectLocationAndPin(pinNumber) {
+        // Reset all location cards to default state
+        document.querySelectorAll('.location-1').forEach(card => {
+          card.classList.remove('selected');
+        });
+        
+        // Reset all map pin numbers to default state
+        document.querySelectorAll('.map-pin-1, .map-pin-2, .map-pin-3, .map-pin-4').forEach(pin => {
+          pin.classList.remove('selected');
+        });
+        
+        // Reset all location card pin numbers to default state
+        document.querySelectorAll('._1, ._2, ._3, ._4').forEach(pin => {
+          pin.classList.remove('selected');
+        });
+        
+        // Reset all pin images to default (original) state
+        document.querySelectorAll('.pin-1-container, .pin-1-container2, .pin-1-container3, .pin-1-container4').forEach(img => {
+          if (img.classList.contains('pin-1-container')) {
+            img.src = 'pin-1-container0.svg';
+          } else if (img.classList.contains('pin-1-container2')) {
+            img.src = 'pin-1-container1.svg';
+          } else if (img.classList.contains('pin-1-container3')) {
+            img.src = 'pin-1-container2.svg';
+          } else if (img.classList.contains('pin-1-container4')) {
+            img.src = 'pin-1-container3.svg';
+          }
+        });
+        
+        // Reset all map pin images to default state
+        document.querySelectorAll('.rectangle-2135436, .rectangle-21354362, .rectangle-21354363, .rectangle-21354364').forEach(img => {
+          if (img.classList.contains('rectangle-2135436')) {
+            img.src = 'rectangle-21354360.svg';
+          } else if (img.classList.contains('rectangle-21354362')) {
+            img.src = 'rectangle-21354361.svg';
+          } else if (img.classList.contains('rectangle-21354363')) {
+            img.src = 'rectangle-21354362.svg';
+          } else if (img.classList.contains('rectangle-21354364')) {
+            img.src = 'rectangle-21354363.svg';
+          }
+        });
+        
+        // Select the corresponding location card
+        const locationCards = document.querySelectorAll('.location-1');
+        if (locationCards[pinNumber - 1]) {
+          locationCards[pinNumber - 1].classList.add('selected');
+          
+          // Auto-scroll to show the selected location card
+          locationCards[pinNumber - 1].scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'nearest'
+          });
+        }
+        
+        // Select the corresponding map pin number
+        const mapPin = document.querySelector(`.map-pin-${pinNumber}`);
+        if (mapPin) {
+          mapPin.classList.add('selected');
+        }
+        
+        // Select the corresponding location card pin number
+        const locationCardPin = document.querySelector(`._${pinNumber}`);
+        if (locationCardPin) {
+          locationCardPin.classList.add('selected');
+        }
+        
+        // Change the corresponding map pin image to blue
+        let mapPinImg;
+        if (pinNumber === 1) {
+          mapPinImg = document.querySelector('.rectangle-2135436');
+        } else if (pinNumber === 2) {
+          mapPinImg = document.querySelector('.rectangle-21354362');
+        } else if (pinNumber === 3) {
+          mapPinImg = document.querySelector('.rectangle-21354363');
+        } else if (pinNumber === 4) {
+          mapPinImg = document.querySelector('.rectangle-21354364');
+        }
+        
+        if (mapPinImg) {
+          mapPinImg.src = 'pin-blue.svg';
+        }
+        
+        // Also update the corresponding location card pin to blue
+        const locationCardPins = document.querySelectorAll('.pin-1-container, .pin-1-container2, .pin-1-container3, .pin-1-container4');
+        const currentLocationCardPin = locationCardPins[pinNumber - 1];
+        if (currentLocationCardPin) {
+          currentLocationCardPin.src = 'pin-blue.svg';
+        }
+      }
+
+      // Make .rectangle-2135438 function as scrollbar
+      const scrollbar = document.querySelector('.rectangle-2135438');
+      const container = document.querySelector('.locations-panel-block-container');
+      
+      if (scrollbar && container) {
+        let isDragging = false;
+        let startY = 0;
+        let startScrollTop = 0;
+        
+        // Calculate scrollbar thumb height and position
+        function updateScrollbar() {
+          const containerHeight = container.clientHeight;
+          const contentHeight = container.scrollHeight;
+          const scrollTop = container.scrollTop;
+          
+          if (contentHeight <= containerHeight) {
+            scrollbar.style.display = 'none';
+            return;
+          }
+          
+          scrollbar.style.display = 'block';
+          
+          // Calculate thumb height (minimum 20px)
+          const thumbHeight = Math.max(20, (containerHeight / contentHeight) * containerHeight);
+          scrollbar.style.height = thumbHeight + 'px';
+          
+          // Calculate thumb position
+          const maxScrollTop = contentHeight - containerHeight;
+          const scrollPercentage = scrollTop / maxScrollTop;
+          const maxThumbTop = containerHeight - thumbHeight;
+          const thumbTop = scrollPercentage * maxThumbTop;
+          
+          scrollbar.style.top = (8 + thumbTop) + 'px';
+        }
+        
+        // Mouse down on scrollbar
+        scrollbar.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          startY = e.clientY;
+          startScrollTop = container.scrollTop;
+          document.body.style.userSelect = 'none';
+          e.preventDefault();
+        });
+        
+        // Mouse move
+        document.addEventListener('mousemove', (e) => {
+          if (!isDragging) return;
+          
+          const deltaY = e.clientY - startY;
+          const containerHeight = container.clientHeight;
+          const contentHeight = container.scrollHeight;
+          const maxScrollTop = contentHeight - containerHeight;
+          
+          const scrollbarHeight = parseFloat(scrollbar.style.height);
+          const maxThumbTop = containerHeight - scrollbarHeight;
+          const scrollRatio = maxScrollTop / maxThumbTop;
+          
+          const newScrollTop = startScrollTop + (deltaY * scrollRatio);
+          container.scrollTop = Math.max(0, Math.min(maxScrollTop, newScrollTop));
+          
+          e.preventDefault();
+        });
+        
+        // Mouse up
+        document.addEventListener('mouseup', () => {
+          isDragging = false;
+          document.body.style.userSelect = '';
+        });
+        
+        // Update scrollbar on container scroll
+        container.addEventListener('scroll', updateScrollbar);
+        
+        // Initial update
+        updateScrollbar();
+        
+        // Update on window resize
+        window.addEventListener('resize', updateScrollbar);
+      }
+    });
+
+    let currentPage = 1;
+const totalPages = 20;
+
+function showPage(pageNum) {
+  // Hide all reviews
+  const allReviews = document.querySelectorAll('.review');
+  allReviews.forEach(review => review.style.display = 'none');
+  
+  // Show reviews for current page
+  const pageReviews = document.querySelectorAll('.page' + pageNum);
+  pageReviews.forEach(review => review.style.display = 'block');
+  
+  // Update button styles
+  updateButtonStyles(pageNum);
+  
+  // Update Previous/Next button states
+  updateNavigationButtons(pageNum);
+  
+  // Update showing text
+  updateShowingText(pageNum);
+}
+
+function updateShowingText(pageNum) {
+  const reviewsPerPage = 6;
+  const totalReviews = 89;
+  
+  let startReview, endReview;
+  
+  if (pageNum === 20) {
+    // Last page shows reviews 84-89
+    startReview = 84;
+    endReview = 89;
+  } else {
+    // Calculate range for other pages
+    startReview = (pageNum - 1) * reviewsPerPage + 1;
+    endReview = pageNum * reviewsPerPage;
+  }
+  
+  const showingElement = document.querySelector('.showing-1-6-of-89-reviews');
+  if (showingElement) {
+    showingElement.textContent = `Showing ${startReview}-${endReview} of ${totalReviews} reviews`;
+  }
+}
+
+function updateButtonStyles(activePageNum) {
+  // Reset all buttons to unselected style
+  const allButtons = document.querySelectorAll('.pagenation-buttons .button, .pagenation-buttons .button-feedback');
+  allButtons.forEach(button => {
+    button.className = 'button-feedback';
+    const textElement = button.querySelector('div');
+    if (textElement) {
+      textElement.className = 'this-is-an-example-o3';
+      textElement.style.color = '#003a96';
+    }
+  });
+  
+  // Set active button style
+  const buttons = document.querySelectorAll('.pagenation-buttons');
+  buttons.forEach((buttonContainer, index) => {
+    const pageNumbers = [1, 2, 3, 20];
+    if (pageNumbers[index] === activePageNum) {
+      const button = buttonContainer.querySelector('.button-feedback');
+      if (button) {
+        button.className = 'button-feedback';
+        const textElement = button.querySelector('div');
+        if (textElement) {
+          textElement.className = 'this-is-an-example-o2';
+          textElement.style.color = '#fff';
+        }
+      }
+    }
+  });
+}
+
+function updateNavigationButtons(pageNum) {
+  const prevButton = document.querySelector('.frame-1686563141');
+  const nextButton = document.querySelector('.frame-1686563142');
+  const prevText = prevButton.querySelector('.this-is-an-example-o');
+  const nextText = nextButton.querySelector('.this-is-an-example-o5');
+  
+  // Update Previous button
+  if (pageNum === 1) {
+    prevButton.style.opacity = '0.5';
+    prevButton.style.cursor = 'not-allowed';
+    prevText.style.color = 'var(--foreground-fg-disabled, rgba(54, 53, 53, 0.5))';
+  } else {
+    prevButton.style.opacity = '1';
+    prevButton.style.cursor = 'pointer';
+    prevText.style.color = 'var(--foreground-text-body-copy-link, #003a96)';
+  }
+  
+  // Update Next button
+  if (pageNum === totalPages) {
+    nextButton.style.opacity = '0.5';
+    nextButton.style.cursor = 'not-allowed';
+    nextText.style.color = 'var(--foreground-fg-disabled, rgba(54, 53, 53, 0.5))';
+  } else {
+    nextButton.style.opacity = '1';
+    nextButton.style.cursor = 'pointer';
+    nextText.style.color = 'var(--foreground-text-body-copy-link, #003a96)';
+  }
+}
+
+function goToPage(pageNum) {
+  currentPage = pageNum;
+  showPage(pageNum);
+}
+
+function previousPage() {
+  if (currentPage > 1) {
+    currentPage--;
+    showPage(currentPage);
+  }
+}
+
+function nextPage() {
+  if (currentPage < totalPages) {
+    currentPage++;
+    showPage(currentPage);
+  }
+}
+
+// Initialize the page
+document.addEventListener('DOMContentLoaded', function() {
+  showPage(1);
+});
+
+//scrolls to section in page navigation
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollMap = {
+      ".component-20": "#feedback-container",
+      ".component-19": "#locations-container",
+      ".component-17": "#about"
+    };
+
+    const offset = 120; // Change this to control how much above the section you want to land
+
+    Object.entries(scrollMap).forEach(([triggerSelector, targetSelector]) => {
+      const trigger = document.querySelector(triggerSelector);
+      const target = document.querySelector(targetSelector);
+
+      if (trigger && target) {
+        trigger.addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent default behavior, just in case
+
+          const rect = target.getBoundingClientRect();
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const targetY = rect.top + scrollTop - offset;
+
+          window.scrollTo({
+            top: targetY,
+            behavior: "smooth"
+          });
+        });
+      }
+    });
+  });
+  </script>
+
+<!-- Footer Component -->
+<img src="footer.jpg" style="margin-left: -155px;">
+<script src="js/navigation.js"></script>
+</body>
+</html>
+

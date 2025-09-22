@@ -1,0 +1,408 @@
+.about,
+.about * {
+  box-sizing: border-box;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  top: 70px;
+  border-bottom: 0.5px solid #213243;
+  padding-bottom: 70px;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 801px;
+  position: relative;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 801px;
+  position: relative;
+}
+.frame-1686563344 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.h-3 {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  position: relative;
+}
+.this-is-an-example-o {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+._2-column {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.education-and-training {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 368px;
+  position: relative;
+}
+.h-32 {
+  color: #213243;
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  width: 368px;
+}
+.line-1993 {
+  margin-top: -0.5px;
+  border-style: solid;
+  border-color: var(--foreground-text-hero-headline, #213243);
+  border-width: 0.5px 0 0 0;
+  flex-shrink: 0;
+  width: 368px;
+  height: 0px;
+  position: relative;
+}
+.frame-1686563317 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 368px;
+  position: relative;
+}
+.frame-1686562667 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 368px;
+  position: relative;
+}
+.board-certifications {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.frame-1686563312 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base-space-100, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.neurology-american-board-of-psychiatry-and-neurology {
+  color: var(--foreground-text-hero-headline, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.psychiatry-american-board-of-psychiatry-and-neurology {
+  color: var(--foreground-text-hero-headline, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.frame-1686563315 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 368px;
+  position: relative;
+}
+.medical-education {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.fellowship-massachusetts-general-hospital {
+  color: var(--foreground-text-hero-headline, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.residency-university-of-iowa-hospital-clinics {
+  color: var(--foreground-text-hero-headline, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.residency-new-york-presbyterian-columbia-university-college-of-physicians-surgeons {
+  color: var(--foreground-text-hero-headline, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+}
+.medical-school-boston-university {
+  color: var(--foreground-text-hero-headline, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.titles-and-positions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 368px;
+  position: relative;
+}
+.h-33 {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  width: 368px;
+}
+.clinical-instructor-in-orthopaedic-surgery-harvard-medical-school {
+  color: var(--foreground-text-hero-headline, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+  width: 368px;
+}
+.quick-card {
+  background: #ecf7f9;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 383px;
+  position: relative;
+}
+.h-34 {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(
+    --headline-preheader-font-family,
+    "Roboto-SemiBold",
+    sans-serif
+  );
+  font-size: var(--headline-preheader-font-size, 18px);
+  line-height: var(--headline-preheader-line-height, 27px);
+  font-weight: var(--headline-preheader-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+}
+.line-19932 {
+  margin-top: -0.5px;
+  border-style: solid;
+  border-color: var(--primary-deep-blue, #213243);
+  border-width: 0.5px 0 0 0;
+  flex-shrink: 0;
+  width: 303px;
+  height: 0px;
+  position: relative;
+}
+.languages-spoken {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.languages-spoken2 {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.frame-16865633122 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.english {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.portuguese {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.ages-treated {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.age-group-treated {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.adult {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.geriatrics {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
+.clinical-interests {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.clinical-interests2 {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-small-500-font-family, "Roboto-Medium", sans-serif);
+  font-size: var(--body-small-500-font-size, 14px);
+  line-height: var(--body-small-500-line-height, 150%);
+  font-weight: var(--body-small-500-font-weight, 500);
+  position: relative;
+}
+.foot-and-ankle-injuries-hip-injuries-sports-injuries {
+  color: var(--primary-deep-blue, #213243);
+  text-align: left;
+  font-family: var(--body-large-400-font-family, "Roboto-Regular", sans-serif);
+  font-size: var(--body-large-400-font-size, 18px);
+  line-height: var(--body-large-400-line-height, 150%);
+  font-weight: var(--body-large-400-font-weight, 400);
+  position: relative;
+}
