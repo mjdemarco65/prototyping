@@ -100,7 +100,7 @@ const medicalData = {
         { name: 'Trauma Surgery', tag: 'Services', description: 'Emergency surgical care for severe injuries and trauma. Our trauma surgeons are available 24/7 to provide life-saving surgical interventions and coordinate comprehensive trauma care.' }
     ],
     'U': [
-        { name: 'Urology', tag: 'Services', description: 'Specialized care for conditions affecting the urinary system and male reproductive organs. Our urologists provide medical and surgical treatment for kidney stones, prostate conditions, and urologic cancers.' },
+        { name: 'Urology', tag: 'Services', description: 'Specialized care for conditions affecting the urinary system and male reproductive organs. Our urologists provide medical and surgical treatment for kidney stones, prostate conditions, and urologic cancers.' url:'https://mjdemarco65.github.io/prototyping/small-service/small-service-urology-final.html' },
         { name: 'Ultrasound', tag: 'Medical Tests', description: 'Non-invasive imaging using sound waves to visualize internal organs and structures. This safe and painless procedure is used for diagnosis, monitoring pregnancy, and guiding medical procedures.' }
     ],
     'V': [
