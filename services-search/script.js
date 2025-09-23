@@ -87,7 +87,7 @@ const medicalData = {
     'R': [
         { name: 'Radiology', tag: 'Services', description: 'Advanced medical imaging services including X-rays, CT scans, MRI, and ultrasound. Our board-certified radiologists provide expert interpretation of imaging studies to support accurate diagnosis and treatment planning.' },
         { name: 'Rheumatology', tag: 'Services', description: 'Specialized care for autoimmune and inflammatory conditions affecting joints, muscles, and connective tissues. Our rheumatologists treat conditions such as rheumatoid arthritis, lupus, and fibromyalgia.' },
-        { name: 'Rehabilitation Services', tag: 'Treatments', description: 'Comprehensive rehabilitation programs including physical, occupational, and speech therapy. Our multidisciplinary team helps patients recover function and independence after injury, illness, or surgery.' }
+        { name: 'Rehabilitation Services', tag: 'Treatments', description: 'Comprehensive rehabilitation programs including physical, occupational, and speech therapy. Our multidisciplinary team helps patients recover function and independence after injury, illness, or surgery.', url: 'https://mjdemarco65.github.io/prototyping/rehabilitation/rehabilitation.html' }
     ],
     'S': [
         { name: 'Surgery', tag: 'Services', description: 'Comprehensive surgical services including general surgery, minimally invasive procedures, and robotic surgery. Our experienced surgeons use advanced techniques to provide safe, effective surgical care with faster recovery times.' },
@@ -131,8 +131,12 @@ function getAllMedicalItems() {
 
 // Function to create a result card HTML
 function createResultCard(item) {
+    const isClickable = item.url ? 'clickable-result' : '';
+    const clickHandler = item.url ? `onclick="window.location.href='${item.url}'"` : '';
+    const cursorStyle = item.url ? 'cursor: pointer;' : '';
+    
     return `
-        <div class="results2">
+        <div class="results2 ${isClickable}" ${clickHandler} style="${cursorStyle}">
             <div class="results-result">
                 <div class="content">
                     <div class="info">
@@ -145,8 +149,9 @@ function createResultCard(item) {
                                 </div>
                             </div>
                             <div class="container23">
-                                <div class="service-name">${item.name}</div>
+                                <div class="service-name">${item.name}${item.url ? ' <span class="external-link-icon">↗</span>' : ''}</div>
                                 <div class="description">${item.description}</div>
+                                ${item.url ? '<div class="click-hint">Click to learn more</div>' : ''}
                             </div>
                         </div>
                     </div>
@@ -450,8 +455,8 @@ function displayTypeaheadResults(results) {
     }
     
     const resultsHTML = results.map((item, index) => `
-        <div class="typeahead-item" data-index="${index}" data-name="${item.name}" data-tag="${item.tag}">
-            <div class="typeahead-item-name">${highlightMatch(item.name, document.getElementById('search-input').value)}</div>
+        <div class="typeahead-item" data-index="${index}" data-name="${item.name}" data-tag="${item.tag}" data-url="${item.url || ''}">
+            <div class="typeahead-item-name">${highlightMatch(item.name, document.getElementById('search-input').value)}${item.url ? ' <span class="external-link-icon">↗</span>' : ''}</div>
             <div class="typeahead-item-tag">${item.tag}</div>
             <div class="typeahead-item-description">${highlightMatch(item.description, document.getElementById('search-input').value)}</div>
         </div>
@@ -482,6 +487,13 @@ function updateHighlight(items) {
 function selectTypeaheadItem(item) {
     const name = item.dataset.name;
     const tag = item.dataset.tag;
+    const url = item.dataset.url;
+    
+    // If item has URL, navigate directly to it
+    if (url && url !== '') {
+        window.location.href = url;
+        return;
+    }
     
     // Set the search input value
     document.getElementById('search-input').value = name;
