@@ -5158,5 +5158,23 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   </script>
 
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const allServices = document.querySelectorAll('.service-name');
+  allServices.forEach(div => {
+    if (div.textContent === 'Urology') {
+      const link = document.createElement('a');
+      link.textContent = 'Urology';
+      link.href = 'https://mjdemarco65.github.io/prototyping/small-service/small-service-urology-final.html';
+      link.className = 'service-name';
+      link.style.color = 'inherit';
+      link.style.textDecoration = 'none';
+      div.replaceWith(link);
+    }
+  });
+});
+</script>
+
+
 
 </html>
