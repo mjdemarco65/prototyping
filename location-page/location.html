@@ -3475,9 +3475,7 @@ display: flex;
           <div class="global-nav-main-row">
             <div class="global-nav-main-left">
               <div class="global-nav-logo">
-                <a href="https://mjdemarco65.github.io/prototyping/homepage-demo/homepage.html">
-                      <img class="global-nav-logo-image" src="img/group-13213176770.svg" />
-                </a>
+                <img class="global-nav-logo-image" src="img/group-13213176770.svg" />
               </div>
               <div class="global-nav-main-menu">
                 <div class="global-nav-nav-item" id="get-care-nav-item">
@@ -3493,9 +3491,7 @@ display: flex;
                   <img class="global-nav-nav-icon" id="patients-chevron" src="img/interface-icon9.svg" />
                 </div>
                 <div class="global-nav-nav-item">
-                  <div class="global-nav-nav-label"><a href="https://mjdemarco65.github.io/prototyping/physicians-results/physicians-results.html" style="color: inherit; text-decoration: none;">
-    Find a Doctor
-  </a> </div>
+                  <div class="global-nav-nav-label">Find a Doctor</div>
                 </div>
               </div>
             </div>
@@ -3546,11 +3542,7 @@ display: flex;
                         </div>
                       </div>
                     </div>
-                    <div class="global-nav-get-care-action-text">
-                      <a href="https://mjdemarco65.github.io/prototyping/physicians-results/physicians-results.html" style="color: inherit; text-decoration: none;">
-                        Find a provider
-                      </a>
-                    </div>
+                    <div class="global-nav-get-care-action-text">Find a provider</div>
                   </div>
                   <div class="global-nav-get-care-action-item">
                     <div class="global-nav-get-care-action-icon">
@@ -3639,9 +3631,7 @@ display: flex;
                         </div>
                       </div>
                     </div>
-                    <div class="global-nav-services-action-text">
-                        <a href="https://mjdemarco65.github.io/prototyping/services-search/index.html" style="color: inherit; text-decoration: none;">
-    Find a service </a></div>
+                    <div class="global-nav-services-action-text">Find a service</div>
                   </div>
                   <div class="global-nav-services-action-item">
                     <div class="global-nav-services-action-icon">
@@ -3679,7 +3669,7 @@ display: flex;
                 <div class="global-nav-services-featured-content">
                   <div class="global-nav-services-featured-title">Featured Services</div>
                   <div class="global-nav-services-featured-item">Cancer Institute</div>
-                  <div class="global-nav-services-featured-item"><a href="https://mjdemarco65.github.io/prototyping/institute/institute.html">Heart and Vascular Institute</a></div>
+                  <div class="global-nav-services-featured-item"><a href="/Users/mjd/Documents/UWSP/institute/institute.html">Heart and Vascular Institute</a></div>
                   <div class="global-nav-services-featured-item">Neurosciences Institute</div>
                   <div class="global-nav-services-featured-item">Orthopedics and Sports Medicine</div>
                   <div class="global-nav-services-featured-item">Home Hospital</div>
@@ -4688,7 +4678,7 @@ Parking at Mass General Brigham is designed for convenience, with garages and lo
 </body>
 
 <script>
-// Medical services organized by first letter
+// Services data organized by letter
 const servicesData = {
     'A': [
         'Addiction Medicine',
@@ -4791,8 +4781,14 @@ const servicesData = {
     'Z': []
 };
 
+// URL mapping for services that should be clickable
+const serviceUrls = {
+    'Urology': 'https://mjdemarco65.github.io/prototyping/small-service/small-service-urology-final.html'
+    // Add more service URLs here as needed
+};
+
 // Get all services in a flat array
-const allServices = Object.values(servicesData).flat();
+const allServices = Object.values(servicesData ).flat();
 
 // Function to display services
 function displayServices(services) {
@@ -4808,16 +4804,46 @@ function displayServices(services) {
         const medicalService = document.createElement('div');
         medicalService.className = 'medical-service';
         
-        const serviceName = document.createElement('div');
-        serviceName.className = 'service-name';
-        serviceName.textContent = service;
+        // Check if this service has a URL mapping
+        const serviceUrl = serviceUrls[service];
         
-        const interfaceIcon = document.createElement('div');
-        interfaceIcon.className = 'interface-icon-list';
-        interfaceIcon.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.56006 3.12L11.4401 8L6.56006 12.88" stroke="#003A96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        if (serviceUrl) {
+            // Create clickable link for services with URLs
+            const serviceLink = document.createElement('a');
+            serviceLink.href = serviceUrl;
+            serviceLink.className = 'service-link';
+            serviceLink.style.textDecoration = 'none';
+            serviceLink.style.color = 'inherit';
+            serviceLink.style.display = 'flex';
+            serviceLink.style.alignItems = 'center';
+            serviceLink.style.justifyContent = 'space-between';
+            serviceLink.style.width = '100%';
+            
+            const serviceName = document.createElement('div');
+            serviceName.className = 'service-name';
+            serviceName.textContent = service;
+            
+            const interfaceIcon = document.createElement('div');
+            interfaceIcon.className = 'interface-icon-list';
+            interfaceIcon.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.56006 3.12L11.4401 8L6.56006 12.88" stroke="#003A96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+            
+            serviceLink.appendChild(serviceName );
+            serviceLink.appendChild(interfaceIcon);
+            medicalService.appendChild(serviceLink);
+        } else {
+            // Create non-clickable div for services without URLs
+            const serviceName = document.createElement('div');
+            serviceName.className = 'service-name';
+            serviceName.textContent = service;
+            
+            const interfaceIcon = document.createElement('div');
+            interfaceIcon.className = 'interface-icon-list';
+            interfaceIcon.innerHTML = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.56006 3.12L11.4401 8L6.56006 12.88" stroke="#003A96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+            
+            medicalService.appendChild(serviceName );
+            medicalService.appendChild(interfaceIcon);
+        }
         
-        medicalService.appendChild(serviceName);
-        medicalService.appendChild(interfaceIcon);
         servicesList.appendChild(medicalService);
     });
 }
@@ -4860,54 +4886,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
- // Team ribbon scroll interactivity
-  var teamRibbon = document.querySelector('.team-ribbon-container');
-  var leftArrow = document.querySelector('.arrow-button');
-  var rightArrow = document.querySelector('.arrow-button2');
-  var card = teamRibbon.querySelector('.team-member-card');
-  var cardWidth = card ? card.offsetWidth + 25 : 260 + 25; // 25px gap
-
-  leftArrow.addEventListener('click', function() {
-    teamRibbon.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-  });
-  rightArrow.addEventListener('click', function() {
-    teamRibbon.scrollBy({ left: cardWidth, behavior: 'smooth' });
-  });
-
-  // Optional: hide left arrow if at start, right arrow if at end
-  function updateArrows() {
-    leftArrow.style.opacity = teamRibbon.scrollLeft > 0 ? '1' : '0.5';
-    rightArrow.style.opacity =
-      teamRibbon.scrollLeft + teamRibbon.offsetWidth < teamRibbon.scrollWidth ? '1' : '0.5';
-  }
-  teamRibbon.addEventListener('scroll', updateArrows);
-  updateArrows();
-
-  // SUpporting content scroll interactivity
-  var teamRibbon = document.querySelector('.supporting-content-ribbon-container');
-  var leftArrow = document.querySelector('.supporting-content-arrow-button');
-  var rightArrow = document.querySelector('.supporting-contentarrow-button2');
-  var card = teamRibbon.querySelector('.supporting-content-card');
-  var cardWidth = card ? card.offsetWidth + 25 : 260 + 25; // 25px gap
-
-  leftArrow.addEventListener('click', function() {
-    teamRibbon.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-  });
-  rightArrow.addEventListener('click', function() {
-    teamRibbon.scrollBy({ left: cardWidth, behavior: 'smooth' });
-  });
-
-  // Optional: hide left arrow if at start, right arrow if at end
-  function updateArrows() {
-    leftArrow.style.opacity = teamRibbon.scrollLeft > 0 ? '1' : '0.5';
-    rightArrow.style.opacity =
-      teamRibbon.scrollLeft + teamRibbon.offsetWidth < teamRibbon.scrollWidth ? '1' : '0.5';
-  }
-  teamRibbon.addEventListener('scroll', updateArrows);
-  updateArrows();  
-
 </script>
 
 <script>
@@ -5157,24 +5135,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   </script>
-
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const allServices = document.querySelectorAll('.service-name');
-  allServices.forEach(div => {
-    if (div.textContent === 'Urology') {
-      const link = document.createElement('a');
-      link.textContent = 'Urology';
-      link.href = 'https://mjdemarco65.github.io/prototyping/small-service/small-service-urology-final.html';
-      link.className = 'service-name';
-      link.style.color = 'inherit';
-      link.style.textDecoration = 'none';
-      div.replaceWith(link);
-    }
-  });
-});
-</script>
-
 
 
 </html>
